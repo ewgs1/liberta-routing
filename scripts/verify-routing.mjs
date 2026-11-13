@@ -4,7 +4,7 @@ import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { readJson, json, ensure } from './lib.mjs';
-import { selectedDomains } from './rule-sets.mjs';
+import { selectedDomains, PROXY_DOMAINS } from './rule-sets.mjs';
 
 // Exercise the real routing core. Both observed exits terminate on loopback;
 // no request reaches a service, DNS resolver, VPN node or the public Internet.
@@ -66,8 +66,8 @@ async function probe(port, host, payloadHost = host) {
     socket.setTimeout(5000, () => socket.destroy(new Error('routing probe timeout')));
     socket.once('connect', () => {
       const authority = host.includes(':') ? `[${host}]:443` : `${host}:443`;
-      const payload = payloadHost ? `GET / HTTP/1.1\r\nHost: ${payloadHost}\r\nConnection: close\r\n\r\n` : 'opaque application payload\r\n';
-      socket.write(`CONNECT ${authority} HTTP/1.1\r\nHost: ${authority}\r\n\r\n${payload}`);
+      const payload = Buffer.isBuffer(payloadHost) ? payloadHost : Buffer.from(payloadHost ? `GET / HTTP/1.1\r\nHost: ${payloadHost}\r\nConnection: close\r\n\r\n` : 'opaque application payload\r\n');
+      socket.write(Buffer.concat([Buffer.from(`CONNECT ${authority} HTTP/1.1\r\nHost: ${authority}\r\n\r\n`), payload]));
     });
     socket.on('data', chunk => {
       response += chunk.toString('utf8');
@@ -78,6 +78,17 @@ async function probe(port, host, payloadHost = host) {
     socket.once('error', reject);
     socket.once('close', () => reject(new Error('routing exercise closed without an observed exit')));
   });
+}
+
+function clientHello(host) {
+  const u16 = number => { const buffer = Buffer.alloc(2); buffer.writeUInt16BE(number); return buffer; };
+  const name = Buffer.from(host);
+  const sni = Buffer.concat([u16(name.length + 3), Buffer.from([0]), u16(name.length), name]);
+  const extensions = Buffer.concat([u16(0), u16(sni.length), sni]);
+  const body = Buffer.concat([Buffer.from([3,3]), Buffer.alloc(32,7), Buffer.from([0]), u16(2), Buffer.from([0,47,1,0]), u16(extensions.length), extensions]);
+  const handshake = Buffer.alloc(4); handshake[0] = 1; handshake.writeUIntBE(body.length,1,3);
+  const record = Buffer.concat([handshake,body]);
+  return Buffer.concat([Buffer.from([22,3,1]),u16(record.length),record]);
 }
 
 try {
@@ -107,7 +118,7 @@ try {
       checked++;
     }
   }
-  for (const host of ['unlisted-liberta-service.ru','github.com','not-tbank-app.ru','yastatic.net.unrelated.invalid','sbp.ru']) {
+  for (const host of ['unlisted-liberta-service.ru','github.com','not-tbank-app.ru','yastatic.net.unrelated.invalid','sbp.ru','tbank.com',...PROXY_DOMAINS,...PROXY_DOMAINS.map(d=>`tenant.${d}`)]) {
     ensure(await probe(inboundPort,host)==='proxy', `unexpected direct route: ${host}`);
     checked++;
   }
@@ -115,7 +126,11 @@ try {
   ensure(await probe(inboundPort,'2001:4860:4860::8888',null)==='proxy','unclassified IPv6 must use proxy'); checked++;
   ensure(await probe(inboundPort,'1.1.1.1','api.t-bank-app.ru')==='direct','HTTP sniffed service name must select direct'); checked++;
   ensure(direct.targets.at(-1)==='1.1.1.1:443','routeOnly must preserve the original IP destination');
-  console.log(`Actual Xray routing passed: ${checked} loopback-only connections; domains, subdomains, negatives, raw IPv4/IPv6 and HTTP sniffing. This is not a device/application acceptance test.`);
+  for (const [host,expected] of [['api.t-bank-app.ru','direct'],['api.vk.com','direct'],['github.com','proxy'],['tenant.cloud.vk.com','proxy']]) {
+    ensure(await probe(inboundPort,'1.1.1.1',clientHello(host))===expected,`TLS SNI route failed: ${host}`); checked++;
+    ensure((expected==='direct'?direct:proxy).targets.at(-1)==='1.1.1.1:443','TLS routeOnly changed the target');
+  }
+  console.log(`Actual Xray routing passed: ${checked} loopback-only connections; domains, subdomains, cloud overrides, raw IPv4/IPv6, HTTP Host and TLS SNI sniffing. This is not a device/application acceptance test.`);
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;

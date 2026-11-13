@@ -4,6 +4,8 @@
     "domain:cbr.ru",
     "domain:nspk.com",
     "domain:nspk.ru",
+    "domain:paywb.com",
+    "domain:paywb.ru",
     "domain:yoomoney.ru"
   ],
   "outboundTag": "direct"

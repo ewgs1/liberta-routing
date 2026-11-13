@@ -6,16 +6,14 @@
     "banks": {
       "policy": "direct",
       "explicit": true,
-      "why": "отказ по иностранному адресу необратим и стоит денег",
+      "why": "Выбранные сервисы категории banks направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "tbank.ru",
         "tinkoff.ru",
         "tinkoff.com",
         "tcsbank.ru",
-        "tbank.com",
         "sberbank.ru",
         "sber.ru",
-        "online.sberbank.ru",
         "sberbank.com",
         "vtb.ru",
         "alfabank.ru",
@@ -31,24 +29,34 @@
         "domrfbank.ru",
         "rsb.ru",
         "alfabank.gcdn.co",
-        "t-bank-app.ru"
+        "t-bank-app.ru",
+        "tinkoffinsurance.ru",
+        "wb-bank.ru",
+        "yandex-bank.net",
+        "t-tolk.ru",
+        "tbank-online.com",
+        "data-tscbank.ru",
+        "cdn-tinkoff.ru",
+        "t-calls.ru"
       ]
     },
     "payments": {
       "policy": "direct",
       "explicit": true,
-      "why": "платёжный шлюз блокирует транзакцию, а не страницу",
+      "why": "Выбранные сервисы категории payments направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "nspk.ru",
         "nspk.com",
         "cbr.ru",
-        "yoomoney.ru"
+        "yoomoney.ru",
+        "paywb.com",
+        "paywb.ru"
       ]
     },
     "gov": {
       "policy": "direct",
       "explicit": true,
-      "why": "вход по иностранному адресу закрыт, восстановление через поддержку",
+      "why": "Выбранные сервисы категории gov направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "gosuslugi.ru",
         "esia.gosuslugi.ru",
@@ -71,7 +79,7 @@
     "telecom": {
       "policy": "direct",
       "explicit": false,
-      "why": "приложение оператора привязано к домашней сети, иностранный адрес даёт отказ",
+      "why": "Выбранные сервисы категории telecom направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "mts.ru",
         "beeline.ru",
@@ -83,13 +91,14 @@
         "rt.ru",
         "dom.ru",
         "mgts.ru",
-        "akado.ru"
+        "akado.ru",
+        "tinkoffmobile.ru"
       ]
     },
     "marketplaces": {
       "policy": "direct",
       "explicit": false,
-      "why": "с апреля 2026 сами ограничивают вход с VPN",
+      "why": "Выбранные сервисы категории marketplaces направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "ozon.ru",
         "wildberries.ru",
@@ -99,13 +108,22 @@
         "megamarket.ru",
         "sbermegamarket.ru",
         "ozone.ru",
-        "wbbasket.ru"
+        "wbbasket.ru",
+        "o3.ru",
+        "o3t.ru",
+        "o3team.ru",
+        "ozon-dostavka.ru",
+        "ozonpartners.ru",
+        "ozonusercontent.com",
+        "wbwh.ru",
+        "wbwh.tech",
+        "wbheld.ru"
       ]
     },
     "retail": {
       "policy": "direct",
       "explicit": false,
-      "why": "магазины и аптеки режут вход по адресу, чаще всего молча",
+      "why": "Выбранные сервисы категории retail направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "dns-shop.ru",
         "mvideo.ru",
@@ -120,13 +138,14 @@
         "magnit.ru",
         "vkusvill.ru",
         "auchan.ru",
-        "lenta.com"
+        "lenta.com",
+        "edadeal.ru"
       ]
     },
     "delivery": {
       "policy": "direct",
       "explicit": false,
-      "why": "заказ привязан к адресу и оплате, отказ по гео выглядит как сбой",
+      "why": "Выбранные сервисы категории delivery направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "eda.yandex.ru",
         "lavka.yandex.ru",
@@ -138,7 +157,7 @@
     "taxi": {
       "policy": "direct",
       "explicit": false,
-      "why": "поездка и оплата ломаются в середине сценария",
+      "why": "Выбранные сервисы категории taxi направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "taxi.yandex.ru",
         "go.yandex"
@@ -147,7 +166,7 @@
     "transport": {
       "policy": "direct",
       "explicit": false,
-      "why": "билеты и посадочные не отдаются на зарубежный адрес",
+      "why": "Выбранные сервисы категории transport направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "rzd.ru",
         "aeroflot.ru",
@@ -164,7 +183,7 @@
     "medicine": {
       "policy": "direct",
       "explicit": false,
-      "why": "запись к врачу привязана к полису и региону",
+      "why": "Выбранные сервисы категории medicine направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "emias.info",
         "medsi.ru"
@@ -173,7 +192,7 @@
     "media": {
       "policy": "direct",
       "explicit": false,
-      "why": "ограничивают показ с зарубежного адреса, часть просто зависает",
+      "why": "Выбранные сервисы категории media направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "kinopoisk.ru",
         "ivi.ru",
@@ -184,13 +203,15 @@
         "premier.one",
         "rutube.ru",
         "vkvideo.ru",
-        "smotrim.ru"
+        "smotrim.ru",
+        "bookmate.ru",
+        "band.link"
       ]
     },
     "social": {
       "policy": "direct",
       "explicit": false,
-      "why": "вход и платежи внутри сервиса, иностранный адрес даёт проверку",
+      "why": "Выбранные сервисы категории social направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "vk.com",
         "vk.ru",
@@ -200,13 +221,40 @@
         "yandex.ru",
         "ya.ru",
         "yandex.net",
-        "yastatic.net"
+        "yastatic.net",
+        "vk.cc",
+        "vk.link",
+        "vkontakte.com",
+        "vkontakte.ru",
+        "vk-cdn.net",
+        "userapi.com",
+        "vkuser.net",
+        "vkuseraudio.com",
+        "vkuseraudio.net",
+        "vkuservideo.com",
+        "vkuservideo.net",
+        "vkuserlive.com",
+        "vkuserlive.net",
+        "mycdn.me",
+        "okcdn.ru",
+        "ok.me",
+        "apiok.ru",
+        "tamtam.chat",
+        "api-hprof.odkl.ru",
+        "dzen.ru",
+        "dzeninfra.ru",
+        "yandex.com",
+        "yandex.com.tr",
+        "yandex.kz",
+        "yandex.by",
+        "yandex.st",
+        "ya.cc"
       ]
     },
     "jobs_realty": {
       "policy": "direct",
       "explicit": false,
-      "why": "отклики и сделки с проверкой личности",
+      "why": "Выбранные сервисы категории jobs_realty направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
         "hh.ru",
         "superjob.ru",

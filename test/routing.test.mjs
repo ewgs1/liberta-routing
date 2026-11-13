@@ -20,7 +20,7 @@ test('TXT and sing-box preserve the existing 45 suffix-domain rules',async()=>{
  for(const host of domains){assert.ok(domains.some(d=>host===d||host.endsWith('.'+d)));assert.ok(domains.some(d=>('api.'+host).endsWith('.'+d)));assert.ok(!domains.some(d=>(host+'.unrelated.invalid').endsWith('.'+d)));}
 });
 test('the two existing measured exceptions remain active',()=>{for(const item of registry.measured_exceptions)assert.ok(activeEntries(registry).some(e=>e.domain===item.domain));});
-test('unreviewed legacy provenance does not silently remove working services',async()=>{const p=await readJson('registry/provenance.json');const original=p.entries.filter(e=>e.origin==='existing-liberta-registry');assert.equal(original.length,111);assert.ok(original.every(e=>e.addedAt===null));assert.equal(activeEntries(registry).length,45);});
+test('unreviewed legacy provenance does not silently remove working services',async()=>{const p=await readJson('registry/provenance.json');const original=p.entries.filter(e=>e.origin==='existing-liberta-registry');assert.equal(original.length,109);assert.ok(original.every(e=>e.addedAt===null));assert.equal(activeEntries(registry).length,45);});
 test('public registry rejects infrastructure fields and invalid names',()=>{
  const extra=structuredClone(registry);extra.nodes=[];assert.throws(()=>validateRegistry(extra));
  for(const domain of ['https://example.com','geoip:ru','geosite:category-ru','*.example.com','127.0.0.1','foo.local',' example.com'])assert.throws(()=>normalizeDomain(domain));

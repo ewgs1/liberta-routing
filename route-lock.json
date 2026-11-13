@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "routeSha256": "6eca3d4d6d25a85c63bcfef19f1724c018012ce2d68ae548995c2729ab7c7f62",
+  "routeSha256": "67a6053e13467bd54c49ea805d4efc1f05e7a87e3eee7af42550f53c9afaf996",
   "compatibilityRouteSha256": "34ea2353985ffb6fd6095f1c0ebea356477697bb8404ea2a6cd3000bcd891719",
   "reviewedAt": "2026-11-13",
   "reason": "Nine first-party domain references added to independent test lists; preserved v1 compatibility profile remains frozen. Device/application acceptance remains open."

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-13",
+  "decisions": [
+    { "domain": "tbank.com", "decision": "exclude", "source": "https://www.tbank.com/", "reason": "Redirects to t.bank, a US bank. Not the Russian T-Bank. Frozen compatibility snapshot is historical and unchanged." },
+    { "domain": "sbp.ru", "decision": "exclude", "source": "https://sbp.ru/", "reason": "Travel agency, not the Faster Payments System. That service is under sbp.nspk.ru, covered by nspk.ru." },
+    { "domain": "online.sberbank.ru", "decision": "covered-by-parent", "parent": "sberbank.ru", "reason": "Domain-suffix match already includes this endpoint; removal of the duplicate preserves its direct route." },
+    { "domain": "go.yandex", "decision": "retain", "source": "https://go.yandex/", "reason": "Official Yandex Go page; .yandex is a real top-level domain." }
+  ]
+}

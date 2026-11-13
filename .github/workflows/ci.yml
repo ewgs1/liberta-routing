@@ -10,6 +10,17 @@ concurrency:
   group: routing-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - run: node scripts/observe-sources.mjs
   validate:
     strategy:
       fail-fast: false

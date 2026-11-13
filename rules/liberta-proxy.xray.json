@@ -1,0 +1,8 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:cloud.vk.com",
+    "domain:mcs.mail.ru"
+  ],
+  "outboundTag": "proxy"
+}

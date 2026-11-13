@@ -4,7 +4,7 @@ import { readFile, mkdtemp, readdir, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { allEntries, json, readJson, sha256, validateProvenance } from '../scripts/lib.mjs';
-import { independentFiles, matchesDomain, selectedDomains, selectiveTemplate } from '../scripts/rule-sets.mjs';
+import { independentFiles, matchesDomain, selectedDomains, selectiveTemplate, PROXY_DOMAINS, happProfile } from '../scripts/rule-sets.mjs';
 import { writeRules } from '../scripts/build-rules.mjs';
 
 const registryBytes = await readFile('registry/registry.json', 'utf8');
@@ -21,11 +21,14 @@ const route = (template, domain) => {
   }
 };
 
-test('independent list retains all 111 original domains and adds nine reviewed references', () => {
-  assert.equal(selected.length, 120);
+test('independent list preserves service coverage except documented exclusions', () => {
+  assert.equal(selected.length, 168);
   assert.deepEqual(selected, allEntries(registry).map(entry => entry.domain));
   for (const [name, group] of Object.entries(original.classes)) {
-    for (const domain of group.domains) assert.ok(registry.classes[name].domains.includes(domain), domain);
+    for (const domain of group.domains) {
+      if (['tbank.com','online.sberbank.ru'].includes(domain)) continue;
+      assert.ok(registry.classes[name].domains.includes(domain), domain);
+    }
   }
   for (const domain of ['ozon.ru', 'wildberries.ru', 'vk.com', 'rzd.ru', 'tbank.ru']) assert.ok(selected.includes(domain));
 });
@@ -48,12 +51,12 @@ test('13 categories cover the whole registry and contain no added domains', () =
 });
 test('manifest verifies every generated file and the input evidence registry', () => {
   const manifest = JSON.parse(files['manifest.json']);
-  assert.equal(manifest.domains, 120);
+  assert.equal(manifest.domains, selected.length);
   assert.equal(manifest.categories, 13);
   assert.equal(manifest.registrySha256, sha256(registryBytes));
   assert.equal(manifest.provenanceSha256, sha256(provenanceBytes));
   assert.deepEqual(manifest.externalRoutingDatabases, []);
-  assert.deepEqual(manifest.sourceReview, {pending:111,firstPartyReference:9,applicationTests:'not-performed-for-this-rule-set'});
+  assert.deepEqual(manifest.sourceReview, {pending:98,firstPartyReference:66,operatorReportedBundle:4,applicationTests:'not-performed-for-this-rule-set'});
   for (const set of Object.values(manifest.sets)) for (const file of Object.values(set.files)) {
     assert.equal(sha256(files[file.name]), file.sha256);
     assert.equal(Buffer.byteLength(files[file.name]), file.bytes);
@@ -139,4 +142,23 @@ test('atomic rule directory updates remove stale files and never merge old conte
     await assert.rejects(writeRules(output, { '../escape.txt': 'refused' }), /unsafe generated name/);
     assert.equal(await readFile(join(output, 'new.txt'), 'utf8'), 'new\n');
   } finally { await rm(directory, { recursive: true, force: true }); }
+});
+
+test('shared-cloud exceptions win over parent service suffixes', () => {
+  const template=selectiveTemplate(registry,compatible);
+  for(const domain of PROXY_DOMAINS) for(const host of [domain,`tenant.${domain}`]) assert.equal(route(template,host),'proxy');
+  assert.equal(route(template,'api.vk.com'),'direct');
+  assert.equal(route(template,'tbank.com'),'proxy');
+  assert.equal(route(template,'online.sberbank.ru'),'direct');
+  assert.equal(JSON.parse(files['liberta-proxy.xray.json']).outboundTag,'proxy');
+});
+test('Happ native routing and optional FakeDNS profile share the own registry', () => {
+  const standard=happProfile(registry), experimental=happProfile(registry,{fakeDNS:true});
+  assert.deepEqual(standard.DirectSites,selected.map(d=>`domain:${d}`));
+  assert.deepEqual(standard.ProxySites,PROXY_DOMAINS.map(d=>`domain:${d}`));
+  assert.equal(standard.GlobalProxy,true);
+  assert.equal(standard.FakeDNS,false);
+  assert.equal(experimental.FakeDNS,true);
+  assert.deepEqual(experimental.DirectSites,standard.DirectSites);
+  assert.equal(standard.Geoipurl,''); assert.equal(standard.Geositeurl,'');
 });

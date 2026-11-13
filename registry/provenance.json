@@ -3,689 +3,43 @@
   "note": "Состав и флаги сохранены из собственного рабочего реестра пользователя. Отсутствие нового обзора не меняет рабочую маршрутизацию. Неизвестные даты добавления не выдумываются.",
   "entries": [
     {
-      "domain": "tbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
+      "domain": "2gis.com",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://tbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
+          "url": "https://2gis.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://account.2gis.com/",
+          "note": "Официальная карта ссылается на вход для бизнеса и redirect.2gis.com."
         }
       ]
     },
     {
-      "domain": "tinkoff.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
+      "domain": "2gis.ru",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://tinkoff.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
+          "url": "https://2gis.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://2gis.ru/",
+          "note": "Официальная карта, справка и юридические документы 2ГИС."
         }
       ]
     },
     {
-      "domain": "tinkoff.com",
-      "class": "banks",
+      "domain": "aeroflot.ru",
+      "class": "transport",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://tinkoff.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "tcsbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://tcsbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "tbank.com",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://tbank.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sberbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sberbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sber.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sber.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "online.sberbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://online.sberbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sberbank.com",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sberbank.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "vtb.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://vtb.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "alfabank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://alfabank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "alfabank.com",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://alfabank.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "gazprombank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://gazprombank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "psbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://psbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rshb.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rshb.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sovcombank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sovcombank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "otpbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://otpbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "raiffeisen.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://raiffeisen.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mkb.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mkb.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "open.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://open.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "domrfbank.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://domrfbank.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rsb.ru",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rsb.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "alfabank.gcdn.co",
-      "class": "banks",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://alfabank.gcdn.co/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "nspk.ru",
-      "class": "payments",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://nspk.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "nspk.com",
-      "class": "payments",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://nspk.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "cbr.ru",
-      "class": "payments",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://cbr.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "yoomoney.ru",
-      "class": "payments",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://yoomoney.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "gosuslugi.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://gosuslugi.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "esia.gosuslugi.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://esia.gosuslugi.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "nalog.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://nalog.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "nalog.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://nalog.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sfr.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sfr.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "fssp.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://fssp.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mos.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mos.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mosreg.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mosreg.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "pravo.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://pravo.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "regulation.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://regulation.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rosreestr.gov.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rosreestr.gov.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sudrf.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sudrf.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "government.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://government.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "kremlin.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://kremlin.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "trudvsem.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://trudvsem.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "pochta.ru",
-      "class": "gov",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://pochta.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mts.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mts.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "beeline.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://beeline.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "megafon.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://megafon.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "t2.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://t2.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "tele2.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://tele2.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "yota.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://yota.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rostelecom.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rostelecom.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rt.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rt.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "dom.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://dom.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mgts.ru",
-      "class": "telecom",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mgts.ru/",
+          "url": "https://aeroflot.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
@@ -705,249 +59,71 @@
       ]
     },
     {
-      "domain": "ozon.ru",
-      "class": "marketplaces",
+      "domain": "alfabank.com",
+      "class": "banks",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://ozon.ru/",
+          "url": "https://alfabank.com/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "wildberries.ru",
-      "class": "marketplaces",
+      "domain": "alfabank.gcdn.co",
+      "class": "banks",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://wildberries.ru/",
+          "url": "https://alfabank.gcdn.co/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "wb.ru",
-      "class": "marketplaces",
+      "domain": "alfabank.ru",
+      "class": "banks",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://wb.ru/",
+          "url": "https://alfabank.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "wbstatic.net",
-      "class": "marketplaces",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
+      "domain": "api-hprof.odkl.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://wbstatic.net/",
-          "checkedAt": null,
-          "result": "pending-review"
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://api-hprof.odkl.ru/",
+          "note": "Only this endpoint is declared; no inference to its entire parent namespace."
         }
       ]
     },
     {
-      "domain": "avito.ru",
-      "class": "marketplaces",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
+      "domain": "apiok.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://avito.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "megamarket.ru",
-      "class": "marketplaces",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://megamarket.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "sbermegamarket.ru",
-      "class": "marketplaces",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://sbermegamarket.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "dns-shop.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://dns-shop.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "mvideo.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://mvideo.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "eldorado.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://eldorado.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "citilink.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://citilink.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "detmir.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://detmir.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "goldapple.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://goldapple.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "letu.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://letu.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "lamoda.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://lamoda.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "perekrestok.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://perekrestok.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "pyaterochka.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://pyaterochka.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "magnit.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://magnit.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "vkusvill.ru",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://vkusvill.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://apiok.ru/",
+          "note": "OK declares these service and content domain families in its own public program."
         }
       ]
     },
@@ -959,175 +135,6 @@
       "source": [
         {
           "url": "https://auchan.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "lenta.com",
-      "class": "retail",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://lenta.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "eda.yandex.ru",
-      "class": "delivery",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://eda.yandex.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "lavka.yandex.ru",
-      "class": "delivery",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://lavka.yandex.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "samokat.ru",
-      "class": "delivery",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://samokat.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "kuper.ru",
-      "class": "delivery",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://kuper.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "delivery-club.ru",
-      "class": "delivery",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://delivery-club.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "taxi.yandex.ru",
-      "class": "taxi",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://taxi.yandex.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "go.yandex",
-      "class": "taxi",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://go.yandex/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "rzd.ru",
-      "class": "transport",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://rzd.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "aeroflot.ru",
-      "class": "transport",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://aeroflot.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "s7.ru",
-      "class": "transport",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://s7.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "pobeda.aero",
-      "class": "transport",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://pobeda.aero/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "utair.ru",
-      "class": "transport",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://utair.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
@@ -1147,26 +154,272 @@
       ]
     },
     {
-      "domain": "tutu.ru",
-      "class": "transport",
+      "domain": "avito.ru",
+      "class": "marketplaces",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://tutu.ru/",
+          "url": "https://avito.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "onetwotrip.com",
-      "class": "transport",
+      "domain": "band.link",
+      "class": "media",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://band.link/",
+          "note": "Company-declared service namespace; domain association only."
+        }
+      ]
+    },
+    {
+      "domain": "beeline.ru",
+      "class": "telecom",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://onetwotrip.com/",
+          "url": "https://beeline.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "bookmate.ru",
+      "class": "media",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://bookmate.ru/",
+          "note": "Company-declared service namespace; domain association only."
+        }
+      ]
+    },
+    {
+      "domain": "cbr.ru",
+      "class": "payments",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://cbr.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "cdn-tinkoff.ru",
+      "class": "banks",
+      "origin": "operator-service-report",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "record": "registry/evidence/tbank-user-report.json",
+          "checkedAt": "2026-11-13",
+          "result": "operator-reported-bundle",
+          "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "cian.ru",
+      "class": "jobs_realty",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://cian.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "citilink.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://citilink.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "data-tscbank.ru",
+      "class": "banks",
+      "origin": "operator-service-report",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "record": "registry/evidence/tbank-user-report.json",
+          "checkedAt": "2026-11-13",
+          "result": "operator-reported-bundle",
+          "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "delivery-club.ru",
+      "class": "delivery",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://delivery-club.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "detmir.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://detmir.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "dns-shop.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://dns-shop.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "dom.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://dom.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "domclick.ru",
+      "class": "jobs_realty",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://domclick.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "domrfbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://domrfbank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "dzen.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/dzen_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://dzen.ru/",
+          "note": "Company-declared web and media infrastructure. Bug-bounty test exclusions are not routing exclusions."
+        }
+      ]
+    },
+    {
+      "domain": "dzeninfra.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/dzen_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://dzeninfra.ru/",
+          "note": "Company-declared web and media infrastructure. Bug-bounty test exclusions are not routing exclusions."
+        }
+      ]
+    },
+    {
+      "domain": "eda.yandex.ru",
+      "class": "delivery",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://eda.yandex.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "edadeal.ru",
+      "class": "retail",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://edadeal.ru/",
+          "note": "Company-declared service namespace."
+        }
+      ]
+    },
+    {
+      "domain": "eldorado.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://eldorado.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
@@ -1186,26 +439,106 @@
       ]
     },
     {
-      "domain": "medsi.ru",
-      "class": "medicine",
+      "domain": "esia.gosuslugi.ru",
+      "class": "gov",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://medsi.ru/",
+          "url": "https://esia.gosuslugi.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "kinopoisk.ru",
-      "class": "media",
+      "domain": "fssp.gov.ru",
+      "class": "gov",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://kinopoisk.ru/",
+          "url": "https://fssp.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "gazprombank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://gazprombank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "go.yandex",
+      "class": "taxi",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://go.yandex/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://go.yandex/",
+          "note": "Official Yandex Go service page. The .yandex top-level domain exists; this hostname is valid."
+        }
+      ]
+    },
+    {
+      "domain": "goldapple.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://goldapple.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "gosuslugi.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://gosuslugi.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "government.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://government.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "hh.ru",
+      "class": "jobs_realty",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://hh.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
@@ -1225,143 +558,106 @@
       ]
     },
     {
-      "domain": "okko.tv",
+      "domain": "kinopoisk.ru",
       "class": "media",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://okko.tv/",
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://kinopoisk.ru/",
+          "note": "Company-declared service namespace; domain association only."
+        }
+      ]
+    },
+    {
+      "domain": "kremlin.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://kremlin.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "wink.ru",
-      "class": "media",
+      "domain": "kuper.ru",
+      "class": "delivery",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://wink.ru/",
+          "url": "https://kuper.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "more.tv",
-      "class": "media",
+      "domain": "lamoda.ru",
+      "class": "retail",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://more.tv/",
+          "url": "https://lamoda.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "start.ru",
-      "class": "media",
+      "domain": "lavka.yandex.ru",
+      "class": "delivery",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://start.ru/",
+          "url": "https://lavka.yandex.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "premier.one",
-      "class": "media",
+      "domain": "lenta.com",
+      "class": "retail",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://premier.one/",
+          "url": "https://lenta.com/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "rutube.ru",
-      "class": "media",
+      "domain": "letu.ru",
+      "class": "retail",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://rutube.ru/",
+          "url": "https://letu.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "vkvideo.ru",
-      "class": "media",
+      "domain": "magnit.ru",
+      "class": "retail",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://vkvideo.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "smotrim.ru",
-      "class": "media",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://smotrim.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "vk.com",
-      "class": "social",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://vk.com/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "vk.ru",
-      "class": "social",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://vk.ru/",
-          "checkedAt": null,
-          "result": "pending-review"
-        }
-      ]
-    },
-    {
-      "domain": "ok.ru",
-      "class": "social",
-      "origin": "existing-liberta-registry",
-      "addedAt": null,
-      "source": [
-        {
-          "url": "https://ok.ru/",
+          "url": "https://magnit.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
@@ -1394,144 +690,371 @@
       ]
     },
     {
-      "domain": "hh.ru",
-      "class": "jobs_realty",
+      "domain": "medsi.ru",
+      "class": "medicine",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://hh.ru/",
+          "url": "https://medsi.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "superjob.ru",
-      "class": "jobs_realty",
+      "domain": "megafon.ru",
+      "class": "telecom",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://superjob.ru/",
+          "url": "https://megafon.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "cian.ru",
-      "class": "jobs_realty",
+      "domain": "megamarket.ru",
+      "class": "marketplaces",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://cian.ru/",
+          "url": "https://megamarket.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "domclick.ru",
-      "class": "jobs_realty",
+      "domain": "mgts.ru",
+      "class": "telecom",
       "origin": "existing-liberta-registry",
       "addedAt": null,
       "source": [
         {
-          "url": "https://domclick.ru/",
+          "url": "https://mgts.ru/",
           "checkedAt": null,
           "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "yandex.ru",
+      "domain": "mkb.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://mkb.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "more.tv",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://more.tv/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "mos.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://mos.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "mosreg.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://mosreg.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "mts.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://mts.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "mvideo.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://mvideo.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "mycdn.me",
       "class": "social",
       "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
           "checkedAt": "2026-11-13",
           "result": "first-party-reference",
-          "reference": "https://yandex.ru/",
-          "note": "Основной домен указан в сетевой документации Яндекса."
+          "reference": "https://mycdn.me/",
+          "note": "OK declares these service and content domain families in its own public program."
         }
       ]
     },
     {
-      "domain": "ya.ru",
+      "domain": "nalog.gov.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://nalog.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "nalog.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://nalog.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "nspk.com",
+      "class": "payments",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://nspk.com/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "nspk.ru",
+      "class": "payments",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://nspk.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "o3.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://o3.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
+        }
+      ]
+    },
+    {
+      "domain": "o3t.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://o3t.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
+        }
+      ]
+    },
+    {
+      "domain": "o3team.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://o3team.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
+        }
+      ]
+    },
+    {
+      "domain": "ok.me",
       "class": "social",
       "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
           "checkedAt": "2026-11-13",
           "result": "first-party-reference",
-          "reference": "https://ya.ru/",
-          "note": "Основной домен указан в сетевой документации Яндекса."
+          "reference": "https://ok.me/",
+          "note": "OK declares these service and content domain families in its own public program."
         }
       ]
     },
     {
-      "domain": "yandex.net",
+      "domain": "ok.ru",
+      "class": "social",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ok.ru/",
+          "note": "OK declares these service and content domain families in its own public program."
+        }
+      ]
+    },
+    {
+      "domain": "okcdn.ru",
       "class": "social",
       "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
           "checkedAt": "2026-11-13",
           "result": "first-party-reference",
-          "reference": "https://mobileproxy.passport.yandex.net/",
-          "note": "Документация указывает поддомены авторизации, файлов и API."
+          "reference": "https://okcdn.ru/",
+          "note": "OK declares these service and content domain families in its own public program."
         }
       ]
     },
     {
-      "domain": "yastatic.net",
-      "class": "social",
-      "origin": "first-party-document-review",
-      "addedAt": "2026-11-13",
+      "domain": "okko.tv",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
       "source": [
         {
-          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
-          "checkedAt": "2026-11-13",
-          "result": "first-party-reference",
-          "reference": "https://yastatic.net/",
-          "note": "Документация указывает хранилище статики интерфейса."
+          "url": "https://okko.tv/",
+          "checkedAt": null,
+          "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "2gis.ru",
+      "domain": "onetwotrip.com",
       "class": "transport",
-      "origin": "first-party-document-review",
-      "addedAt": "2026-11-13",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
       "source": [
         {
-          "url": "https://2gis.ru/",
-          "checkedAt": "2026-11-13",
-          "result": "first-party-reference",
-          "reference": "https://2gis.ru/",
-          "note": "Официальная карта, справка и юридические документы 2ГИС."
+          "url": "https://onetwotrip.com/",
+          "checkedAt": null,
+          "result": "pending-review"
         }
       ]
     },
     {
-      "domain": "2gis.com",
-      "class": "transport",
+      "domain": "open.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://open.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "otpbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://otpbank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "ozon-dostavka.ru",
+      "class": "marketplaces",
       "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://2gis.ru/",
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
           "checkedAt": "2026-11-13",
           "result": "first-party-reference",
-          "reference": "https://account.2gis.com/",
-          "note": "Официальная карта ссылается на вход для бизнеса и redirect.2gis.com."
+          "reference": "https://ozon-dostavka.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
+        }
+      ]
+    },
+    {
+      "domain": "ozon.ru",
+      "class": "marketplaces",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ozon.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
         }
       ]
     },
@@ -1551,17 +1074,426 @@
       ]
     },
     {
-      "domain": "wbbasket.ru",
+      "domain": "ozonpartners.ru",
       "class": "marketplaces",
       "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "url": "https://seller.wildberries.ru/instructions/ru/ru/material/service-terms",
+          "url": "https://bugbounty.standoff365.com/en-US/programs/ozon/",
           "checkedAt": "2026-11-13",
           "result": "first-party-reference",
-          "reference": "https://static-basket-02.wbbasket.ru/vol20/folder/documents/Fulfillment_package_20260924.pdf",
-          "note": "Официальные условия Wildberries ссылаются на документы на static-basket-02.wbbasket.ru."
+          "reference": "https://ozonpartners.ru/",
+          "note": "Company-declared service domain scope; does not prove use in every buyer-app scenario."
+        }
+      ]
+    },
+    {
+      "domain": "ozonusercontent.com",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://dev.ozon.ru/community/1823-Ozon-Logistika-raschet-stoimosti-dostavki/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://cdn1.ozonusercontent.com/s3/kms-files-prod/seller-edu/7b28379c-1fd5-446d-bbf2-9bf2a9559b84/tariffs-ozon-logistika-122025.xlsx",
+          "note": "Ozon for dev moderator links its tariff document on cdn1.ozonusercontent.com."
+        }
+      ]
+    },
+    {
+      "domain": "paywb.com",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://paywb.com/",
+          "note": "Wildberries declares payment gateway domains, including alpha.paywb.com and beta.paywb.com."
+        }
+      ]
+    },
+    {
+      "domain": "paywb.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://paywb.ru/",
+          "note": "Wildberries declares payment gateway domains, including alpha.paywb.com and beta.paywb.com."
+        }
+      ]
+    },
+    {
+      "domain": "perekrestok.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://perekrestok.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "pobeda.aero",
+      "class": "transport",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://pobeda.aero/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "pochta.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://pochta.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "pravo.gov.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://pravo.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "premier.one",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://premier.one/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "psbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://psbank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "pyaterochka.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://pyaterochka.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "raiffeisen.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://raiffeisen.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "regulation.gov.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://regulation.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rosreestr.gov.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rosreestr.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rostelecom.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rostelecom.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rsb.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rsb.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rshb.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rshb.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rt.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rt.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rutube.ru",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rutube.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rzd.ru",
+      "class": "transport",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://rzd.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "s7.ru",
+      "class": "transport",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://s7.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "samokat.ru",
+      "class": "delivery",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://samokat.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sber.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sber.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sberbank.com",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sberbank.com/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sberbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sberbank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sbermegamarket.ru",
+      "class": "marketplaces",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sbermegamarket.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sfr.gov.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sfr.gov.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "smotrim.ru",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://smotrim.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sovcombank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sovcombank.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "start.ru",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://start.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sudrf.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://sudrf.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "superjob.ru",
+      "class": "jobs_realty",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://superjob.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
         }
       ]
     },
@@ -1577,6 +1509,816 @@
           "result": "first-party-reference",
           "reference": "https://acdn.t-bank-app.ru/static/documents/docs-terms-of-use-of-the-tinkoff-mobile-application.pdf",
           "note": "На поддомене доступен документ об условиях использования приложения Т-Банка; отдельная трассировка приложения не выполнялась."
+        }
+      ]
+    },
+    {
+      "domain": "t-calls.ru",
+      "class": "banks",
+      "origin": "operator-service-report",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "record": "registry/evidence/tbank-user-report.json",
+          "checkedAt": "2026-11-13",
+          "result": "operator-reported-bundle",
+          "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "t-tolk.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://www.tbank.ru/invest/social/profile/T_Academy/ecd7d54b-e923-409a-acff-e42dfa43c58c/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://t-tolk.ru/",
+          "note": "T-Academy announcement links the TOLK service; this is not evidence that bank login requires it."
+        }
+      ]
+    },
+    {
+      "domain": "t2.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://t2.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "tamtam.chat",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/odnoklassniki_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tamtam.chat/",
+          "note": "OK declares these service and content domain families in its own public program."
+        }
+      ]
+    },
+    {
+      "domain": "taxi.yandex.ru",
+      "class": "taxi",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://taxi.yandex.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "tbank-online.com",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://status.tbank-online.com/android-bank/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tbank-online.com/",
+          "note": "Reviewed T-Bank application installation page, also named in operator report. A self-hosted reference is not an independent ownership audit."
+        }
+      ]
+    },
+    {
+      "domain": "tbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/tbank/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tbank.ru/",
+          "note": "Company-declared domain scope. This confirms a service association, not a complete mobile dependency inventory."
+        }
+      ]
+    },
+    {
+      "domain": "tcsbank.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/tbank/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tcsbank.ru/",
+          "note": "Company-declared domain scope. This confirms a service association, not a complete mobile dependency inventory."
+        }
+      ]
+    },
+    {
+      "domain": "tele2.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://tele2.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "tinkoff.com",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://tinkoff.com/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "tinkoff.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/tbank/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tinkoff.ru/",
+          "note": "Company-declared domain scope. This confirms a service association, not a complete mobile dependency inventory."
+        }
+      ]
+    },
+    {
+      "domain": "tinkoffinsurance.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/tbank/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tinkoffinsurance.ru/",
+          "note": "Company-declared domain scope. This confirms a service association, not a complete mobile dependency inventory."
+        }
+      ]
+    },
+    {
+      "domain": "tinkoffmobile.ru",
+      "class": "telecom",
+      "origin": "operator-service-report",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "record": "registry/evidence/tbank-user-report.json",
+          "checkedAt": "2026-11-13",
+          "result": "operator-reported-bundle",
+          "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "trudvsem.ru",
+      "class": "gov",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://trudvsem.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "tutu.ru",
+      "class": "transport",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://tutu.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "userapi.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://userapi.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "utair.ru",
+      "class": "transport",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://utair.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "vk-cdn.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vk-cdn.net/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vk.cc",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vk.cc/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vk.com",
+      "class": "social",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vk.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vk.link",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vk.link/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vk.ru",
+      "class": "social",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vk.ru/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkontakte.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkontakte.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkontakte.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkontakte.ru/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuser.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuser.net/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuseraudio.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuseraudio.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuseraudio.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuseraudio.net/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuserlive.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuserlive.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuserlive.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuserlive.net/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuservideo.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuservideo.com/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkuservideo.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://vkuservideo.net/",
+          "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkusvill.ru",
+      "class": "retail",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://vkusvill.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "vkvideo.ru",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://vkvideo.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "vtb.ru",
+      "class": "banks",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://vtb.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "wb-bank.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wb-bank.ru/",
+          "note": "Wildberries identifies this domain as WB Bank."
+        }
+      ]
+    },
+    {
+      "domain": "wb.ru",
+      "class": "marketplaces",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wb.ru/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wbbasket.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wbbasket.ru/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wbheld.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wbheld.ru/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wbstatic.net",
+      "class": "marketplaces",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://wbstatic.net/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "wbwh.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wbwh.ru/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wbwh.tech",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wbwh.tech/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wildberries.ru",
+      "class": "marketplaces",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wildberries.ru/",
+          "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wink.ru",
+      "class": "media",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://wink.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "ya.cc",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://go.yandex/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ya.cc/go",
+          "note": "Official Yandex Go page links ya.cc/go for terms."
+        }
+      ]
+    },
+    {
+      "domain": "ya.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ya.ru/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex-bank.net",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex-bank.net/",
+          "note": "Company-declared banking namespace; ownership evidence only."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.by",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.by/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.com",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.com/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.com.tr",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.com.tr/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.kz",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.kz/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.net/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.ru/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.st",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/bugbounty/i/main-scope",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.st/",
+          "note": "Company-declared service namespaces. Does not include the shared Yandex Cloud customer namespace."
+        }
+      ]
+    },
+    {
+      "domain": "yastatic.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yastatic.net/",
+          "note": "Документация указывает хранилище статики интерфейса."
+        }
+      ]
+    },
+    {
+      "domain": "yoomoney.ru",
+      "class": "payments",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://yoomoney.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "yota.ru",
+      "class": "telecom",
+      "origin": "existing-liberta-registry",
+      "addedAt": null,
+      "source": [
+        {
+          "url": "https://yota.ru/",
+          "checkedAt": null,
+          "result": "pending-review"
         }
       ]
     }

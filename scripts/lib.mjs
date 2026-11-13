@@ -78,10 +78,17 @@ export function validateProvenance(registry, provenance, now = new Date()) {
     ensure(Array.isArray(entry.source) && entry.source.length > 0, 'provenance source required');
     if (entry.origin === 'existing-liberta-registry') ensure(entry.addedAt === null, 'do not invent original addition dates');
     else {
-      ensure(entry.origin === 'first-party-document-review', 'unknown provenance origin');
+      ensure(['first-party-document-review', 'operator-service-report'].includes(entry.origin), 'unknown provenance origin');
       date(entry.addedAt, now, 'addedAt');
     }
     for (const source of entry.source) {
+      if (source.result === 'operator-reported-bundle') {
+        exactKeys(source, ['record', 'checkedAt', 'result', 'note'], 'operator source');
+        ensure(entry.origin === 'operator-service-report' && source.record === 'registry/evidence/tbank-user-report.json', 'invalid operator evidence');
+        date(source.checkedAt, now, 'checkedAt');
+        ensure(typeof source.note === 'string' && source.note.length > 0, 'operator evidence note required');
+        continue;
+      }
       publicHttps(source.url);
       if (source.result === 'pending-review') {
         exactKeys(source, ['url', 'checkedAt', 'result'], 'pending source');

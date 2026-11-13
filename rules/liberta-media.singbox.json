@@ -3,6 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
+        "band.link",
+        "bookmate.ru",
         "ivi.ru",
         "kinopoisk.ru",
         "more.tv",

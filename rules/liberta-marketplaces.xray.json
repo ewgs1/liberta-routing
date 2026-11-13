@@ -3,12 +3,21 @@
   "domain": [
     "domain:avito.ru",
     "domain:megamarket.ru",
+    "domain:o3.ru",
+    "domain:o3t.ru",
+    "domain:o3team.ru",
+    "domain:ozon-dostavka.ru",
     "domain:ozon.ru",
     "domain:ozone.ru",
+    "domain:ozonpartners.ru",
+    "domain:ozonusercontent.com",
     "domain:sbermegamarket.ru",
     "domain:wb.ru",
     "domain:wbbasket.ru",
+    "domain:wbheld.ru",
     "domain:wbstatic.net",
+    "domain:wbwh.ru",
+    "domain:wbwh.tech",
     "domain:wildberries.ru"
   ],
   "outboundTag": "direct"
