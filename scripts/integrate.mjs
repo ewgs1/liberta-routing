@@ -4,24 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { args, ensure, readJson, render, json } from './lib.mjs';
 
 export function integrate(base, registry, format) {
-  ensure(base && typeof base === 'object' && !Array.isArray(base), 'one JSON configuration object required');
-  const files = render(registry), result = structuredClone(base);
-  const tags = new Set((base.outbounds ?? []).map(outbound => outbound.tag));
-  const { directTag, proxyTag } = registry.profile;
-  ensure(tags.has(directTag) && tags.has(proxyTag), `existing outbounds must define ${directTag} and ${proxyTag}`);
-  if (format === 'xray') {
-    ensure(!base.routing?.script, 'Xray routing script requires a separate manual review');
-    // This explicitly creates an isolated test profile. The original routing is not merged or rewritten on disk.
-    result.routing = JSON.parse(files['smart.xray.json']);
-  } else if (format === 'singbox') {
-    const source = JSON.parse(files['smart.singbox.json']);
-    result.route = {
-      ...(base.route ?? {}),
-      rules: source.rules.map(rule => ({ ...rule, action: 'route', outbound: directTag })),
-      final: proxyTag
-    };
-    // Liberta rules are embedded for the isolated trial. Preserve existing rule sets because DNS may reference them.
-  } else throw new Error('format must be xray or singbox');
+  ensure(format === 'xray', 'Automatic replacement of the full sing-box routing is disabled; its source export covers explicit domain rules only');
+  ensure(base && typeof base === 'object' && !Array.isArray(base), 'configuration object required');
+  const result=structuredClone(base);
+  result.remarks='Liberta Routing v1';
   return result;
 }
 export async function privateOutput(target, input) {
@@ -39,7 +25,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const options = args(process.argv.slice(2), ['--base', '--registry', '--format', '--out']);
     ensure(options['--base'] && options['--out'] && options['--format'], 'required: --base --format --out');
-    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry.json'), options['--format']);
+    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry/registry.json'), options['--format']);
     await mkdir('.private', { recursive: true, mode: 0o700 });
     await writeFile(await privateOutput(options['--out'], options['--base']), json(result), { mode: 0o600, flag: 'wx' });
     console.log('Created separate private test configuration. Original profile unchanged. No profile was activated.');

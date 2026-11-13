@@ -18,5 +18,6 @@
     "verify:cores": "node scripts/verify-cores.mjs",
     "verify:legacy": "node scripts/verify-legacy.mjs",
     "verify": "npm run validate && node compare-lists.mjs && npm test && npm run check && npm run audit:public"
-  }
+  },
+  "releaseTag": "v1.0.0"
 }

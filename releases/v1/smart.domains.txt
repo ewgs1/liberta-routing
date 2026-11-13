@@ -1,8 +1,0 @@
-full:lkfl2.nalog.ru
-full:lkip2.nalog.ru
-full:lknpd.nalog.ru
-full:lkul.nalog.ru
-full:npd.nalog.ru
-full:service.nalog.ru
-full:www.gosuslugi.ru
-full:www.nalog.gov.ru

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "routeSha256": "9c94fc89308885d344bfc1e8a3f637c9c6bdbdfeef20083e01a5ce11fdb2172c",
+  "routeSha256": "34ea2353985ffb6fd6095f1c0ebea356477697bb8404ea2a6cd3000bcd891719",
   "reviewedAt": "2026-11-13",
-  "reason": "Initial alpha review of eight individually selected official hosts. Ownership evidence reviewed; regional service functionality and Smart v5 compatibility remain untested."
+  "reason": "Preserve the existing complete Liberta registry and routing selection; rename the profile only."
 }

@@ -40,81 +40,43 @@ export function publicHttps(value) {
   ensure(normalizeDomain(url.hostname) === url.hostname, 'source: noncanonical hostname');
   return url;
 }
-export function validateRegistry(registry, { now = new Date(), freshness = true } = {}) {
-  exactKeys(registry, ['schemaVersion', 'project', 'version', ...(Object.hasOwn(registry, 'releaseTag') ? ['releaseTag'] : []), 'profile', 'maxReviewAgeDays', 'classes', 'entries'], 'registry');
-  ensure(registry.schemaVersion === 1 && registry.project === 'liberta-routing', 'registry: unsupported schema/project');
-  ensure(/^\d+\.\d+\.\d+-(?:alpha|beta)(?:\.\d+)?$/.test(registry.version), 'version: prerelease version required');
-  if (Object.hasOwn(registry, 'releaseTag')) ensure(typeof registry.releaseTag === 'string' && /^v[1-9]\d*$/.test(registry.releaseTag), 'releaseTag: expected v1, v2, ...');
-  exactKeys(registry.profile, ['id', 'defaultRoute', 'directTag', 'proxyTag'], 'profile');
-  ensure(registry.profile.id === 'smart-alpha' && registry.profile.defaultRoute === 'proxy', 'profile: Smart must default to proxy');
-  const tags = [registry.profile.directTag, registry.profile.proxyTag];
-  ensure(tags.every(tag => typeof tag === 'string' && /^[a-zA-Z][a-zA-Z0-9_-]{0,31}$/.test(tag)) && tags[0] !== tags[1], 'profile: distinct safe outbound tags required');
-  ensure(Number.isInteger(registry.maxReviewAgeDays) && registry.maxReviewAgeDays >= 1 && registry.maxReviewAgeDays <= 90, 'review window: expected 1..90 days');
-  ensure(Array.isArray(registry.classes) && registry.classes.length > 0, 'classes: empty');
-  const classes = new Set();
-  for (const item of registry.classes) {
-    exactKeys(item, ['id', 'label'], 'class');
-    ensure(/^[a-z][a-z0-9-]{1,63}$/.test(item.id) && typeof item.label === 'string' && item.label.length > 0 && item.label.length <= 120 && !classes.has(item.id), 'class: invalid or duplicate');
-    classes.add(item.id);
+export function validateRegistry(registry) {
+  exactKeys(registry, ['version', 'updated', 'note', 'classes', 'measured_exceptions'], 'registry');
+  ensure(registry.version === 3, 'unsupported existing registry schema');
+  ensure(typeof registry.note === 'string' && typeof registry.updated === 'string', 'registry metadata missing');
+  ensure(registry.classes && typeof registry.classes === 'object' && !Array.isArray(registry.classes), 'classes must be an object');
+  const seen = new Set();
+  for (const [name, cls] of Object.entries(registry.classes)) {
+    ensure(/^[a-z][a-z0-9_]*$/.test(name), 'invalid class');
+    exactKeys(cls, ['policy', 'explicit', 'why', 'domains'], 'class');
+    ensure(cls.policy === 'direct' && typeof cls.explicit === 'boolean' && typeof cls.why === 'string', 'invalid legacy policy');
+    ensure(Array.isArray(cls.domains) && cls.domains.length > 0, 'empty class');
+    for (const domain of cls.domains) {
+      ensure(normalizeDomain(domain) === domain && !seen.has(domain), 'duplicate or invalid registry domain');
+      seen.add(domain);
+    }
   }
-  ensure(Array.isArray(registry.entries), 'entries: expected array');
-  const ids = new Set(), domains = new Set();
-  for (const entry of registry.entries) {
-    exactKeys(entry, ['id', 'class', 'domain', 'match', 'route', 'explicit', 'status', 'source', 'addedAt', 'reviewedAt', 'verification'], 'entry');
-    ensure(typeof entry.id === 'string' && /^[a-z][a-z0-9-]{1,79}$/.test(entry.id) && !ids.has(entry.id), 'entry: invalid/duplicate ID');
-    ids.add(entry.id);
-    ensure(classes.has(entry.class), `${entry.id}: unknown class`);
-    ensure(normalizeDomain(entry.domain) === entry.domain && !domains.has(entry.domain), `${entry.id}: noncanonical/duplicate domain`);
-    domains.add(entry.domain);
-    ensure(['full', 'suffix'].includes(entry.match), `${entry.id}: unsupported match`);
-    ensure(entry.match !== 'suffix' || !broadSuffixes.has(entry.domain), `${entry.id}: public suffix forbidden`);
-    ensure(entry.route === 'direct' && entry.explicit === true, `${entry.id}: explicit direct rule required`);
-    ensure(['approved', 'candidate', 'disabled'].includes(entry.status), `${entry.id}: unsupported status`);
-    const added = date(entry.addedAt, now, `${entry.id}.addedAt`);
-    const reviewed = date(entry.reviewedAt, now, `${entry.id}.reviewedAt`);
-    ensure(added <= reviewed, `${entry.id}: review predates addition`);
-    ensure(Array.isArray(entry.source) && entry.source.length >= 1, `${entry.id}: missing provenance`);
-    for (const source of entry.source) {
-      exactKeys(source, ['url', 'kind', 'checkedAt', 'evidence'], 'source');
-      publicHttps(source.url);
-      ensure(source.kind === 'official-site' && typeof source.evidence === 'string' && source.evidence.length >= 15 && source.evidence.length <= 500, `${entry.id}: first-party factual evidence required`);
-      const checked = date(source.checkedAt, now, `${entry.id}.source.checkedAt`);
-      ensure(checked >= added && checked <= reviewed, `${entry.id}: source check outside review interval`);
-      if (entry.status === 'approved' && freshness) ensure(now.getTime() - checked < registry.maxReviewAgeDays * 86400000, `${entry.id}: stale source review`);
-    }
-    exactKeys(entry.verification, ['ownership', 'reachability'], 'verification');
-    ensure(['verified', 'pending'].includes(entry.verification.ownership) && entry.verification.reachability === 'not-measured', `${entry.id}: invalid verification; live results belong in private reports`);
-    if (entry.status === 'approved') {
-      ensure(entry.verification.ownership === 'verified', `${entry.id}: ownership not verified`);
-      // Alpha deliberately permits only individually reviewed hosts. Suffix support is reserved.
-      ensure(entry.match === 'full', `${entry.id}: suffix approval is disabled in alpha`);
-      if (freshness) ensure(now.getTime() - reviewed < registry.maxReviewAgeDays * 86400000, `${entry.id}: stale review`);
-    }
+  ensure(Object.keys(registry.classes).length > 0 && Array.isArray(registry.measured_exceptions), 'empty registry');
+  for (const item of registry.measured_exceptions) {
+    exactKeys(item, ['domain', 'why'], 'measured exception');
+    ensure(normalizeDomain(item.domain) === item.domain && seen.has(item.domain) && typeof item.why === 'string', 'invalid measured exception');
   }
   return registry;
 }
-export const activeEntries = registry => registry.entries.filter(entry => entry.status === 'approved').sort((a, b) => a.domain < b.domain ? -1 : a.domain > b.domain ? 1 : 0);
-export function render(registry, options) {
-  validateRegistry(registry, options);
-  const entries = activeEntries(registry);
-  ensure(entries.length > 0, 'refusing empty direct list (use a new explicit profile for this change)');
-  const domains = entries.map(entry => `${entry.match === 'full' ? 'full' : 'domain'}:${entry.domain}`);
-  const singbox = { version: 1, rules: [{ domain: entries.map(entry => entry.domain) }] };
-  const xray = {
-    domainStrategy: 'AsIs',
-    rules: [
-      { type: 'field', domain: domains, outboundTag: registry.profile.directTag },
-      { type: 'field', network: 'tcp,udp', outboundTag: registry.profile.proxyTag }
-    ]
-  };
-  return { 'smart.domains.txt': domains.join('\n') + '\n', 'smart.singbox.json': json(singbox), 'smart.xray.json': json(xray) };
+export function allEntries(registry) {
+  return Object.entries(registry.classes).flatMap(([name, cls]) => cls.domains.map(domain => ({id:domain,class:name,domain,match:'suffix',route:'direct',explicit:cls.explicit}))).sort((a,b)=>a.domain < b.domain ? -1 : a.domain > b.domain ? 1 : 0);
 }
-export function manifest(registry, registryBytes, files) {
+export function activeEntries(registry) {
+  const measured = new Set(registry.measured_exceptions.map(entry => entry.domain));
+  return allEntries(registry).filter(entry => entry.explicit || measured.has(entry.domain));
+}
+export function render(registry) {
+  validateRegistry(registry);
+  const domains=activeEntries(registry).map(entry=>entry.domain);
+  ensure(domains.length > 0, 'empty explicit list');
   return {
-    schemaVersion: 1, version: registry.version, releaseTag: releaseTag(registry), profile: registry.profile.id,
-    registrySha256: sha256(registryBytes), directHostCount: activeEntries(registry).length,
-    verification: { ownership: 'first-party-source-review', regionalReachability: 'not-measured', legacySmartV5: 'not-tested' },
-    files: Object.fromEntries(ARTIFACTS.map(name => [name, { sha256: sha256(files[name]), bytes: Buffer.byteLength(files[name]) }]))
+    'smart.domains.txt': domains.map(domain=>'domain:'+domain).join('\n')+'\n',
+    'smart.singbox.json':json({version:1,rules:[{domain_suffix:domains}]})
   };
 }
 export async function atomicDirectory(target, files) {

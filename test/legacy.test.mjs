@@ -36,5 +36,5 @@ test('compatibility builder preserves the paired successful-home workflow', asyn
   assert.equal(build({ ...values, baseline: values.home }).status, 0);
   const result = JSON.parse(await readFile(values.output, 'utf8'));
   assert.ok(result.routing.rules.some(rule => rule.domain?.includes('domain:unconfirmed.example.com')));
-  assert.equal(result.remarks, 'Liberta Smart v5');
+  assert.equal(result.remarks, 'Liberta Routing v1');
 }));

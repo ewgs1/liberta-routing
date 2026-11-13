@@ -43,7 +43,7 @@ export async function auditPublic(root = '.') {
     // Synthetic network addresses and adversarial secrets are confined to code/tests for validation.
     const kinds = scanContent(content).filter(kind => {
       if ((path.startsWith('test/') || path === 'service-canary.mjs' || path === 'scripts/audit-public.mjs') && ['ipv4-literal', 'credential-assignment', 'connection-uri'].includes(kind)) return false;
-      if (path === 'scripts/build.mjs' && kind === 'ipv4-literal') {
+      if ((path === 'scripts/build.mjs' || path.endsWith('/smart.xray.json')) && kind === 'ipv4-literal') {
         const allowed = new Set(['8.8.4.4', '1.1.1.1', '77.88.8.8', '77.88.8.1', '127.0.0.1']);
         return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(match => !allowed.has(match[0]));
       }
@@ -53,10 +53,11 @@ export async function auditPublic(root = '.') {
     if (/\.json$/.test(path)) {
       let object;
       try { object = JSON.parse(content); } catch { findings.push({ path, kind: 'invalid-json' }); continue; }
+      if (path.endsWith('/smart.xray.json') && !object.outbounds.every(out => ['freedom', 'blackhole'].includes(out.protocol) && ['direct', 'block'].includes(out.tag) && !out.settings?.servers && !out.settings?.vnext)) findings.push({path,kind:'unexpected-connection-outbound'});
       const visit = value => {
         if (!value || typeof value !== 'object') return;
         for (const [key, item] of Object.entries(value)) {
-          if (['outbounds', 'inbounds', 'privateKey', 'shortIds', 'uuid', 'token', 'apiKey', 'password'].includes(key)) findings.push({ path, kind: 'server-or-credential-field' });
+          if ((['outbounds', 'inbounds'].includes(key) && !path.endsWith('/smart.xray.json')) || ['privateKey', 'shortIds', 'uuid', 'token', 'apiKey', 'password', 'nodes'].includes(key)) findings.push({ path, kind: 'server-or-credential-field' });
           visit(item);
         }
       };

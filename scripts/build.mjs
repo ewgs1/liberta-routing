@@ -13,7 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 function parseArgs(argv) {
   const out = {
-    registry: path.join(ROOT, '.private/legacy/registry/registry.json'),
+    registry: path.join(ROOT, 'registry/registry.json'),
     canary: '',
     baseline: '',
     // Тег gov по умолчанию выключен: geosite:category-ru уже включает
@@ -23,7 +23,7 @@ function parseArgs(argv) {
     gov: false,
     diag: false,
     checkTags: false,
-    out: path.join(ROOT, '.private/smart-v5.generated.json')
+    out: path.join(ROOT, 'dist/smart.xray.json')
   };
   for (let i = 0; i < argv.length; i += 1) {
     const key = argv[i];
@@ -100,7 +100,7 @@ const ruServer = (address) => ({
 });
 
 const config = {
-  remarks: 'Liberta Smart v5',
+  remarks: 'Liberta Routing v1',
   log: {
     // В диагностическом профиле журнал включён: без него нельзя доказать,
     // какой outbound выбран для конкретного домена.

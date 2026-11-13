@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "version": "1.0.0-alpha",
+  "releaseTag": "v1.0.0",
+  "name": "Liberta Routing v1",
+  "registryDomains": 111,
+  "explicitDomains": 45,
+  "behaviorSha256": "1ac6ae9275bafe7445f906171731efd04c6165204e20250321f4f737441200bf",
+  "singboxScope": "explicit-domain-rules-only",
+  "files": {
+    "smart.domains.txt": {
+      "sha256": "61e48648cc60c55d06a4abbc473c0de751279283c37d1650f00bc9d949f93d35",
+      "bytes": 837
+    },
+    "smart.singbox.json": {
+      "sha256": "82137cac5af6b7d714e2192bc2cf2e19e2b06fc3e3ff644c97885d062b9d1688",
+      "bytes": 1098
+    },
+    "smart.xray.json": {
+      "sha256": "5bba5c1e846aa3c5304a26ac6868dd68b914df2c14b430109b22b22e6f55b63c",
+      "bytes": 7840
+    }
+  }
+}

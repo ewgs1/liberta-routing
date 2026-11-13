@@ -15,8 +15,11 @@ try {
   const output = join(directory, 'rebuilt.json');
   const result = spawnSync(process.execPath, ['scripts/build.mjs', '--registry', join(root, 'registry/registry.json'), '--out', output], { encoding: 'utf8', timeout: 15000 });
   ensure(!result.error && result.status === 0, 'legacy builder failed');
-  ensure(sha256(await readFile(output)) === expected, 'Smart v5 regression: rebuilt bytes differ');
-  console.log(`Smart v5 regression passed: byte-for-byte identical to supplied baseline (${expected}). No live configuration changed.`);
+  const rebuilt=JSON.parse(await readFile(output,'utf8'));
+  ensure(rebuilt.remarks === 'Liberta Routing v1','new profile name missing');
+  rebuilt.remarks=JSON.parse(saved).remarks;
+  ensure(sha256(JSON.stringify(rebuilt,null,2)+'\n') === expected, 'Regression: routing, DNS or other configuration changed');
+  console.log(`Rename-only regression passed: all fields except remarks match supplied baseline (${expected}). No live configuration changed.`);
 } catch (error) {
   console.error(error.code === 'ENOENT' ? 'Private supplied Smart v5 baseline is unavailable; legacy verification was not performed.' : error.message);
   process.exitCode = 1;

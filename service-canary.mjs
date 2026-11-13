@@ -4,7 +4,7 @@ import { isIP } from 'node:net';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve, relative, isAbsolute, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { args, readJson, validateRegistry, activeEntries, json, ensure } from './scripts/lib.mjs';
+import { args, readJson, validateRegistry, allEntries, json, ensure } from './scripts/lib.mjs';
 import { privateOutput } from './scripts/integrate.mjs';
 
 export function isPublicAddress(address) {
@@ -57,7 +57,7 @@ export function probeHttps(host, address, { timeoutMs = 6000 } = {}) {
 export async function canary(registry, { resolveHost = dnsAddresses, probe = probeHttps, concurrency = 2 } = {}) {
   validateRegistry(registry);
   ensure(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 4, 'invalid concurrency');
-  const entries = activeEntries(registry), results = new Array(entries.length);
+  const entries = allEntries(registry), results = new Array(entries.length);
   let next = 0;
   const worker = async () => {
     while (next < entries.length) {
@@ -80,7 +80,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const target = resolve(options['--out'] ?? '.private/canary.json');
     const rel = relative(resolve('.private'), target);
     ensure(rel && !rel.startsWith('..') && !isAbsolute(rel), 'canary reports must stay under .private/');
-    const report = await canary(await readJson(options['--registry'] ?? 'registry.json'));
+    const report = await canary(await readJson(options['--registry'] ?? 'registry/registry.json'));
     await mkdir(dirname(target), { recursive: true, mode: 0o700 });
     await writeFile(await privateOutput(target, ''), json(report), { mode: 0o600, flag: 'wx' });
     const counts = Object.fromEntries(['reachable', 'http-response', 'inconclusive'].map(result => [result, report.results.filter(item => item.result === result).length]));
