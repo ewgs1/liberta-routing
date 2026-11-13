@@ -96,6 +96,7 @@ domain:rsb.ru
 domain:rshb.ru
 domain:rt.ru
 domain:rutube.ru
+domain:rwb.ru
 domain:rzd.ru
 domain:s7.ru
 domain:samokat.ru
@@ -111,6 +112,7 @@ domain:sudrf.ru
 domain:superjob.ru
 domain:t-bank-app.ru
 domain:t-calls.ru
+domain:t-static.ru
 domain:t-tolk.ru
 domain:t2.ru
 domain:tamtam.chat
@@ -145,12 +147,15 @@ domain:vkusvill.ru
 domain:vkvideo.ru
 domain:vtb.ru
 domain:wb-bank.ru
+domain:wb-basket.ru
 domain:wb.ru
 domain:wbbasket.ru
+domain:wbcontent.net
 domain:wbheld.ru
 domain:wbstatic.net
 domain:wbwh.ru
 domain:wbwh.tech
+domain:wibes.ru
 domain:wildberries.ru
 domain:wink.ru
 domain:ya.cc

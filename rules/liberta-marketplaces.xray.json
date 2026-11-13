@@ -11,13 +11,17 @@
     "domain:ozone.ru",
     "domain:ozonpartners.ru",
     "domain:ozonusercontent.com",
+    "domain:rwb.ru",
     "domain:sbermegamarket.ru",
+    "domain:wb-basket.ru",
     "domain:wb.ru",
     "domain:wbbasket.ru",
+    "domain:wbcontent.net",
     "domain:wbheld.ru",
     "domain:wbstatic.net",
     "domain:wbwh.ru",
     "domain:wbwh.tech",
+    "domain:wibes.ru",
     "domain:wildberries.ru"
   ],
   "outboundTag": "direct"

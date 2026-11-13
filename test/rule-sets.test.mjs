@@ -22,7 +22,7 @@ const route = (template, domain) => {
 };
 
 test('independent list preserves service coverage except documented exclusions', () => {
-  assert.equal(selected.length, 168);
+  assert.equal(selected.length, 173);
   assert.deepEqual(selected, allEntries(registry).map(entry => entry.domain));
   for (const [name, group] of Object.entries(original.classes)) {
     for (const domain of group.domains) {
@@ -56,7 +56,7 @@ test('manifest verifies every generated file and the input evidence registry', (
   assert.equal(manifest.registrySha256, sha256(registryBytes));
   assert.equal(manifest.provenanceSha256, sha256(provenanceBytes));
   assert.deepEqual(manifest.externalRoutingDatabases, []);
-  assert.deepEqual(manifest.sourceReview, {pending:98,firstPartyReference:66,operatorReportedBundle:4,applicationTests:'not-performed-for-this-rule-set'});
+  assert.deepEqual(manifest.sourceReview, {pending:98,firstPartyReference:72,operatorReportedBundle:3,applicationTests:'not-performed-for-this-rule-set'});
   for (const set of Object.values(manifest.sets)) for (const file of Object.values(set.files)) {
     assert.equal(sha256(files[file.name]), file.sha256);
     assert.equal(Buffer.byteLength(files[file.name]), file.bytes);

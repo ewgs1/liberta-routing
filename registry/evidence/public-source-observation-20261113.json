@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "collector": "scripts/observe-sources.mjs",
+  "commit": "3432661f8c9fd9d36d0e3e36aa7feaa64a86398d",
+  "run": "https://github.com/ewgs1/liberta-routing/actions/runs/43437609761",
+  "applicationTests": false,
+  "results": [
+    {
+      "source": "https://www.wildberries.ru/",
+      "checkedAt": "2026-11-13T13:53:27.098Z",
+      "result": "observed-public-response",
+      "httpStatus": 498,
+      "bodySha256": "e96f6bb6f9dbe1dd5c25ece0e30763bc593ce8e7dcdeab7831a47949e175bcf1",
+      "bodyHosts": [],
+      "cspSha256": "4c721fbb557ea093234db1eb7480627cbce69fc553ba6baa7666ad0e5c80287c",
+      "cspHosts": [
+        "api-maps.yandex.ru",
+        "nel.wb.ru",
+        "rwb.ru",
+        "wb-basket.ru",
+        "wb.ru",
+        "wbbasket.ru",
+        "wbcontent.net",
+        "wibes.ru",
+        "wildberries.ru",
+        "yastatic.net"
+      ]
+    },
+    {
+      "source": "https://status.tbank-online.com/",
+      "checkedAt": "2026-11-13T13:53:30.560Z",
+      "result": "observed-public-response",
+      "httpStatus": 200,
+      "bodySha256": "18e3723ee1519e509a3867b6fb941eafdc8aa7730bb9d4d47734817fc544e848",
+      "bodyHosts": [
+        "2w.ru",
+        "as.tbank-online.com",
+        "browser.yandex.ru",
+        "cdn.tbank-online.com",
+        "cdn.tbank.ru",
+        "cfg.tbank-online.com",
+        "fallback.cdn-tinkoff.ru",
+        "imgproxy-cdn.tbank-online.com",
+        "mddc.tbank.ru",
+        "status.tbank-online.com",
+        "status.tbank.ru",
+        "tj-static2-origin.t-static.ru",
+        "unic-cdn-prod.cdn-tinkoff.ru",
+        "www.cdn-tinkoff.ru",
+        "www.tbank.ru"
+      ],
+      "cspSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "cspHosts": []
+    }
+  ]
+}

@@ -8,38 +8,38 @@
     "liberta-direct",
     "default-proxy"
   ],
-  "domains": 168,
+  "domains": 173,
   "categories": 13,
-  "registrySha256": "1f1ca8c17756b5b2cf182c6d327099cf3c91bc89e8952ae6aaed4e7abeabd1ea",
-  "provenanceSha256": "dfed4f54332fe35e64a1246d091caf705b65b9f4b475bbdb6597574166c599f9",
-  "selectionSha256": "39386112928d481b63f8f3d0c656568080453b6dce96c4f174e6617aaae57c2e",
+  "registrySha256": "891bff96bdbc5bfcab4ece855e179dbfe20491ca8518515a12a8eeaf19ace926",
+  "provenanceSha256": "6459fe08fbde90f0f4a826e31803c511b0df2caeb20f7371dd882b69beacd6b6",
+  "selectionSha256": "3fff7fd025b23fd5e187413c26381746174ce00494e1be796965495af01a7633",
   "externalRoutingDatabases": [],
   "verification": "Domain references and application tests are separate; device/application acceptance is not established by generation.",
   "sourceReview": {
     "pending": 98,
-    "firstPartyReference": 66,
-    "operatorReportedBundle": 4,
+    "firstPartyReference": 72,
+    "operatorReportedBundle": 3,
     "applicationTests": "not-performed-for-this-rule-set"
   },
   "sets": {
     "liberta-direct": {
-      "domains": 168,
+      "domains": 173,
       "route": "direct",
       "files": {
         "domains.txt": {
           "name": "liberta-direct.domains.txt",
-          "sha256": "61a1eb27b9362383779e29d4f382fdb73eba6d1d3cad2eb658de35d504cb22be",
-          "bytes": 3037
+          "sha256": "8a2117d9000276140cfc2d15d96eb792695e04bf9228e3b457e26f34c3fc1522",
+          "bytes": 3127
         },
         "singbox.json": {
           "name": "liberta-direct.singbox.json",
-          "sha256": "ec0217b16e8276290326143d245d38bf8666126b6ede2256338777c60d63e3f4",
-          "bytes": 3790
+          "sha256": "cfd8e5ef184589dc48e9d7b6b183d296535ee8e4342761598424a7c6edb09666",
+          "bytes": 3900
         },
         "xray.json": {
           "name": "liberta-direct.xray.json",
-          "sha256": "d1d2c6afbe5aeb3694906add56ce4b0a5187792a8f6501a878b92a2913457aa6",
-          "bytes": 4280
+          "sha256": "ab4ed68fbac4d9265ece045bcc3311b075bf470f5acb427a23a39c4a98fbbd2c",
+          "bytes": 4405
         }
       }
     },
@@ -65,23 +65,23 @@
       }
     },
     "liberta-banks": {
-      "domains": 30,
+      "domains": 31,
       "route": "direct",
       "files": {
         "domains.txt": {
           "name": "liberta-banks.domains.txt",
-          "sha256": "734e925d9a462869a63cee120c0e92795c5abb2cec4f7d71c517a0de52b298e9",
-          "bytes": 572
+          "sha256": "0e3215717b044babfcb00377b35431513c1b613a4aa2724e10c7f09c66d4e620",
+          "bytes": 591
         },
         "singbox.json": {
           "name": "liberta-banks.singbox.json",
-          "sha256": "13f268e65e6f2a2c9d682b46770a8b4c35114e19c22c82be2336ee0f38f65d4c",
-          "bytes": 773
+          "sha256": "3c5a00b09cd520c5a60918ce59e095283542a2aa787f75c4e07aea91953c9b71",
+          "bytes": 796
         },
         "xray.json": {
           "name": "liberta-banks.xray.json",
-          "sha256": "fb453708f0836277715ce687038c7f7506d6c0c00fbc3b6b5e3edfa30bb97975",
-          "bytes": 849
+          "sha256": "3ff0b1219c2d23874ad05e5e6c98887ec1f31565f940981e3c1d71f6601c2391",
+          "bytes": 875
         }
       }
     },
@@ -149,23 +149,23 @@
       }
     },
     "liberta-marketplaces": {
-      "domains": 18,
+      "domains": 22,
       "route": "direct",
       "files": {
         "domains.txt": {
           "name": "liberta-marketplaces.domains.txt",
-          "sha256": "bc7feb3d14e0c702b56ae4b69b025d17e101732db80e68e536499f3cccebbf7d",
-          "bytes": 334
+          "sha256": "d9ccd3752b69bbf863efd2646fb5703f4913683a047152f5f35fe07b3f7b5fb4",
+          "bytes": 405
         },
         "singbox.json": {
           "name": "liberta-marketplaces.singbox.json",
-          "sha256": "1bc89f232b964a8a5f353cb8f493372ec0ae0ebfd77dd6c6eaca5bd9f70bf727",
-          "bytes": 487
+          "sha256": "dc895ec23bdf24c2c4bb65ff8da6637fe09ec2616cdd95e65adb4c7d7aa245f0",
+          "bytes": 574
         },
         "xray.json": {
           "name": "liberta-marketplaces.xray.json",
-          "sha256": "e993c9808b7022929e34d00247d6681c6a8e785d384f5ae275c640b10d4f41b5",
-          "bytes": 527
+          "sha256": "246b227c7ee5ba622e41b17c76bedc4588f2b1b70fa280dbabeb6bcf77cc84c2",
+          "bytes": 626
         }
       }
     },

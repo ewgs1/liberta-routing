@@ -225,14 +225,15 @@
     {
       "domain": "cdn-tinkoff.ru",
       "class": "banks",
-      "origin": "operator-service-report",
+      "origin": "first-party-document-review",
       "addedAt": "2026-11-13",
       "source": [
         {
-          "record": "registry/evidence/tbank-user-report.json",
+          "url": "https://status.tbank-online.com/",
           "checkedAt": "2026-11-13",
-          "result": "operator-reported-bundle",
-          "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+          "result": "first-party-reference",
+          "reference": "https://fallback.cdn-tinkoff.ru/",
+          "note": "Observed asset URL in the public application page HTML. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
         }
       ]
     },
@@ -1329,6 +1330,21 @@
       ]
     },
     {
+      "domain": "rwb.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://www.wildberries.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://rwb.ru/",
+          "note": "Observed permitted HTTPS script/worker source in the first-party CSP header; HTTP 498 means the page itself was not accepted as an application test. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
+        }
+      ]
+    },
+    {
       "domain": "rzd.ru",
       "class": "transport",
       "origin": "existing-liberta-registry",
@@ -1523,6 +1539,21 @@
           "checkedAt": "2026-11-13",
           "result": "operator-reported-bundle",
           "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "t-static.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://status.tbank-online.com/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://tj-static2-origin.t-static.ru/",
+          "note": "Observed asset URL in the public application page HTML. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
         }
       ]
     },
@@ -2016,6 +2047,21 @@
       ]
     },
     {
+      "domain": "wb-basket.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://www.wildberries.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wb-basket.ru/",
+          "note": "Observed permitted HTTPS script/worker source in the first-party CSP header; HTTP 498 means the page itself was not accepted as an application test. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
+        }
+      ]
+    },
+    {
       "domain": "wb.ru",
       "class": "marketplaces",
       "origin": "existing-liberta-registry",
@@ -2042,6 +2088,21 @@
           "result": "first-party-reference",
           "reference": "https://wbbasket.ru/",
           "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wbcontent.net",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://www.wildberries.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wbcontent.net/",
+          "note": "Observed permitted HTTPS script/worker source in the first-party CSP header; HTTP 498 means the page itself was not accepted as an application test. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
         }
       ]
     },
@@ -2100,6 +2161,21 @@
           "result": "first-party-reference",
           "reference": "https://wbwh.tech/",
           "note": "Company-declared marketplace and infrastructure domain scope."
+        }
+      ]
+    },
+    {
+      "domain": "wibes.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://www.wildberries.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://wibes.ru/",
+          "note": "Observed permitted HTTPS script/worker source in the first-party CSP header; HTTP 498 means the page itself was not accepted as an application test. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
         }
       ]
     },

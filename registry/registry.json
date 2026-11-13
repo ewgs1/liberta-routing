@@ -37,7 +37,8 @@
         "tbank-online.com",
         "data-tscbank.ru",
         "cdn-tinkoff.ru",
-        "t-calls.ru"
+        "t-calls.ru",
+        "t-static.ru"
       ]
     },
     "payments": {
@@ -117,7 +118,11 @@
         "ozonusercontent.com",
         "wbwh.ru",
         "wbwh.tech",
-        "wbheld.ru"
+        "wbheld.ru",
+        "wb-basket.ru",
+        "wbcontent.net",
+        "rwb.ru",
+        "wibes.ru"
       ]
     },
     "retail": {

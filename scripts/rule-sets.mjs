@@ -99,9 +99,11 @@ export function selectiveTemplate(registry, compatibleTemplate) {
     ]
   };
   // Domestic resolver selection must respect the same exceptions as routing.
-  const proxyDns = result.dns.servers.map(server => typeof server === 'string' ? { address: server } : server).find(server => String(server.address).startsWith('https://'));
-  ensure(proxyDns, 'remote HTTPS DNS required');
-  result.dns.servers.unshift({ ...structuredClone(proxyDns), domains: PROXY_DOMAINS.map(domain => `domain:${domain}`), skipFallback: true });
+  const remoteDns = result.dns.servers.map(server => typeof server === 'string' ? { address: server } : server).filter(server => String(server.address).startsWith('https://'));
+  ensure(remoteDns.length > 0, 'remote HTTPS DNS required');
+  // Parallel DNS queries otherwise also reach the parent mail.ru/vk.com resolvers.
+  // End this matched group explicitly, including when both remote resolvers fail.
+  result.dns.servers.unshift(...remoteDns.map((server,index) => ({ ...structuredClone(server), domains: PROXY_DOMAINS.map(domain => `domain:${domain}`), skipFallback: true, finalQuery: index === remoteDns.length - 1 })));
   ensure(!/(?:geosite:|geoip:|ext:)/.test(json(result)), 'selective template must not depend on external geodata');
   return result;
 }
