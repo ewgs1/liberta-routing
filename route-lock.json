@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "routeSha256": "9c94fc89308885d344bfc1e8a3f637c9c6bdbdfeef20083e01a5ce11fdb2172c",
+  "reviewedAt": "2026-11-13",
+  "reason": "Initial alpha review of eight individually selected official hosts. Ownership evidence reviewed; regional service functionality and Smart v5 compatibility remain untested."
+}

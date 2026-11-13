@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "project": "liberta-routing",
+  "version": "0.1.0-alpha",
+  "profile": {
+    "id": "smart-alpha",
+    "defaultRoute": "proxy",
+    "directTag": "direct",
+    "proxyTag": "proxy"
+  },
+  "maxReviewAgeDays": 90,
+  "classes": [
+    {
+      "id": "public-services",
+      "label": "Государственные услуги: точные хосты"
+    },
+    {
+      "id": "tax-services",
+      "label": "Налоговые сервисы: точные хосты"
+    }
+  ],
+  "entries": [
+    {
+      "id": "gosuslugi-web",
+      "class": "public-services",
+      "domain": "www.gosuslugi.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.gosuslugi.ru/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "Официальная страница портала получена; показана страница ожидания загрузки. Полный сценарий услуги не проверен."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-web",
+      "class": "tax-services",
+      "domain": "www.nalog.gov.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.nalog.gov.ru/rn77/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "Проверена официальная главная страница ФНС. Этот хост выбран отдельно; весь домен gov.ru не включается."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-individual",
+      "class": "tax-services",
+      "domain": "lkfl2.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.nalog.gov.ru/rn77/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "На официальной главной странице ФНС ссылка «Личный кабинет» для физических лиц ведёт на этот хост."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-entrepreneur",
+      "class": "tax-services",
+      "domain": "lkip2.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.nalog.gov.ru/rn77/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "На официальной главной странице ФНС ссылка «Личный кабинет» для индивидуальных предпринимателей ведёт на этот хост."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-legal",
+      "class": "tax-services",
+      "domain": "lkul.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.nalog.gov.ru/rn77/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "На официальной главной странице ФНС ссылка «Личный кабинет» для юридических лиц ведёт на этот хост."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-service",
+      "class": "tax-services",
+      "domain": "service.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://www.nalog.gov.ru/rn77/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "На официальной главной странице ФНС ссылки сервисов уплаты налогов и получения ИНН ведут на этот хост."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-npd-info",
+      "class": "tax-services",
+      "domain": "npd.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://npd.nalog.ru/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "Проверен официальный сайт ФНС о налоге на профессиональный доход и ссылка на его веб-кабинет."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    },
+    {
+      "id": "fns-npd-account",
+      "class": "tax-services",
+      "domain": "lknpd.nalog.ru",
+      "match": "full",
+      "route": "direct",
+      "explicit": true,
+      "status": "approved",
+      "source": [
+        {
+          "url": "https://npd.nalog.ru/",
+          "kind": "official-site",
+          "checkedAt": "2026-11-13",
+          "evidence": "На официальной странице ФНС о НПД ссылка «Веб-кабинет Мой налог» ведёт на этот хост. Корневая страница кабинета также получена."
+        }
+      ],
+      "addedAt": "2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "verification": {
+        "ownership": "verified",
+        "reachability": "not-measured"
+      }
+    }
+  ]
+}

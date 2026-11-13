@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0-alpha",
+  "profile": "smart-alpha",
+  "registrySha256": "8338719e2b54178c8d121bd1d33e0316a4bc21fa59360284dc5fb5c7b7918b51",
+  "directHostCount": 8,
+  "verification": {
+    "ownership": "first-party-source-review",
+    "regionalReachability": "not-measured",
+    "legacySmartV5": "not-tested"
+  },
+  "files": {
+    "smart.domains.txt": {
+      "sha256": "6e6179a57bc889f757393cfef08fee3e231c1a253b292dd9959a99ce9a9799d3",
+      "bytes": 163
+    },
+    "smart.singbox.json": {
+      "sha256": "55eef9acc5d60c96de5ec273c34083dbea1b65b21571c27460bd235be981d28e",
+      "bytes": 285
+    },
+    "smart.xray.json": {
+      "sha256": "6854aff92fb67fc5aaa8a38e90db884216b9c63925bb2f1c3c39168790483c7a",
+      "bytes": 484
+    }
+  }
+}

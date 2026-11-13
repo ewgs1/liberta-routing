@@ -1,0 +1,14 @@
+node_modules/
+.private/
+.local/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.tar.gz

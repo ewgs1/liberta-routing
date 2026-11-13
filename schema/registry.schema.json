@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Liberta Routing alpha registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "project",
+    "version",
+    "profile",
+    "maxReviewAgeDays",
+    "classes",
+    "entries"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "project": {
+      "const": "liberta-routing"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-(alpha|beta)(\\.[0-9]+)?$"
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "defaultRoute",
+        "directTag",
+        "proxyTag"
+      ],
+      "properties": {
+        "id": {
+          "const": "smart-alpha"
+        },
+        "defaultRoute": {
+          "const": "proxy"
+        },
+        "directTag": {
+          "type": "string",
+          "pattern": "^[a-zA-Z][a-zA-Z0-9_-]{0,31}$"
+        },
+        "proxyTag": {
+          "type": "string",
+          "pattern": "^[a-zA-Z][a-zA-Z0-9_-]{0,31}$"
+        }
+      }
+    },
+    "maxReviewAgeDays": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 90
+    },
+    "classes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{1,63}$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "class",
+          "domain",
+          "match",
+          "route",
+          "explicit",
+          "status",
+          "source",
+          "addedAt",
+          "reviewedAt",
+          "verification"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{1,79}$"
+          },
+          "class": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string",
+            "maxLength": 253
+          },
+          "match": {
+            "enum": [
+              "full",
+              "suffix"
+            ]
+          },
+          "route": {
+            "const": "direct"
+          },
+          "explicit": {
+            "const": true
+          },
+          "status": {
+            "enum": [
+              "candidate",
+              "approved",
+              "disabled"
+            ]
+          },
+          "source": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "url",
+                "kind",
+                "checkedAt",
+                "evidence"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                },
+                "kind": {
+                  "const": "official-site"
+                },
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "evidence": {
+                  "type": "string",
+                  "minLength": 15,
+                  "maxLength": 500
+                }
+              }
+            }
+          },
+          "addedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "reviewedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "ownership",
+              "reachability"
+            ],
+            "properties": {
+              "ownership": {
+                "enum": [
+                  "verified",
+                  "pending"
+                ]
+              },
+              "reachability": {
+                "const": "not-measured"
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "approved"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "match": {
+                  "const": "full"
+                },
+                "verification": {
+                  "properties": {
+                    "ownership": {
+                      "const": "verified"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

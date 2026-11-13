@@ -1,0 +1,22 @@
+{
+  "name": "liberta-routing",
+  "version": "0.1.0-alpha",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Твой трафик — твоя территория. Liberta Routing: берём сеть под контроль. Независимые правила для Xray, sing-box и Remnawave.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "canary": "node service-canary.mjs",
+    "audit:public": "node scripts/audit-public.mjs",
+    "verify:cores": "node scripts/verify-cores.mjs",
+    "verify:legacy": "node scripts/verify-legacy.mjs",
+    "verify": "npm run validate && node compare-lists.mjs && npm test && npm run check && npm run audit:public"
+  }
+}
