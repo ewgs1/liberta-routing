@@ -1,0 +1,4 @@
+domain:cbr.ru
+domain:nspk.com
+domain:nspk.ru
+domain:yoomoney.ru

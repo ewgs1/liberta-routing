@@ -1,0 +1,17 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:akado.ru",
+    "domain:beeline.ru",
+    "domain:dom.ru",
+    "domain:megafon.ru",
+    "domain:mgts.ru",
+    "domain:mts.ru",
+    "domain:rostelecom.ru",
+    "domain:rt.ru",
+    "domain:t2.ru",
+    "domain:tele2.ru",
+    "domain:yota.ru"
+  ],
+  "outboundTag": "direct"
+}

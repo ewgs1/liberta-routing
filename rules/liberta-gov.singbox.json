@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "esia.gosuslugi.ru",
+        "fssp.gov.ru",
+        "gosuslugi.ru",
+        "government.ru",
+        "kremlin.ru",
+        "mos.ru",
+        "mosreg.ru",
+        "nalog.gov.ru",
+        "nalog.ru",
+        "pochta.ru",
+        "pravo.gov.ru",
+        "regulation.gov.ru",
+        "rosreestr.gov.ru",
+        "sfr.gov.ru",
+        "sudrf.ru",
+        "trudvsem.ru"
+      ]
+    }
+  ]
+}

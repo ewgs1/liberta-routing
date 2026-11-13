@@ -1,0 +1,20 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:auchan.ru",
+    "domain:citilink.ru",
+    "domain:detmir.ru",
+    "domain:dns-shop.ru",
+    "domain:eldorado.ru",
+    "domain:goldapple.ru",
+    "domain:lamoda.ru",
+    "domain:lenta.com",
+    "domain:letu.ru",
+    "domain:magnit.ru",
+    "domain:mvideo.ru",
+    "domain:perekrestok.ru",
+    "domain:pyaterochka.ru",
+    "domain:vkusvill.ru"
+  ],
+  "outboundTag": "direct"
+}

@@ -1,0 +1,8 @@
+domain:aeroflot.ru
+domain:aviasales.ru
+domain:onetwotrip.com
+domain:pobeda.aero
+domain:rzd.ru
+domain:s7.ru
+domain:tutu.ru
+domain:utair.ru

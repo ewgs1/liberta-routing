@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "auchan.ru",
+        "citilink.ru",
+        "detmir.ru",
+        "dns-shop.ru",
+        "eldorado.ru",
+        "goldapple.ru",
+        "lamoda.ru",
+        "lenta.com",
+        "letu.ru",
+        "magnit.ru",
+        "mvideo.ru",
+        "perekrestok.ru",
+        "pyaterochka.ru",
+        "vkusvill.ru"
+      ]
+    }
+  ]
+}

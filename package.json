@@ -11,13 +11,17 @@
   "scripts": {
     "test": "node --test",
     "validate": "node scripts/validate.mjs",
-    "build": "node build.mjs",
-    "check": "node build.mjs --check",
+    "build": "node scripts/build-rules.mjs",
+    "check": "node scripts/build-rules.mjs --check",
     "canary": "node service-canary.mjs",
     "audit:public": "node scripts/audit-public.mjs",
     "verify:cores": "node scripts/verify-cores.mjs",
     "verify:legacy": "node scripts/verify-legacy.mjs",
-    "verify": "npm run validate && node compare-lists.mjs && npm test && npm run check && npm run audit:public"
+    "verify": "npm run validate && node compare-lists.mjs && npm test && npm run check && npm run check:compat && npm run audit:public",
+    "build:rules": "node scripts/build-rules.mjs",
+    "check:rules": "node scripts/build-rules.mjs --check",
+    "build:compat": "node build.mjs",
+    "check:compat": "node build.mjs --check"
   },
   "releaseTag": "v1.0.0"
 }

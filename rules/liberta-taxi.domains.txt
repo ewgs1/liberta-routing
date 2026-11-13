@@ -1,0 +1,2 @@
+domain:go.yandex
+domain:taxi.yandex.ru

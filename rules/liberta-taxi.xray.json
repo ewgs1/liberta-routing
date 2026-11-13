@@ -1,0 +1,8 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:go.yandex",
+    "domain:taxi.yandex.ru"
+  ],
+  "outboundTag": "direct"
+}

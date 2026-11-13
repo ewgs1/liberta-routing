@@ -29,5 +29,15 @@ try {
     ensure(!result.error && result.status === 0, `${binary} native validation unavailable or failed${result.error?.code === 'ENOENT' ? ': executable not installed' : ''}`);
     console.log(`${binary}: explicit domain rule syntax accepted`);
   }
+  // The new independent profile is checked as a whole, without any geodata files.
+  const selective = JSON.parse(await readFile('examples/remnawave/liberta-selective.xray.json', 'utf8'));
+  selective.outbounds.push({ tag: 'proxy', protocol: 'blackhole', settings: {} });
+  await writeFile(xrayPath, json(selective));
+  await writeFile(sourcePath, await readFile('rules/liberta-direct.singbox.json', 'utf8'));
+  for (const [binary, argv] of [['xray', ['run', '-test', '-config', xrayPath]], ['sing-box', ['check', '-c', singboxPath]], ['sing-box-current', ['check', '-c', singboxPath]]]) {
+    const result = spawnSync(binary, argv, { encoding: 'utf8', timeout: 20000 });
+    ensure(!result.error && result.status === 0, `${binary}: independent rules/profile rejected`);
+    console.log(`${binary}: independent rules/profile accepted without country geodata`);
+  }
 } catch (error) { console.error(error.message); process.exitCode = 1; }
 finally { await rm(directory, { recursive: true, force: true }); }

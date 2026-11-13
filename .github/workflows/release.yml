@@ -1,4 +1,4 @@
-name: Publish reviewed alpha
+name: Publish own rule sets
 on:
   workflow_dispatch:
 permissions:
@@ -34,23 +34,8 @@ jobs:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           persist-credentials: false
-      - name: Create immutable prerelease with only the reviewed public files
+      - name: Publish verified data to the release branch
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-        run: |
-          tag="$(node -p "require('./package.json').releaseTag")"
-          # Withdraw the mistakenly published small experiments; keep them as recoverable drafts.
-          for previous_tag in v1 v0.1.0-alpha; do
-            previous_release_id="$(gh api "repos/$GH_REPO/releases/tags/$previous_tag" --jq '.id' 2>/dev/null || true)"
-            if [ -n "$previous_release_id" ]; then
-              gh api --method PATCH "repos/$GH_REPO/releases/$previous_release_id" -F draft=true > /dev/null
-            fi
-          done
-          gh release create "$tag" \
-            "releases/$tag/smart.xray.json" \
-            "releases/$tag/smart.singbox.json" \
-            "releases/$tag/smart.domains.txt" \
-            "releases/$tag/release.json" \
-            --target "$GITHUB_SHA" --prerelease --latest=false \
-            --title "Liberta Routing v1" --notes-file docs/RELEASE_NOTES.md
+        run: node scripts/publish-rule-sets.mjs

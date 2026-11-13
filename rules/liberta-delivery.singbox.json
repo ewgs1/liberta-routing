@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "delivery-club.ru",
+        "eda.yandex.ru",
+        "kuper.ru",
+        "lavka.yandex.ru",
+        "samokat.ru"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+domain:ivi.ru
+domain:kinopoisk.ru
+domain:more.tv
+domain:okko.tv
+domain:premier.one
+domain:rutube.ru
+domain:smotrim.ru
+domain:start.ru
+domain:vkvideo.ru
+domain:wink.ru

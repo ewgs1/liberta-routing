@@ -1,0 +1,11 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:delivery-club.ru",
+    "domain:eda.yandex.ru",
+    "domain:kuper.ru",
+    "domain:lavka.yandex.ru",
+    "domain:samokat.ru"
+  ],
+  "outboundTag": "direct"
+}

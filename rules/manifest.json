@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "project": "liberta-routing",
+  "scope": "selected-services",
+  "matching": "domain-and-subdomains",
+  "domains": 111,
+  "categories": 13,
+  "registrySha256": "c9f67a7e2e4e6cad15175981a168817fba29467ad308ff8a80ac6e6b222b1e47",
+  "provenanceSha256": "768f13a44e6f71499966fd5bf1de853b2c35e7c65478d5865b70b2fae93f52ac",
+  "selectionSha256": "8962f44530e5114e2ac5611bc3dd32adfc0c9009e2b02b604d6e899c07d462e6",
+  "externalRoutingDatabases": [],
+  "verification": "existing-liberta-registry; source review and regional application tests remain separate",
+  "sets": {
+    "liberta-direct": {
+      "domains": 111,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-direct.domains.txt",
+          "sha256": "ff6e2df4ba2dfd6b85fea355d95c58266421e561bb667199dcca2be8ecb4ea97",
+          "bytes": 1972
+        },
+        "singbox.json": {
+          "name": "liberta-direct.singbox.json",
+          "sha256": "f3b4cdaace4e14ed530830c49a6e3c2d957b9ae71c56e536c9c1f34dcc5508dd",
+          "bytes": 2497
+        },
+        "xray.json": {
+          "name": "liberta-direct.xray.json",
+          "sha256": "8662c3ad375bca9916a287139ff86982829bfc3fc5bf85e5f6c20ae7ae155726",
+          "bytes": 2816
+        }
+      }
+    },
+    "liberta-banks": {
+      "domains": 23,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-banks.domains.txt",
+          "sha256": "65edc88d08f5d774fd9e6ec98ac6897d673a148dfe351d9b86dc1b531d8d84c3",
+          "bytes": 422
+        },
+        "singbox.json": {
+          "name": "liberta-banks.singbox.json",
+          "sha256": "3b6b7fe890aa25f10e716cd5802b1f9f7c6579529123780d3daf7a37fe83a0d1",
+          "bytes": 595
+        },
+        "xray.json": {
+          "name": "liberta-banks.xray.json",
+          "sha256": "c91c1de0ed820b41d9da510edfb66840c005347f20251aca2a2c2e14adf01c45",
+          "bytes": 650
+        }
+      }
+    },
+    "liberta-payments": {
+      "domains": 4,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-payments.domains.txt",
+          "sha256": "8a5f67940c2d8b5ec973a6d576ce4f9492a0916de2fc9e43e7c28c4fb19885b0",
+          "bytes": 64
+        },
+        "singbox.json": {
+          "name": "liberta-payments.singbox.json",
+          "sha256": "7f2b1452232ab2b1762e07336646f4655358f8f79ec9a154e5becc9a9d56e9f9",
+          "bytes": 161
+        },
+        "xray.json": {
+          "name": "liberta-payments.xray.json",
+          "sha256": "7365a674d3ea0953e080f482659b1bf5c226c9059030209185516c9fb1124e6f",
+          "bytes": 159
+        }
+      }
+    },
+    "liberta-gov": {
+      "domains": 16,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-gov.domains.txt",
+          "sha256": "5cf5f6be08204eea28aacfff99db35d206acfa6ba654492e6eff1126c3963441",
+          "bytes": 309
+        },
+        "singbox.json": {
+          "name": "liberta-gov.singbox.json",
+          "sha256": "09c5b038371d2738ebc11e3e18311a8e8c06736fa10b28d0e65f75bd013a73c5",
+          "bytes": 454
+        },
+        "xray.json": {
+          "name": "liberta-gov.xray.json",
+          "sha256": "f8c7b216a955a054cb9d80187ab061920bc4b8862d2506d9060ab3e05723f6ee",
+          "bytes": 488
+        }
+      }
+    },
+    "liberta-telecom": {
+      "domains": 11,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-telecom.domains.txt",
+          "sha256": "a50e3256a2f61f2b905f71722d6834d6f99b58f8a8ad5f8e06b7cdfdf0cda21a",
+          "bytes": 173
+        },
+        "singbox.json": {
+          "name": "liberta-telecom.singbox.json",
+          "sha256": "1d9a1ef7319c44b28d8a28146de8aeb5924b614661bcf2849c52cd7bfc151a28",
+          "bytes": 298
+        },
+        "xray.json": {
+          "name": "liberta-telecom.xray.json",
+          "sha256": "77aabdf57edac11c0d96f005ea5f70f2d4d0d99286f77a747372b5e23e2d4b60",
+          "bytes": 317
+        }
+      }
+    },
+    "liberta-marketplaces": {
+      "domains": 7,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-marketplaces.domains.txt",
+          "sha256": "de025a0550c1757f66998c1a5a08255d12e448ecc54de1111d09d5ef7ada312f",
+          "bytes": 132
+        },
+        "singbox.json": {
+          "name": "liberta-marketplaces.singbox.json",
+          "sha256": "50d34bd48d7c9ff51e6a5ab06cada2e2ac29c836d007a5e8f93cc99398f04eed",
+          "bytes": 241
+        },
+        "xray.json": {
+          "name": "liberta-marketplaces.xray.json",
+          "sha256": "2819ea7bf649f145e081b5f2d8e5eee411364d3175b5adfbe15b395bb5165c07",
+          "bytes": 248
+        }
+      }
+    },
+    "liberta-retail": {
+      "domains": 14,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-retail.domains.txt",
+          "sha256": "e6bba9af56ae9d801971286e2b4f8525598bdf4d6c5c8e09d726fb0aca5ea718",
+          "bytes": 257
+        },
+        "singbox.json": {
+          "name": "liberta-retail.singbox.json",
+          "sha256": "24956e01efca89e21eeeb5345d65565f95c55e9102690615d35c0d7a3c1431be",
+          "bytes": 394
+        },
+        "xray.json": {
+          "name": "liberta-retail.xray.json",
+          "sha256": "4a4dbcc258214e2290a079839098232dffe13fefca7c04e2195e4a4e035ff928",
+          "bytes": 422
+        }
+      }
+    },
+    "liberta-delivery": {
+      "domains": 5,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-delivery.domains.txt",
+          "sha256": "d041f7cf6d87196349b3f8b480e81f9da2266f61467d297d0ccfc027672322e7",
+          "bytes": 102
+        },
+        "singbox.json": {
+          "name": "liberta-delivery.singbox.json",
+          "sha256": "7bcbe8d3aff18f5af6e303efce8011ed43b0eddcfec199d0d429b6d92969edbf",
+          "bytes": 203
+        },
+        "xray.json": {
+          "name": "liberta-delivery.xray.json",
+          "sha256": "2fd3523c17fa8daed2708402378465d26bbd01e637ccac598866be0f7e8f789f",
+          "bytes": 204
+        }
+      }
+    },
+    "liberta-taxi": {
+      "domains": 2,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-taxi.domains.txt",
+          "sha256": "ec083913b9ef19127e988290f21a1bac04b4c9a1dcaea8f3b7a23947a78b0f95",
+          "bytes": 39
+        },
+        "singbox.json": {
+          "name": "liberta-taxi.singbox.json",
+          "sha256": "46311baf1ba78d2ef5c835a7fe33694402d9580cba1b038b384ac71b3f954cdf",
+          "bytes": 128
+        },
+        "xray.json": {
+          "name": "liberta-taxi.xray.json",
+          "sha256": "a3a1c213d3f28f6603b1ff4deb56620bff0d7f1d04bef579b83090622689829c",
+          "bytes": 120
+        }
+      }
+    },
+    "liberta-transport": {
+      "domains": 8,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-transport.domains.txt",
+          "sha256": "837e32b7a947411ff837b444a27bc96e3c399cb6c0bb0324ee56e294b9e0c031",
+          "bytes": 138
+        },
+        "singbox.json": {
+          "name": "liberta-transport.singbox.json",
+          "sha256": "bfc91c4b2d21a5d008c01279e51442e2ecf1f2bc111987112461a670ee357197",
+          "bytes": 251
+        },
+        "xray.json": {
+          "name": "liberta-transport.xray.json",
+          "sha256": "3f00fbada8d132c89ae6c2503353c768859d8ae154bd86fe37e071885816b843",
+          "bytes": 261
+        }
+      }
+    },
+    "liberta-medicine": {
+      "domains": 2,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-medicine.domains.txt",
+          "sha256": "97cf5a96822eecbc965ecd47d4a193d07d3db41ad14c6cbcfb3a45d2a0441823",
+          "bytes": 34
+        },
+        "singbox.json": {
+          "name": "liberta-medicine.singbox.json",
+          "sha256": "13704b9a3ca401e5429629acaf9666769ff26d861bae3a8e49fafad15e4f0c49",
+          "bytes": 123
+        },
+        "xray.json": {
+          "name": "liberta-medicine.xray.json",
+          "sha256": "d5966e191453af6bc68d51fd91adbfffa7b629462e3b8373fa0ac9db795ab930",
+          "bytes": 115
+        }
+      }
+    },
+    "liberta-media": {
+      "domains": 10,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-media.domains.txt",
+          "sha256": "4a6e0d92ef467bcbbea9edaf40e4f19cb81ea5839d79a9a1d32eaeef2ac4cec4",
+          "bytes": 167
+        },
+        "singbox.json": {
+          "name": "liberta-media.singbox.json",
+          "sha256": "183ef9d6d450c936591c12fbc89548d920b35562a2ce9137b5d3a3e1e084146a",
+          "bytes": 288
+        },
+        "xray.json": {
+          "name": "liberta-media.xray.json",
+          "sha256": "ff79ae0f625219acd8ee65878fcf2bec0050888c41a607c8576543aa58e927d5",
+          "bytes": 304
+        }
+      }
+    },
+    "liberta-social": {
+      "domains": 5,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-social.domains.txt",
+          "sha256": "50ac2265ba629e2aa7ebb45d37b16fe221718fefb3ef2aebe7a9588ce63b3914",
+          "bytes": 69
+        },
+        "singbox.json": {
+          "name": "liberta-social.singbox.json",
+          "sha256": "73ddc11f1451904e72c37930476cc07c6f1f1be3796168f4cf4ad2cf177798a3",
+          "bytes": 170
+        },
+        "xray.json": {
+          "name": "liberta-social.xray.json",
+          "sha256": "7c86b77558c9a6b7f85906bf04559e862a19f3e3e19f2aef2793811a7bfe6b08",
+          "bytes": 171
+        }
+      }
+    },
+    "liberta-jobs-realty": {
+      "domains": 4,
+      "files": {
+        "domains.txt": {
+          "name": "liberta-jobs-realty.domains.txt",
+          "sha256": "3e5698cc081de9c15a6ae5930f4f8f1ac87742bc51e4f1e169a2d3a0dd7f977d",
+          "bytes": 66
+        },
+        "singbox.json": {
+          "name": "liberta-jobs-realty.singbox.json",
+          "sha256": "c69af4342ad28362b7075c34c2813cd1c9536158a38dc31bace56b88b09758af",
+          "bytes": 163
+        },
+        "xray.json": {
+          "name": "liberta-jobs-realty.xray.json",
+          "sha256": "70f5240fa66629620eb8a9cb56eb06e60db1434d67ab73976ca284fd051a7e4a",
+          "bytes": 161
+        }
+      }
+    }
+  }
+}

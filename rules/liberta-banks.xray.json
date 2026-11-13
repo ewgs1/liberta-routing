@@ -1,0 +1,29 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:alfabank.com",
+    "domain:alfabank.gcdn.co",
+    "domain:alfabank.ru",
+    "domain:domrfbank.ru",
+    "domain:gazprombank.ru",
+    "domain:mkb.ru",
+    "domain:online.sberbank.ru",
+    "domain:open.ru",
+    "domain:otpbank.ru",
+    "domain:psbank.ru",
+    "domain:raiffeisen.ru",
+    "domain:rsb.ru",
+    "domain:rshb.ru",
+    "domain:sber.ru",
+    "domain:sberbank.com",
+    "domain:sberbank.ru",
+    "domain:sovcombank.ru",
+    "domain:tbank.com",
+    "domain:tbank.ru",
+    "domain:tcsbank.ru",
+    "domain:tinkoff.com",
+    "domain:tinkoff.ru",
+    "domain:vtb.ru"
+  ],
+  "outboundTag": "direct"
+}

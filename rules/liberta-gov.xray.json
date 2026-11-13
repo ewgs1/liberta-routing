@@ -1,0 +1,22 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:esia.gosuslugi.ru",
+    "domain:fssp.gov.ru",
+    "domain:gosuslugi.ru",
+    "domain:government.ru",
+    "domain:kremlin.ru",
+    "domain:mos.ru",
+    "domain:mosreg.ru",
+    "domain:nalog.gov.ru",
+    "domain:nalog.ru",
+    "domain:pochta.ru",
+    "domain:pravo.gov.ru",
+    "domain:regulation.gov.ru",
+    "domain:rosreestr.gov.ru",
+    "domain:sfr.gov.ru",
+    "domain:sudrf.ru",
+    "domain:trudvsem.ru"
+  ],
+  "outboundTag": "direct"
+}

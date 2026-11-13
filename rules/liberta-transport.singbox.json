@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "aeroflot.ru",
+        "aviasales.ru",
+        "onetwotrip.com",
+        "pobeda.aero",
+        "rzd.ru",
+        "s7.ru",
+        "tutu.ru",
+        "utair.ru"
+      ]
+    }
+  ]
+}

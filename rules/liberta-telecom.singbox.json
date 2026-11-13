@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "akado.ru",
+        "beeline.ru",
+        "dom.ru",
+        "megafon.ru",
+        "mgts.ru",
+        "mts.ru",
+        "rostelecom.ru",
+        "rt.ru",
+        "t2.ru",
+        "tele2.ru",
+        "yota.ru"
+      ]
+    }
+  ]
+}

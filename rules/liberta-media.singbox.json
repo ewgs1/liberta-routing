@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ivi.ru",
+        "kinopoisk.ru",
+        "more.tv",
+        "okko.tv",
+        "premier.one",
+        "rutube.ru",
+        "smotrim.ru",
+        "start.ru",
+        "vkvideo.ru",
+        "wink.ru"
+      ]
+    }
+  ]
+}

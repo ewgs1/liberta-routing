@@ -1,0 +1,11 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:mail.ru",
+    "domain:max.ru",
+    "domain:ok.ru",
+    "domain:vk.com",
+    "domain:vk.ru"
+  ],
+  "outboundTag": "direct"
+}

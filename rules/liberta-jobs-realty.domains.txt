@@ -1,0 +1,4 @@
+domain:cian.ru
+domain:domclick.ru
+domain:hh.ru
+domain:superjob.ru

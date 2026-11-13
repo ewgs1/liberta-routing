@@ -1,0 +1,8 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:emias.info",
+    "domain:medsi.ru"
+  ],
+  "outboundTag": "direct"
+}

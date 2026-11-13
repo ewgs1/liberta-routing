@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "alfabank.com",
+        "alfabank.gcdn.co",
+        "alfabank.ru",
+        "domrfbank.ru",
+        "gazprombank.ru",
+        "mkb.ru",
+        "online.sberbank.ru",
+        "open.ru",
+        "otpbank.ru",
+        "psbank.ru",
+        "raiffeisen.ru",
+        "rsb.ru",
+        "rshb.ru",
+        "sber.ru",
+        "sberbank.com",
+        "sberbank.ru",
+        "sovcombank.ru",
+        "tbank.com",
+        "tbank.ru",
+        "tcsbank.ru",
+        "tinkoff.com",
+        "tinkoff.ru",
+        "vtb.ru"
+      ]
+    }
+  ]
+}
