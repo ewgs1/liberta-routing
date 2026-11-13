@@ -1,6 +1,8 @@
 {
   "type": "field",
   "domain": [
+    "domain:2gis.com",
+    "domain:2gis.ru",
     "domain:aeroflot.ru",
     "domain:aviasales.ru",
     "domain:onetwotrip.com",

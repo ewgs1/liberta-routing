@@ -1,4 +1,4 @@
-import { allEntries, ensure, json, sha256, validateRegistry } from './lib.mjs';
+import { allEntries, ensure, json, sha256, validateRegistry, validateProvenance } from './lib.mjs';
 
 export const DIRECT_TAG = 'direct';
 export const PROXY_TAG = 'proxy';
@@ -28,7 +28,7 @@ export function renderSet(domains) {
 
 export function independentFiles(registry, provenance, registryBytes, provenanceBytes) {
   const domains = selectedDomains(registry);
-  ensure(provenance.schemaVersion === 1 && Array.isArray(provenance.entries), 'invalid provenance registry');
+  validateProvenance(registry, provenance);
   const sourceDomains = provenance.entries.map(entry => entry.domain).sort(lexical);
   ensure(sourceDomains.join('\n') === domains.join('\n'), 'provenance must cover every selected domain exactly once');
   const groups = { 'liberta-direct': domains };
@@ -59,7 +59,12 @@ export function independentFiles(registry, provenance, registryBytes, provenance
     provenanceSha256: sha256(provenanceBytes),
     selectionSha256: sha256(json(domains)),
     externalRoutingDatabases: [],
-    verification: 'existing-liberta-registry; source review and regional application tests remain separate',
+    verification: 'Domain references and application tests are separate; device/application acceptance is not established by generation.',
+    sourceReview: {
+      pending: provenance.entries.filter(entry => entry.source.every(source => source.result === 'pending-review')).length,
+      firstPartyReference: provenance.entries.filter(entry => entry.source.some(source => source.result === 'first-party-reference')).length,
+      applicationTests: 'not-performed-for-this-rule-set'
+    },
     sets
   });
   return files;

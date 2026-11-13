@@ -7,7 +7,7 @@ import { args, readJson, validateRegistry, render, activeEntries, allEntries, js
 const options=args(process.argv.slice(2),['--check','--out']);
 let temp;
 try {
-  const registry=validateRegistry(await readJson('registry/registry.json'));
+  const registry=validateRegistry(await readJson('registry/compatibility-v1.json'));
   const meta=await readJson('package.json');
   temp=await mkdtemp(join(tmpdir(),'liberta-compatible-build-'));
   const target=join(temp,'config.json');

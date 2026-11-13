@@ -1444,6 +1444,141 @@
           "result": "pending-review"
         }
       ]
+    },
+    {
+      "domain": "yandex.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yandex.ru/",
+          "note": "Основной домен указан в сетевой документации Яндекса."
+        }
+      ]
+    },
+    {
+      "domain": "ya.ru",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ya.ru/",
+          "note": "Основной домен указан в сетевой документации Яндекса."
+        }
+      ]
+    },
+    {
+      "domain": "yandex.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://mobileproxy.passport.yandex.net/",
+          "note": "Документация указывает поддомены авторизации, файлов и API."
+        }
+      ]
+    },
+    {
+      "domain": "yastatic.net",
+      "class": "social",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://yastatic.net/",
+          "note": "Документация указывает хранилище статики интерфейса."
+        }
+      ]
+    },
+    {
+      "domain": "2gis.ru",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://2gis.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://2gis.ru/",
+          "note": "Официальная карта, справка и юридические документы 2ГИС."
+        }
+      ]
+    },
+    {
+      "domain": "2gis.com",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://2gis.ru/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://account.2gis.com/",
+          "note": "Официальная карта ссылается на вход для бизнеса и redirect.2gis.com."
+        }
+      ]
+    },
+    {
+      "domain": "ozone.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://docs.ozon.ru/legal/partners/pickup/ru/contract/",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://ir.ozone.ru/s3/brand-ozon/pvz/Brandbook_Punkty_vydachi.pdf",
+          "note": "Договор Ozon ссылается на документы на ir.ozone.ru."
+        }
+      ]
+    },
+    {
+      "domain": "wbbasket.ru",
+      "class": "marketplaces",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://seller.wildberries.ru/instructions/ru/ru/material/service-terms",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://static-basket-02.wbbasket.ru/vol20/folder/documents/Fulfillment_package_20260924.pdf",
+          "note": "Официальные условия Wildberries ссылаются на документы на static-basket-02.wbbasket.ru."
+        }
+      ]
+    },
+    {
+      "domain": "t-bank-app.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-13",
+      "source": [
+        {
+          "url": "https://acdn.t-bank-app.ru/static/documents/docs-terms-of-use-of-the-tinkoff-mobile-application.pdf",
+          "checkedAt": "2026-11-13",
+          "result": "first-party-reference",
+          "reference": "https://acdn.t-bank-app.ru/static/documents/docs-terms-of-use-of-the-tinkoff-mobile-application.pdf",
+          "note": "На поддомене доступен документ об условиях использования приложения Т-Банка; отдельная трассировка приложения не выполнялась."
+        }
+      ]
     }
   ]
 }

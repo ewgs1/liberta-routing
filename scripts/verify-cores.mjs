@@ -6,7 +6,7 @@ import { readJson, json, ensure, render } from './lib.mjs';
 
 const directory = await mkdtemp(join(tmpdir(), 'liberta-core-check-'));
 try {
-  const files = render(await readJson('registry/registry.json'));
+  const files = render(await readJson('registry/compatibility-v1.json'));
   const full=JSON.parse(await readFile('dist/smart.xray.json','utf8'));
   const explicit=full.routing.rules.find(rule=>rule.domain?.length && rule.domain.every(x=>x.startsWith('domain:')));
   const xray = {

@@ -13,7 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 function parseArgs(argv) {
   const out = {
-    registry: path.join(ROOT, 'registry/registry.json'),
+    registry: path.join(ROOT, 'registry/compatibility-v1.json'),
     canary: '',
     baseline: '',
     // Тег gov по умолчанию выключен: geosite:category-ru уже включает

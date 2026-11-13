@@ -3,6 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
+        "2gis.com",
+        "2gis.ru",
         "aeroflot.ru",
         "aviasales.ru",
         "onetwotrip.com",

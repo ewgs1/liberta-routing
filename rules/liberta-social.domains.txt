@@ -3,3 +3,7 @@ domain:max.ru
 domain:ok.ru
 domain:vk.com
 domain:vk.ru
+domain:ya.ru
+domain:yandex.net
+domain:yandex.ru
+domain:yastatic.net

@@ -16,6 +16,7 @@
     "canary": "node service-canary.mjs",
     "audit:public": "node scripts/audit-public.mjs",
     "verify:cores": "node scripts/verify-cores.mjs",
+    "verify:routing": "node scripts/verify-routing.mjs",
     "verify:legacy": "node scripts/verify-legacy.mjs",
     "verify": "npm run validate && node compare-lists.mjs && npm test && npm run check && npm run check:compat && npm run audit:public",
     "build:rules": "node scripts/build-rules.mjs",

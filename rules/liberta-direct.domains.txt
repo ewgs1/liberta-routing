@@ -1,3 +1,5 @@
+domain:2gis.com
+domain:2gis.ru
 domain:aeroflot.ru
 domain:akado.ru
 domain:alfabank.com
@@ -59,6 +61,7 @@ domain:online.sberbank.ru
 domain:open.ru
 domain:otpbank.ru
 domain:ozon.ru
+domain:ozone.ru
 domain:perekrestok.ru
 domain:pobeda.aero
 domain:pochta.ru
@@ -87,6 +90,7 @@ domain:sovcombank.ru
 domain:start.ru
 domain:sudrf.ru
 domain:superjob.ru
+domain:t-bank-app.ru
 domain:t2.ru
 domain:taxi.yandex.ru
 domain:tbank.com
@@ -104,8 +108,13 @@ domain:vkusvill.ru
 domain:vkvideo.ru
 domain:vtb.ru
 domain:wb.ru
+domain:wbbasket.ru
 domain:wbstatic.net
 domain:wildberries.ru
 domain:wink.ru
+domain:ya.ru
+domain:yandex.net
+domain:yandex.ru
+domain:yastatic.net
 domain:yoomoney.ru
 domain:yota.ru

@@ -1,7 +1,9 @@
 domain:avito.ru
 domain:megamarket.ru
 domain:ozon.ru
+domain:ozone.ru
 domain:sbermegamarket.ru
 domain:wb.ru
+domain:wbbasket.ru
 domain:wbstatic.net
 domain:wildberries.ru

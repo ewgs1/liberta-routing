@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "updated": "2026-11-12",
-  "note": "Собственный реестр Liberta. Все классы policy:direct входят в независимые списки. Флаг explicit используется только прежним совместимым профилем и не исключает домены из собственных наборов.",
+  "updated": "2026-11-13",
+  "note": "Собственный текущий реестр выбранных сервисов. Все policy: direct включаются в независимые наборы. Старые explicit-флаги сохранены для истории; совместимый профиль v1 собирается из отдельного неизменяемого снимка compatibility-v1.json.",
   "classes": {
     "banks": {
       "policy": "direct",
@@ -30,7 +30,8 @@
         "open.ru",
         "domrfbank.ru",
         "rsb.ru",
-        "alfabank.gcdn.co"
+        "alfabank.gcdn.co",
+        "t-bank-app.ru"
       ]
     },
     "payments": {
@@ -96,7 +97,9 @@
         "wbstatic.net",
         "avito.ru",
         "megamarket.ru",
-        "sbermegamarket.ru"
+        "sbermegamarket.ru",
+        "ozone.ru",
+        "wbbasket.ru"
       ]
     },
     "retail": {
@@ -153,7 +156,9 @@
         "utair.ru",
         "aviasales.ru",
         "tutu.ru",
-        "onetwotrip.com"
+        "onetwotrip.com",
+        "2gis.ru",
+        "2gis.com"
       ]
     },
     "medicine": {
@@ -191,7 +196,11 @@
         "vk.ru",
         "ok.ru",
         "mail.ru",
-        "max.ru"
+        "max.ru",
+        "yandex.ru",
+        "ya.ru",
+        "yandex.net",
+        "yastatic.net"
       ]
     },
     "jobs_realty": {

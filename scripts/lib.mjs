@@ -66,6 +66,39 @@ export function validateRegistry(registry) {
 export function allEntries(registry) {
   return Object.entries(registry.classes).flatMap(([name, cls]) => cls.domains.map(domain => ({id:domain,class:name,domain,match:'suffix',route:'direct',explicit:cls.explicit}))).sort((a,b)=>a.domain < b.domain ? -1 : a.domain > b.domain ? 1 : 0);
 }
+export function validateProvenance(registry, provenance, now = new Date()) {
+  validateRegistry(registry);
+  ensure(provenance.schemaVersion === 1 && Array.isArray(provenance.entries), 'invalid provenance registry');
+  const expected = new Map(allEntries(registry).map(entry => [entry.domain, entry.class]));
+  const seen = new Set();
+  for (const entry of provenance.entries) {
+    exactKeys(entry, ['domain', 'class', 'origin', 'addedAt', 'source'], 'provenance entry');
+    ensure(expected.get(entry.domain) === entry.class && !seen.has(entry.domain), 'provenance domain/class missing, duplicate or mismatched');
+    seen.add(entry.domain);
+    ensure(Array.isArray(entry.source) && entry.source.length > 0, 'provenance source required');
+    if (entry.origin === 'existing-liberta-registry') ensure(entry.addedAt === null, 'do not invent original addition dates');
+    else {
+      ensure(entry.origin === 'first-party-document-review', 'unknown provenance origin');
+      date(entry.addedAt, now, 'addedAt');
+    }
+    for (const source of entry.source) {
+      publicHttps(source.url);
+      if (source.result === 'pending-review') {
+        exactKeys(source, ['url', 'checkedAt', 'result'], 'pending source');
+        ensure(entry.origin === 'existing-liberta-registry' && source.checkedAt === null, 'new domains require a checked first-party reference');
+      } else {
+        exactKeys(source, ['url', 'checkedAt', 'result', 'reference', 'note'], 'reviewed source');
+        ensure(source.result === 'first-party-reference', 'unknown source result');
+        date(source.checkedAt, now, 'checkedAt');
+        const host = publicHttps(source.reference).hostname;
+        ensure(host === entry.domain || host.endsWith(`.${entry.domain}`), 'source reference does not identify this domain');
+        ensure(typeof source.note === 'string' && source.note.length > 0, 'source review note required');
+      }
+    }
+  }
+  ensure(seen.size === expected.size, 'provenance must cover every selected domain exactly once');
+  return provenance;
+}
 export function activeEntries(registry) {
   const measured = new Set(registry.measured_exceptions.map(entry => entry.domain));
   return allEntries(registry).filter(entry => entry.explicit || measured.has(entry.domain));

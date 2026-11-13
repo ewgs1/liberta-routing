@@ -45,3 +45,4 @@ jobs:
       - run: |
           export PATH="$GITHUB_WORKSPACE/.local/bin:$PATH"
           npm run verify:cores
+          npm run verify:routing
