@@ -2,7 +2,7 @@ import { request } from 'node:https';
 import { isIP } from 'node:net';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { dnsAddresses } from '../service-canary.mjs';
+import { dnsAddresses, pinnedLookup } from '../service-canary.mjs';
 import { normalizeDomain, sha256, json } from './lib.mjs';
 
 // Fixed public first-party pages only. No accounts, API calls, crawling or route updates.
@@ -24,7 +24,7 @@ async function readPage(url) {
     const finish = value => { if (!done) { done = true; clearTimeout(timer); resolveResult(value); } };
     const req = request(url, {
       method: 'GET', agent: false, rejectUnauthorized: true,
-      lookup: (_host, _options, callback) => callback(null, address, isIP(address)),
+      lookup: pinnedLookup(address),
       headers: { 'User-Agent': 'LibertaRouting-SourceReview/1.0', Accept: 'text/html', 'Accept-Encoding': 'identity' }
     }, response => {
       const chunks = [];
@@ -42,7 +42,7 @@ async function readPage(url) {
       });
     });
     const timer = setTimeout(() => req.destroy(), 10000);
-    req.on('error', () => finish({source:url,result:'inconclusive'}));
+    req.on('error', error => finish({source:url,result:'inconclusive',phase:'https',error:['ETIMEDOUT','ECONNRESET','ECONNREFUSED','ENETUNREACH','ERR_INVALID_IP_ADDRESS'].includes(error.code)?error.code:'network-or-tls-error'}));
     req.on('close', () => finish({source:url,result:'inconclusive'}));
     req.end();
   });
@@ -51,7 +51,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const results = [];
   for (const source of SOURCES) {
     try { results.push(await readPage(source)); }
-    catch { results.push({source,result:'inconclusive'}); }
+    catch { results.push({source,result:'inconclusive',phase:'dns'}); }
   }
   console.log(json({schemaVersion:1,purpose:'candidate discovery only',routesModified:false,applicationTests:false,results}));
 }

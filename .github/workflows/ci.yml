@@ -57,3 +57,4 @@ jobs:
           export PATH="$GITHUB_WORKSPACE/.local/bin:$PATH"
           npm run verify:cores
           npm run verify:routing
+          node scripts/verify-dns.mjs
