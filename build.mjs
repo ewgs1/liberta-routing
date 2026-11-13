@@ -1,14 +1,14 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { args, render, manifest, json, atomicDirectory, ensure } from './scripts/lib.mjs';
+import { args, render, manifest, json, atomicDirectory, ensure, releaseTag } from './scripts/lib.mjs';
 
 export async function build({ registryPath = 'registry.json', output, check = false } = {}) {
   const bytes = await readFile(registryPath, 'utf8');
   const registry = JSON.parse(bytes);
   const files = render(registry);
   files['release.json'] = json(manifest(registry, bytes, files));
-  const destination = output ?? `releases/v${registry.version}`;
+  const destination = output ?? `releases/${releaseTag(registry)}`;
   if (check) {
     const names = (await readdir(destination)).sort();
     ensure(names.join(',') === Object.keys(files).sort().join(','), 'release contains missing/extra files');

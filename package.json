@@ -1,10 +1,10 @@
 {
   "name": "liberta-routing",
-  "version": "0.1.0-alpha",
+  "version": "1.0.0-alpha",
   "private": true,
   "type": "module",
   "license": "MIT",
-  "description": "Твой трафик — твоя территория. Liberta Routing: берём сеть под контроль. Независимые правила для Xray, sing-box и Remnawave.",
+  "description": "Свой маршрут за пределы Матрицы. Правила маршрутизации для Xray, sing-box и Remnawave.",
   "engines": {
     "node": ">=22"
   },

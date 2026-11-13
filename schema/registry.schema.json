@@ -10,7 +10,8 @@
     "profile",
     "maxReviewAgeDays",
     "classes",
-    "entries"
+    "entries",
+    "releaseTag"
   ],
   "properties": {
     "schemaVersion": {
@@ -214,6 +215,10 @@
           }
         ]
       }
+    },
+    "releaseTag": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
     }
   }
 }

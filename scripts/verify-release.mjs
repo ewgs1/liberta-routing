@@ -11,8 +11,9 @@ export async function verifyRelease(directory, expectedManifestHash) {
   const bytes = await readFile(join(directory, 'release.json'));
   ensure(sha256(bytes) === expectedManifestHash, 'manifest hash mismatch');
   const release = JSON.parse(bytes.toString('utf8'));
-  exactKeys(release, ['schemaVersion', 'version', 'profile', 'registrySha256', 'directHostCount', 'verification', 'files'], 'release');
+  exactKeys(release, ['schemaVersion', 'version', ...(Object.hasOwn(release, 'releaseTag') ? ['releaseTag'] : []), 'profile', 'registrySha256', 'directHostCount', 'verification', 'files'], 'release');
   ensure(release.schemaVersion === 1 && release.profile === 'smart-alpha' && /^\d+\.\d+\.\d+-(alpha|beta)(\.\d+)?$/.test(release.version), 'invalid release identity');
+  if (Object.hasOwn(release, 'releaseTag')) ensure(/^v(?:[1-9]\d*|\d+\.\d+\.\d+-(?:alpha|beta)(?:\.\d+)?)$/.test(release.releaseTag), 'invalid release tag');
   exactKeys(release.files, ARTIFACTS, 'release.files');
   for (const name of ARTIFACTS) {
     exactKeys(release.files[name], ['sha256', 'bytes'], 'release.file');

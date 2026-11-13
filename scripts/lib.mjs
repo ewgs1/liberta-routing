@@ -7,6 +7,7 @@ import { dirname, join, resolve } from 'node:path';
 export const ARTIFACTS = ['smart.domains.txt', 'smart.singbox.json', 'smart.xray.json'];
 export const json = value => JSON.stringify(value, null, 2) + '\n';
 export const sha256 = value => createHash('sha256').update(value).digest('hex');
+export const releaseTag = registry => registry.releaseTag ?? `v${registry.version}`;
 export const readJson = async path => JSON.parse(await readFile(path, 'utf8'));
 export function ensure(condition, message) { if (!condition) throw new Error(message); }
 export function exactKeys(value, keys, label) {
@@ -40,9 +41,10 @@ export function publicHttps(value) {
   return url;
 }
 export function validateRegistry(registry, { now = new Date(), freshness = true } = {}) {
-  exactKeys(registry, ['schemaVersion', 'project', 'version', 'profile', 'maxReviewAgeDays', 'classes', 'entries'], 'registry');
+  exactKeys(registry, ['schemaVersion', 'project', 'version', ...(Object.hasOwn(registry, 'releaseTag') ? ['releaseTag'] : []), 'profile', 'maxReviewAgeDays', 'classes', 'entries'], 'registry');
   ensure(registry.schemaVersion === 1 && registry.project === 'liberta-routing', 'registry: unsupported schema/project');
   ensure(/^\d+\.\d+\.\d+-(?:alpha|beta)(?:\.\d+)?$/.test(registry.version), 'version: prerelease version required');
+  if (Object.hasOwn(registry, 'releaseTag')) ensure(typeof registry.releaseTag === 'string' && /^v[1-9]\d*$/.test(registry.releaseTag), 'releaseTag: expected v1, v2, ...');
   exactKeys(registry.profile, ['id', 'defaultRoute', 'directTag', 'proxyTag'], 'profile');
   ensure(registry.profile.id === 'smart-alpha' && registry.profile.defaultRoute === 'proxy', 'profile: Smart must default to proxy');
   const tags = [registry.profile.directTag, registry.profile.proxyTag];
@@ -109,7 +111,7 @@ export function render(registry, options) {
 }
 export function manifest(registry, registryBytes, files) {
   return {
-    schemaVersion: 1, version: registry.version, profile: registry.profile.id,
+    schemaVersion: 1, version: registry.version, releaseTag: releaseTag(registry), profile: registry.profile.id,
     registrySha256: sha256(registryBytes), directHostCount: activeEntries(registry).length,
     verification: { ownership: 'first-party-source-review', regionalReachability: 'not-measured', legacySmartV5: 'not-tested' },
     files: Object.fromEntries(ARTIFACTS.map(name => [name, { sha256: sha256(files[name]), bytes: Buffer.byteLength(files[name]) }]))

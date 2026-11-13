@@ -39,8 +39,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          version="$(node -p "require('./package.json').version")"
-          tag="v${version}"
+          tag="$(node -p "require('./registry.json').releaseTag")"
           gh release create "$tag" \
             "releases/$tag/smart.xray.json" \
             "releases/$tag/smart.singbox.json" \
