@@ -221,6 +221,116 @@
       "holder": "AS_WILDBERRIES_KZ LLC Wildberries",
       "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
       "status": "reviewed-service-network"
+    },
+    {
+      "service": "tbank",
+      "prefix": "91.218.132.0/22",
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "tbank",
+      "prefix": "212.233.80.0/22",
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "tbank",
+      "prefix": "91.194.226.0/23",
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "tbank",
+      "prefix": "178.130.128.0/23",
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "tbank",
+      "prefix": "217.14.19.0/24",
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "ozon",
+      "prefix": "185.73.192.0/22",
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "ozon",
+      "prefix": "195.34.20.0/23",
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "ozon",
+      "prefix": "46.226.122.0/24",
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "ozon",
+      "prefix": "91.212.64.0/24",
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "ozon",
+      "prefix": "91.223.93.0/24",
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "snapshotSha256": "65c4b95c97c9b0a6218abdbd0b5f00e26c83092bfdfbd2bad1ba1ce794e2dd86",
+      "status": "reviewed-service-network"
     }
   ]
 }

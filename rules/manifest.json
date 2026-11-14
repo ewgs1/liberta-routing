@@ -10,21 +10,21 @@
   ],
   "domains": 238,
   "serviceNetworks": {
-    "prefixes": 20,
-    "registrySha256": "a103641203b8be4f915a6090f6c390a04d4aa4cd94563417a0bb774245aec1a3",
+    "prefixes": 30,
+    "registrySha256": "c87035b4b296e61452f7b04ab640b63cba1aa0c96f7fa63b6caa4710ff22097a",
     "validUntil": "2026-11-21",
     "files": {
       "liberta-direct-ip.cidrs.txt": {
-        "sha256": "f90532731f7963b0dc80ee72839feda291d3c818d979c9aeef196e8c53f19fde",
-        "bytes": 324
+        "sha256": "a9b3d86eb2de86b738879ff4dad798f65dc11673732eade11f9367fa62de6092",
+        "bytes": 481
       },
       "liberta-direct-ip.singbox.json": {
-        "sha256": "be4be0b3fdaedd4e87021144bf17fed933244bcbe27ce905fe8663193fe8f038",
-        "bytes": 619
+        "sha256": "0f1efc4b0cad3fd2ebda168e821b48e95c4f9c2c666159cb014a827e1383fb2e",
+        "bytes": 886
       },
       "liberta-direct-ip.xray.json": {
-        "sha256": "54fef5590d9cf3eeb7b14a73380111fae9c6679b90174d8d93eae0b1821569ce",
-        "bytes": 527
+        "sha256": "fd61da8f6257d2aac26b51b7bddc5ae36fa145943cb82696ff4ae419babedec2",
+        "bytes": 754
       }
     }
   },

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-14T11:00:53.322105+00:00",
+  "policy": "Service-owned origin networks only; legal identity cross-checked with first-party company pages. Contained more-specific announcements removed without inventing larger prefixes. No country allocation or shared transit ASN imported.",
+  "announcements": [
+    {
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "service": "tbank",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "companyReference": "https://www.tbank.ru/contacts/",
+      "registryApi": "https://stat.ripe.net/",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "91.218.132.0/22",
+        "212.233.80.0/22",
+        "91.194.226.0/23",
+        "178.130.128.0/23",
+        "217.14.19.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "service": "ozon",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "companyReference": "https://docs.ozon.ru/legal/terms-of-use/user-agreement/",
+      "registryApi": "https://stat.ripe.net/",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "185.73.192.0/22",
+        "195.34.20.0/23",
+        "46.226.122.0/24",
+        "91.212.64.0/24",
+        "91.223.93.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    }
+  ],
+  "excludedSharedProviders": [
+    {
+      "service": "tbank",
+      "asn": 210756,
+      "holder": "EdgeCenterLLC EdgeCenter LLC",
+      "source": "https://stat.ripe.net/",
+      "decision": "Shared CDN origin identified for an application endpoint; provider-wide ranges are not promoted to service-owned direct routes."
+    }
+  ]
+}

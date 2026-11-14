@@ -3,10 +3,10 @@
   "routeSha256": "7cbfa966c6b361cacefba524e6d608282bc35928c7f63d4b65cfc12db89be60c",
   "compatibilityRouteSha256": "34ea2353985ffb6fd6095f1c0ebea356477697bb8404ea2a6cd3000bcd891719",
   "reviewedAt": "2026-11-14",
-  "reason": "First-party review adds 65 service roots across education, software, medicine, logistics, food, insurance, media and other categories. Twenty current Wildberries service networks cover IP-only traffic; withdrawn announcements and shared clouds are not promoted. Device acceptance remains open; compatible v1 behavior is frozen.",
+  "reason": "65 reviewed service roots added across 21 categories. Thirty current service-owned prefixes cover Wildberries, T-Bank and Ozon. ASN holder identities reviewed against primary company and RIPE records; historical/withdrawn routes and shared providers are excluded. Compatible v1 remains frozen; device acceptance is open.",
   "proxySuffixes": [
     "cloud.vk.com",
     "mcs.mail.ru"
   ],
-  "networkRouteSha256": "60853068851fffd7cccbde5c32b88bfe8c96f69878d9b6f14613b771d2d32f2c"
+  "networkRouteSha256": "a2c7e4d9ec8faaa85270100092e6c304605c39366fe9df80d6e0166f8045a2ae"
 }

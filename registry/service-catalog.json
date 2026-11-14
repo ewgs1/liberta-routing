@@ -666,7 +666,13 @@
       "ctRoots": [
         "tbank.ru"
       ],
-      "asns": [],
+      "asns": [
+        {
+          "number": 43399,
+          "holderIncludes": "tbank",
+          "source": "https://rdap.db.ripe.net/autnum/43399"
+        }
+      ],
       "products": [
         "Банк",
         "Бизнес",
@@ -2129,7 +2135,13 @@
       "ctRoots": [
         "ozon.ru"
       ],
-      "asns": [],
+      "asns": [
+        {
+          "number": 44386,
+          "holderIncludes": "ozon",
+          "source": "https://rdap.db.ripe.net/autnum/44386"
+        }
+      ],
       "products": [
         "Маркетплейс",
         "Банк",
