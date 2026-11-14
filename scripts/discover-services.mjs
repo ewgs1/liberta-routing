@@ -1,3 +1,4 @@
+import { currentAnnouncements } from './network-data.mjs';
 import { request } from 'node:https';
 import { Resolver } from 'node:dns/promises';
 import { isIP } from 'node:net';
@@ -62,6 +63,7 @@ export function quotedAssetHosts(body) {
   for(const match of body.matchAll(/["'`]([a-z0-9*.-]+)["'`]/gi))for(const host of declaredHosts(match[1]))if(match[1].replace(/^\*\./,'')===host)names.add(host);
   return [...names].sort();
 }
+function ownedTitle(body='') {const title=body.match(/<title[^>]*>([^<]{1,300})<\/title>/i)?.[1];return title?{title:title.replace(/\s+/g,' ').trim()}:{};}
 export async function fetchPublic(url, { api = false } = {}) {
   const target = new URL(url);
   ensure(!target.username && !target.password && (!target.port || target.port === '443') && target.protocol === 'https:', 'unsafe source URL');
@@ -109,12 +111,12 @@ export async function discover(config, registry, {fetch=fetchPublic, dns=dnsObse
     requests++;try{return await fetch(url,{api});}catch{return {result:'inconclusive'};}
   };
   for(const service of config.services) {
-    for(const domain of service.domains)add(service,domain,'configured-seed','registry/discovery-sources.json','configured-seed');
+    for(const domain of service.domains)add(service,domain,'configured-seed','registry/service-catalog.json','configured-seed');
     const pages=[...service.pages], visited=new Set(); let assets=0;
     while(pages.length) {
       const url=pages.shift();if(visited.has(url))continue;visited.add(url);
       const response=await get(url);
-      const record={service:service.id,source:publicSource(url),result:response.result,...response.status?{httpStatus:response.status,bodySha256:response.sha256}: {}};reports.push(record);
+      const record={service:service.id,source:publicSource(url),result:response.result,...response.status?{httpStatus:response.status,bodySha256:response.sha256,...ownedTitle(response.body)}: {}};reports.push(record);
       if(response.result!=='observed')continue;
       const ownedPage=service.domains.some(suffix=>matchesDomain(new URL(url).hostname,suffix));
       const context=ownedPage?'service-response':'reference-document';
@@ -142,7 +144,7 @@ export async function discover(config, registry, {fetch=fetchPublic, dns=dnsObse
         ensure(String(overview.holder).toLowerCase().includes(asn.holderIncludes.toLowerCase()),'holder mismatch');
         record.holder=overview.holder;record.result='holder-matched';
         const result=await get(`https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS${asn.number}`,true);
-        if(result.status===200){const data=JSON.parse(result.body).data;record.prefixes=(data.prefixes??[]).map(p=>({prefix:p.prefix,timelines:p.timelines}));record.window={start:data.query_starttime,end:data.query_endtime};}
+        if(result.status===200){const data=JSON.parse(result.body).data;record.prefixes=(data.prefixes??[]).map(p=>({prefix:p.prefix,timelines:p.timelines}));record.window={start:data.query_starttime,end:data.query_endtime};record.currentPrefixes=currentAnnouncements(data,now);record.historicalOnlyPrefixes=record.prefixes.filter(p=>!record.currentPrefixes.includes(p.prefix)).map(p=>p.prefix);}
       }catch{record.result='inconclusive-or-holder-mismatch';}
     }
   }
@@ -158,7 +160,7 @@ if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   try {
     const options=args(process.argv.slice(2),['--service','--out','--ct','--networks']);
     for(const key of ['--ct','--networks'])ensure(!options[key]||['true','false'].includes(options[key]),'expected true or false');
-    const config=await readJson('registry/discovery-sources.json');
+    const config=await readJson('registry/service-catalog.json');
     if(options['--service']){config.services=config.services.filter(s=>s.id===options['--service']);ensure(config.services.length,'unknown service');}
     const report=await discover(config,await readJson('registry/registry.json'),{ct:options['--ct']==='true',networks:options['--networks']==='true'});
     if(options['--out']){await mkdir('.private',{recursive:true,mode:0o700});await writeFile(await privateOutput(options['--out'],''),json(report),{mode:0o600,flag:'wx'});}

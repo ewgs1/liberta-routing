@@ -4,7 +4,7 @@ import { isIP } from 'node:net';
 import { readFile, lstat, mkdtemp, mkdir, writeFile, rename, rm } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 
-export const ARTIFACTS = ['smart.domains.txt', 'smart.singbox.json', 'smart.xray.json'];
+export const ARTIFACTS = ['liberta-v1.domains.txt', 'liberta-v1.singbox.json', 'liberta-v1.xray.json'];
 export const json = value => JSON.stringify(value, null, 2) + '\n';
 export const sha256 = value => createHash('sha256').update(value).digest('hex');
 export const releaseTag = registry => registry.releaseTag ?? `v${registry.version}`;
@@ -115,8 +115,8 @@ export function render(registry) {
   const domains=activeEntries(registry).map(entry=>entry.domain);
   ensure(domains.length > 0, 'empty explicit list');
   return {
-    'smart.domains.txt': domains.map(domain=>'domain:'+domain).join('\n')+'\n',
-    'smart.singbox.json':json({version:1,rules:[{domain_suffix:domains}]})
+    'liberta-v1.domains.txt': domains.map(domain=>'domain:'+domain).join('\n')+'\n',
+    'liberta-v1.singbox.json':json({version:1,rules:[{domain_suffix:domains}]})
   };
 }
 export async function atomicDirectory(target, files) {

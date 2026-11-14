@@ -10,7 +10,7 @@ import { writeRules } from '../scripts/build-rules.mjs';
 const registryBytes = await readFile('registry/registry.json', 'utf8');
 const provenanceBytes = await readFile('registry/provenance.json', 'utf8');
 const registry = JSON.parse(registryBytes), provenance = JSON.parse(provenanceBytes);
-const compatible = await readJson('dist/smart.xray.json');
+const compatible = await readJson('dist/liberta-v1.xray.json');
 const files = independentFiles(registry, provenance, registryBytes, provenanceBytes);
 const selected = selectedDomains(registry);
 const original = await readJson('registry/compatibility-v1.json');

@@ -35,7 +35,7 @@ export async function auditPublic(root = '.') {
   ensure(files.length > 0, 'public audit: empty file set');
   const findings = [];
   for (const path of files) {
-    const generatedTemplate = path.endsWith('/smart.xray.json') || path === 'examples/remnawave/liberta-selective.xray.json';
+    const generatedTemplate = (path.endsWith('/liberta-v1.xray.json') || path === 'dist/liberta.xray.json') || path === 'examples/remnawave/liberta-selective.xray.json';
     if (/(?:^|\/)(?:\.private|\.local|node_modules|\.env)(?:\/|$)|\.(?:pem|key|p12|pfx|log|zip|tgz)$/i.test(path)) findings.push({ path, kind: 'private-or-binary-path' });
     const stat = await lstat(join(root, path));
     if (stat.isSymbolicLink()) { findings.push({ path, kind: 'symlink' }); continue; }
@@ -44,7 +44,7 @@ export async function auditPublic(root = '.') {
     // Synthetic network addresses and adversarial secrets are confined to code/tests for validation.
     const kinds = scanContent(content).filter(kind => {
       if ((path.startsWith('test/') || path === 'service-canary.mjs' || path === 'scripts/audit-public.mjs') && ['ipv4-literal', 'credential-assignment', 'connection-uri'].includes(kind)) return false;
-      if ((path === 'scripts/build.mjs' || path === 'scripts/rule-sets.mjs' || path === 'scripts/integrate.mjs' || path === 'scripts/verify-routing.mjs' || path === 'scripts/verify-dns.mjs' || path.startsWith('examples/happ/') || generatedTemplate) && kind === 'ipv4-literal') {
+      if ((path === 'scripts/build.mjs' || path === 'scripts/rule-sets.mjs' || path === 'scripts/integrate.mjs' || path === 'scripts/remnawave-sync.mjs' || path === 'scripts/verify-routing.mjs' || path === 'scripts/verify-dns.mjs' || path.startsWith('examples/happ/') || generatedTemplate) && kind === 'ipv4-literal') {
         const allowed = new Set(['8.8.4.4', '1.1.1.1', '77.88.8.8', '77.88.8.1', '127.0.0.1', '10.0.0.0', '127.0.0.0', '169.254.0.0', '172.16.0.0', '192.168.0.0']);
         return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(match => !allowed.has(match[0]));
       }

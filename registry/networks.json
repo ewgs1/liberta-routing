@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "policy": "Only reviewed service-owned public networks with a fresh BGP snapshot. Shared hosting, DNS answers and country allocation do not establish service ownership. Empty until reviewed; no country-wide fallback.",
+  "entries": []
+}

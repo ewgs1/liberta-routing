@@ -11,7 +11,7 @@ export async function generatedRules() {
   const registry = JSON.parse(registryBytes), provenance = JSON.parse(provenanceBytes);
   return {
     rules: independentFiles(registry, provenance, registryBytes, provenanceBytes),
-    template: json(selectiveTemplate(registry, JSON.parse(await readFile(join(ROOT, 'dist/smart.xray.json'), 'utf8')))),
+    template: json(selectiveTemplate(registry, JSON.parse(await readFile(join(ROOT, 'dist/liberta-v1.xray.json'), 'utf8')))),
     happ: Object.fromEntries([false, true].flatMap(fakeDNS => {
       const profile = happProfile(registry, { fakeDNS });
       const name = fakeDNS ? 'liberta-selective-fakedns' : 'liberta-selective';
@@ -48,6 +48,7 @@ export async function buildRules({ check = false } = {}) {
     ensure((await readdir(output)).sort().join(',') === Object.keys(generated.rules).sort().join(','), 'independent files missing or unexpected');
     for (const [name, body] of Object.entries(generated.rules)) ensure(await readFile(join(output, name), 'utf8') === body, `independent list differs: ${name}`);
     ensure(await readFile(example, 'utf8') === generated.template, 'selective example differs');
+    ensure(await readFile(join(ROOT,'dist/liberta.xray.json'),'utf8') === generated.template, 'primary template differs');
     const happOutput = join(ROOT, 'examples/happ');
     ensure((await readdir(happOutput)).sort().join(',') === Object.keys(generated.happ).sort().join(','), 'unexpected Happ files');
     for (const [name, body] of Object.entries(generated.happ)) ensure(await readFile(join(happOutput, name), 'utf8') === body, `Happ profile differs: ${name}`);
@@ -57,6 +58,8 @@ export async function buildRules({ check = false } = {}) {
     const temporary = example + '.tmp';
     await writeFile(temporary, generated.template);
     await rename(temporary, example);
+    await writeFile(join(ROOT,'dist/liberta.xray.json.tmp'),generated.template);
+    await rename(join(ROOT,'dist/liberta.xray.json.tmp'),join(ROOT,'dist/liberta.xray.json'));
     await writeRules(join(ROOT, 'examples/happ'), generated.happ);
   }
   return { domains: JSON.parse(generated.rules['manifest.json']).domains, files: Object.keys(generated.rules).length, check };

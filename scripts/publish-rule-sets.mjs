@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { ensure, json } from './lib.mjs';
 import { buildRules } from './build-rules.mjs';
 
-// Manually dispatched publisher. It updates only the public data branch and never
+// Verified-main publisher. It updates only the public data branch and never
 // changes a version tag, GitHub release, production subscription or source branch.
 const repository = process.env.GH_REPO;
 const source = process.env.GITHUB_SHA;
@@ -37,7 +37,7 @@ try {
     if (name === 'manifest.json') content = json({ ...JSON.parse(content), sourceCommit: source });
     tree.push({ path: name, mode: '100644', type: 'blob', content });
   }
-  tree.push({ path: 'README.md', mode: '100644', type: 'blob', content: `# Liberta Routing rule sets\n\n${manifest.domains} выбранных доменов и ${manifest.categories} категорий из собственного реестра Liberta.\n\nИсточник: https://github.com/${repository}/tree/${source}\n\nПодключение: https://github.com/${repository}/blob/${source}/docs/OWN_RULES.md\n\nЛицензия MIT. Данные не включают country-wide списки, геобазы или подключения VPN-узлов.\n` });
+  tree.push({ path: 'README.md', mode: '100644', type: 'blob', content: `# Liberta Routing rule sets\n\n${manifest.domains} выбранных доменов и ${manifest.categories} категорий из собственного реестра Liberta.\n\nИсточник: https://github.com/${repository}/tree/${source}\n\nПодключение: https://github.com/${repository}/blob/${source}/docs/USAGE.md\n\nЛицензия MIT. Данные не включают country-wide списки, геобазы или подключения VPN-узлов.\n` });
   tree.push({ path: 'LICENSE', mode: '100644', type: 'blob', content: await readFile('LICENSE', 'utf8') });
   const createdTree = await api('POST', 'git/trees', { tree });
   const commit = await api('POST', 'git/commits', { message: `Publish own rule sets from ${source}`, tree: createdTree.sha, parents: [existing?.object.sha ?? source] });

@@ -4,7 +4,7 @@ import { readJson } from '../scripts/lib.mjs';
 import { integrate } from '../scripts/integrate.mjs';
 import { referencedHosts } from '../scripts/observe-sources.mjs';
 import { pinnedLookup } from '../service-canary.mjs';
-const template=await readJson('dist/smart.xray.json');
+const template=await readJson('dist/liberta-v1.xray.json');
 const registry=await readJson('registry/registry.json');
 test('selective integration preserves connection credentials and the original input',()=>{
   const base=structuredClone(template);

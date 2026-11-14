@@ -7,7 +7,7 @@ import { readJson, json, ensure, render } from './lib.mjs';
 const directory = await mkdtemp(join(tmpdir(), 'liberta-core-check-'));
 try {
   const files = render(await readJson('registry/compatibility-v1.json'));
-  const full=JSON.parse(await readFile('dist/smart.xray.json','utf8'));
+  const full=JSON.parse(await readFile('dist/liberta-v1.xray.json','utf8'));
   const explicit=full.routing.rules.find(rule=>rule.domain?.length && rule.domain.every(x=>x.startsWith('domain:')));
   const xray = {
     log: { loglevel: 'none' },
@@ -18,10 +18,10 @@ try {
   const sourcePath = join(directory, 'source.json');
   const singboxPath = join(directory, 'singbox.json');
   await writeFile(xrayPath, json(xray));
-  await writeFile(sourcePath, files['smart.singbox.json']);
+  await writeFile(sourcePath, files['liberta-v1.singbox.json']);
   await writeFile(singboxPath, json({
     outbounds: [{ tag: 'proxy', type: 'direct' }, { tag: 'direct', type: 'direct' }],
-    route: { rule_set: [{ tag: 'liberta-smart', type: 'local', format: 'source', path: sourcePath }], rules: [{ rule_set: ['liberta-smart'], action: 'route', outbound: 'direct' }], final: 'proxy' }
+    route: { rule_set: [{ tag: 'liberta-v1', type: 'local', format: 'source', path: sourcePath }], rules: [{ rule_set: ['liberta-v1'], action: 'route', outbound: 'direct' }], final: 'proxy' }
   }));
   // Parser-only checks: no listeners, node addresses, connections or service requests.
   for (const [binary, argv] of [['xray', ['run', '-test', '-config', xrayPath]], ['sing-box', ['check', '-c', singboxPath]], ['sing-box-current', ['check', '-c', singboxPath]]]) {

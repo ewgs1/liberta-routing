@@ -1,6 +1,10 @@
 import { readJson, validateRegistry, validateProvenance, allEntries, ensure } from './lib.mjs';
+import { validateNetworks } from './network-data.mjs';
+import { validateCatalog } from './catalog.mjs';
 try{
  const registry=validateRegistry(await readJson('registry/registry.json'));
+ validateNetworks(await readJson('registry/networks.json'));
+ validateCatalog(await readJson('registry/service-catalog.json'),registry);
  const provenance=await readJson('registry/provenance.json');
  validateProvenance(registry,provenance);
  const evidence=await readJson('registry/evidence/tbank-user-report.json');

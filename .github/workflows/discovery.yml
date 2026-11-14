@@ -3,15 +3,6 @@ on:
   schedule:
     - cron: '19 4 * * *'
   workflow_dispatch:
-    inputs:
-      certificates:
-        description: Query public certificate records
-        type: boolean
-        default: false
-      networks:
-        description: Observe configured service ASN holders and announcements
-        type: boolean
-        default: false
 permissions:
   contents: read
 concurrency:
@@ -20,12 +11,12 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 5
       matrix:
-        service: [tbank, vk, ozon, wildberries, yandex, gosuslugi, 2gis]
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
@@ -34,14 +25,10 @@ jobs:
         with:
           node-version: 24
       - name: Collect public candidates
-        env:
-          SERVICE: ${{ matrix.service }}
-          CERTIFICATES: ${{ inputs.certificates || 'false' }}
-          NETWORKS: ${{ inputs.networks || 'false' }}
-        run: node scripts/discover-services.mjs --service "$SERVICE" --ct "$CERTIFICATES" --networks "$NETWORKS" --out .private/discovery.json
+        run: node scripts/discover-catalog.mjs --shard ${{ matrix.shard }} --shards 10 --out .private/discovery.json
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: dependency-candidates-${{ matrix.service }}
+          name: dependency-candidates-${{ matrix.shard }}
           path: .private/discovery.json
           include-hidden-files: true
           if-no-files-found: error

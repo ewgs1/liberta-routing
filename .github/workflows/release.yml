@@ -1,5 +1,7 @@
 name: Publish own rule sets
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -40,4 +42,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-        run: node scripts/publish-rule-sets.mjs
+        run: |
+          node scripts/publish-rule-sets.mjs
+          node scripts/clean-release.mjs

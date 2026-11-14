@@ -12,3 +12,7 @@ coverage/
 *.pfx
 *.zip
 *.tar.gz
+
+__pycache__/
+*.pyc
+*.apk

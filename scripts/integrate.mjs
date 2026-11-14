@@ -40,7 +40,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const options = args(process.argv.slice(2), ['--base', '--registry', '--format', '--out', '--mode']);
     ensure(options['--base'] && options['--out'] && options['--format'], 'required: --base --format --out');
-    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry/registry.json'), options['--format'], { mode: options['--mode'] ?? 'rename', template: options['--mode'] === 'selective' ? await readJson('dist/smart.xray.json') : undefined });
+    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry/registry.json'), options['--format'], { mode: options['--mode'] ?? 'rename', template: options['--mode'] === 'selective' ? await readJson('dist/liberta-v1.xray.json') : undefined });
     await mkdir('.private', { recursive: true, mode: 0o700 });
     await writeFile(await privateOutput(options['--out'], options['--base']), json(result), { mode: 0o600, flag: 'wx' });
     console.log('Created separate private test configuration. Original profile unchanged. No profile was activated.');

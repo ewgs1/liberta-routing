@@ -11,6 +11,6 @@ npm run build
 npm run verify
 ```
 
-[Happ на iPhone](docs/HAPP_IOS.md) · [Как подключить](docs/OWN_RULES.md) · [Выборочный шаблон Remnawave](examples/remnawave/liberta-selective.xray.json) · [Происхождение данных](docs/PROVENANCE.md) · [MIT](LICENSE)
+[Подключение](docs/USAGE.md) · [Данные](docs/DATA.md) · [Разработка](docs/DEVELOPMENT.md) · [Совместимость](docs/COMPATIBILITY.md) · [MIT](LICENSE)
 
 Сейчас тестируем. Прежний рабочий шаблон сохранён отдельно; полное покрытие приложений и работа на устройствах проверяются отдельно.
