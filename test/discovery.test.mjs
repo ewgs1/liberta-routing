@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readJson,json} from '../scripts/lib.mjs';
-import {certificateHosts,declaredHosts,discover,extractAssets,publicSource,validateDiscovery} from '../scripts/discover-services.mjs';
+import {certificateHosts,declaredHosts,quotedAssetHosts,discover,extractAssets,publicSource,validateDiscovery} from '../scripts/discover-services.mjs';
 const registry=await readJson('registry/registry.json');
 const config={schemaVersion:1,services:[{id:'test',domains:['tbank.ru'],pages:['https://tbank.ru/'],ctRoots:['tbank.ru'],asns:[]}]};
 const response=(body,extra={})=>({result:'observed',status:200,body,sha256:'fixture',csp:'',...extra});
@@ -30,6 +30,7 @@ test('certificate names remain candidates and invalid/private names are discarde
 test('literal domain declarations include alternatives without copying scripts or promoting candidates',()=>{
   const hosts=declaredHosts('<p>*.vkuseraudio.(com|net), *.userapi.com, tbank.ru</p><script>foo.bar.ru</script>');
   assert.ok(hosts.includes('vkuseraudio.com'));assert.ok(hosts.includes('vkuseraudio.net'));assert.ok(hosts.includes('userapi.com'));assert.ok(!hosts.includes('foo.bar.ru'));
+  assert.deepEqual(quotedAssetHosts('a.ru;ft.ru;const x="api.tbrands.pro";const ext="script.js"'),['api.tbrands.pro']);
 });
 test('request limits and unavailable sources are explicit, never empty successful updates',async()=>{
   let calls=0;const report=await discover(config,registry,{dns,maxRequests:0,fetch:async()=>{calls++;throw Error('unavailable');}});
