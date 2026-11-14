@@ -1,0 +1,48 @@
+name: Discover service dependencies
+on:
+  schedule:
+    - cron: '19 4 * * *'
+  workflow_dispatch:
+    inputs:
+      certificates:
+        description: Query public certificate records
+        type: boolean
+        default: false
+      networks:
+        description: Observe configured service ASN holders and announcements
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: dependency-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        service: [tbank, vk, ozon, wildberries, yandex, gosuslugi, 2gis]
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - name: Collect public candidates
+        env:
+          SERVICE: ${{ matrix.service }}
+          CERTIFICATES: ${{ inputs.certificates || 'false' }}
+          NETWORKS: ${{ inputs.networks || 'false' }}
+        run: node scripts/discover-services.mjs --service "$SERVICE" --ct "$CERTIFICATES" --networks "$NETWORKS" --out .private/discovery.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: dependency-candidates-${{ matrix.service }}
+          path: .private/discovery.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14

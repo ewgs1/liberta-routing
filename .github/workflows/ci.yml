@@ -12,7 +12,12 @@ concurrency:
 jobs:
   sources:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        service: [tbank, vk, ozon, wildberries, yandex, gosuslugi, 2gis]
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
@@ -20,7 +25,21 @@ jobs:
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
         with:
           node-version: 24
-      - run: node scripts/observe-sources.mjs
+      - if: matrix.service == 'wildberries'
+        run: node scripts/observe-sources.mjs
+      - name: Discover service dependencies
+        env:
+          SERVICE: ${{ matrix.service }}
+          CERTIFICATES: ${{ matrix.service == 'tbank' && 'true' || 'false' }}
+          NETWORKS: ${{ matrix.service == 'wildberries' && 'true' || 'false' }}
+        run: node scripts/discover-services.mjs --service "$SERVICE" --ct "$CERTIFICATES" --networks "$NETWORKS" --out .private/discovery.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: discovery-candidates-${{ matrix.service }}
+          path: .private/discovery.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
   validate:
     strategy:
       fail-fast: false

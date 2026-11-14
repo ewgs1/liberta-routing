@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "services": [
+    { "id": "tbank", "domains": ["tbank.ru", "tinkoff.ru", "t-bank-app.ru", "tbank-online.com", "cdn-tinkoff.ru"], "pages": ["https://status.tbank-online.com/", "https://status.tbank-online.com/android-bank/"], "ctRoots": ["tbank.ru"], "asns": [] },
+    { "id": "vk", "domains": ["vk.com", "vk.ru", "userapi.com", "vk-cdn.net"], "pages": ["https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/", "https://vk.com/"], "ctRoots": ["vk.com"], "asns": [] },
+    { "id": "ozon", "domains": ["ozon.ru", "ozone.ru", "ozonusercontent.com"], "pages": ["https://dev.ozon.ru/community/1823-Ozon-Logistika-raschet-stoimosti-dostavki/", "https://bugbounty.standoff365.com/en-US/programs/ozon/"], "ctRoots": ["ozon.ru"], "asns": [] },
+    { "id": "wildberries", "domains": ["wildberries.ru", "wb.ru", "wbbasket.ru", "wb-basket.ru", "wbcontent.net"], "pages": ["https://www.wildberries.ru/", "https://bugbounty.standoff365.com/en-US/programs/wildberries/"], "ctRoots": ["wildberries.ru"], "asns": [{"number": 49053, "holderIncludes": "wildberries", "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/"}] },
+    { "id": "yandex", "domains": ["yandex.ru", "yandex.net", "yastatic.net", "ya.ru"], "pages": ["https://yandex.ru/bugbounty/i/main-scope", "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings"], "ctRoots": ["yandex.ru"], "asns": [] },
+    { "id": "gosuslugi", "domains": ["gosuslugi.ru"], "pages": ["https://www.gosuslugi.ru/"], "ctRoots": ["gosuslugi.ru"], "asns": [] },
+    { "id": "2gis", "domains": ["2gis.ru", "2gis.com"], "pages": ["https://2gis.ru/"], "ctRoots": ["2gis.ru"], "asns": [] }
+  ]
+}

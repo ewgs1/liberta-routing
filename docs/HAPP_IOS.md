@@ -37,3 +37,5 @@ node scripts/integrate.mjs --mode selective --format xray --base .private/base.j
 Официальные описания формата: https://www.happ.su/main/ru/dev-docs/routing и https://www.happ.su/main/ru/dev-docs/examples-of-links-and-parameters .
 
 Нативная проверка полного JSON использует закреплённый Xray 26.11.9. Версию ядра внутри Happ необходимо записать перед импортом; принятие JSON другим ядром здесь не подтверждено. Полный шаблон пока сохраняет IPv4-стратегию DNS прежнего профиля; сеть только с IPv6/NAT64 ещё не испытана.
+
+Happ документирует собственные URL GeoSite/GeoIP и загрузку геофайлов из профиля. Поэтому общее утверждение «свою базу на телефон поставить нельзя» неверно. В текущей сборке собственного DAT нет; для первой приёмки достаточно inline-правил. Дальнейшее направление и критерии завершения: [ARCHITECTURE_DECISION.md](ARCHITECTURE_DECISION.md).
