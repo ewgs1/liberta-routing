@@ -41,3 +41,17 @@ test('incomplete daily observations cannot replace the complete review queue',()
 test('official APK discovery refuses third-party mirrors, credentials and query parameters',()=>{
  assert.deepEqual(apkLinks('<a href="https://download.2gis.ru/app.apk">ok</a><a href="https://unrelated.net/app.apk">mirror</a><a href="https://user:pass@apk.2gis.ru/app.apk">bad</a>','https://apk.2gis.ru/'),['https://download.2gis.ru/app.apk']);
 });
+
+import { templateHash, prepareTemplate, validatePlan } from '../scripts/remnawave-sync.mjs';
+test('panel JSON key ordering does not create false deployment drift; expired plans and missing proxy fail',()=>{
+ assert.equal(templateHash({a:{c:1,b:2},d:[2,1]}),templateHash({d:[2,1],a:{b:2,c:1}}));
+ assert.notEqual(templateHash({d:[2,1]}),templateHash({d:[1,2]}));
+ assert.throws(()=>prepareTemplate({uuid:'test',templateType:'XRAY_JSON',templateJson:{outbounds:[{tag:'direct',protocol:'freedom'},{tag:'block',protocol:'blackhole'}]}},generated),/proxy outbound/);
+ assert.throws(()=>validatePlan({validUntil:'2000-01-01'}),/expired/);
+});
+
+test('APK links in first-party JSON metadata and escaped URLs are recognized',()=>{
+ assert.deepEqual(apkLinks('{"url":"https://disk.2gis.com/android/Latest/2GIS.apk"}','https://apk.2gis.ru/'),['https://disk.2gis.com/android/Latest/2GIS.apk']);
+ assert.deepEqual(apkLinks('{"url":"https:\\u002F\\u002Fdisk.2gis.com\\u002Fapp.apk"}','https://apk.2gis.ru/'),['https://disk.2gis.com/app.apk']);
+ assert.deepEqual(apkLinks('{"url":"https://acdn.t-bank-app.ru/client.apk"}','https://www.tbank.ru/',['t-bank-app.ru']),['https://acdn.t-bank-app.ru/client.apk']);
+});

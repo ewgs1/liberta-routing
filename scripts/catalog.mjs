@@ -1,3 +1,5 @@
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { ensure, normalizeDomain, publicHttps, readJson } from './lib.mjs';
 import { selectedDomains } from './rule-sets.mjs';
 export function validateCatalog(catalog, registry) {
@@ -21,7 +23,7 @@ export function shardServices(catalog, index, count) {
   ensure(Number.isInteger(count) && count > 0 && count <= 32 && Number.isInteger(index) && index >= 0 && index < count, 'invalid catalog shard');
   return [...catalog.services].sort((a,b)=>a.id.localeCompare(b.id)).filter((_,i)=>i%count===index);
 }
-if (process.argv[1]?.endsWith('/catalog.mjs')) {
+if (process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   const catalog=validateCatalog(await readJson('registry/service-catalog.json'),await readJson('registry/registry.json'));
   console.log(JSON.stringify({services:catalog.services.length,categories:new Set(catalog.services.map(s=>s.category)).size,activeDomains:catalog.services.reduce((n,s)=>n+s.activeDomains.length,0),candidateDomains:catalog.services.reduce((n,s)=>n+s.candidateDomains.length,0)}));
 }

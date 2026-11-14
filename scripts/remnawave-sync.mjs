@@ -3,25 +3,28 @@ import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { args, ensure, json, readJson, sha256 } from './lib.mjs';
 import { privateOutput } from './integrate.mjs';
-export const templateHash = value => sha256(JSON.stringify(value));
+const canonical=value=>Array.isArray(value)?value.map(canonical):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonical(value[key])])):value;
+export const templateHash = value => sha256(JSON.stringify(canonical(value)));
 export function prepareTemplate(current, generated) {
   ensure(current?.templateType==='XRAY_JSON' && current.uuid && current.templateJson && !Array.isArray(current.templateJson), 'expected one XRAY_JSON template');
   const base=current.templateJson;
   ensure(Array.isArray(base.outbounds) && base.outbounds.some(o=>o.tag==='direct'&&o.protocol==='freedom') && base.outbounds.some(o=>o.tag==='block'&&o.protocol==='blackhole'), 'direct/block outbounds required');
   ensure(!base.fakedns && !base.routing?.balancers && !base.routing?.rules?.some(r=>r.balancerTag), 'existing FakeDNS or balancers require review');
   ensure(!base.inbounds || base.inbounds.every(i=>['socks','http'].includes(i.protocol)&&i.listen==='127.0.0.1'), 'unsupported template inbounds');
+  ensure(base.outbounds.some(o=>o.tag==='proxy')||base.remnawave?.addVirtualHostAsOutbound===true,'proxy outbound or explicit virtual-host injection required');
   const result=structuredClone(base);
   result.dns=structuredClone(generated.dns);result.routing=structuredClone(generated.routing);
   if(result.inbounds)for(const inbound of result.inbounds)inbound.sniffing={enabled:true,destOverride:['http','tls','quic'],routeOnly:true};
   result.remarks='Liberta Routing v1';
   return result;
 }
-export function makePlan(current, generated, revision) {
+export function makePlan(current, generated, revision, {validUntil=null}={}) {
   ensure(/^[a-f0-9]{40,64}$/.test(revision),'source revision hash required');
   const after=prepareTemplate(current,generated);
-  return {schemaVersion:1,uuid:current.uuid,templateType:current.templateType,revision,before:current.templateJson,after,beforeSha256:templateHash(current.templateJson),afterSha256:templateHash(after)};
+  return {schemaVersion:1,uuid:current.uuid,templateType:current.templateType,revision,validUntil,before:current.templateJson,after,beforeSha256:templateHash(current.templateJson),afterSha256:templateHash(after)};
 }
 export function validatePlan(plan) {
+  ensure(!plan.validUntil||Date.parse(plan.validUntil+'T00:00:00Z')>Date.now(),'service IP review expired; prepare a fresh plan');
   ensure(plan.schemaVersion===1 && typeof plan.uuid==='string' && plan.templateType==='XRAY_JSON' && templateHash(plan.before)===plan.beforeSha256 && templateHash(plan.after)===plan.afterSha256,'invalid or modified deployment plan');
 }
 export async function applyPlan(plan, api, {rollback=false}={}) {
@@ -53,7 +56,7 @@ if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
       ensure(options['--plan'],'--plan required');
       const current=options['--template']?await readJson(options['--template']):await apiClient()('GET',`subscription-templates/${options['--uuid']}`);
       const generated=await readJson('dist/liberta.xray.json');
-      const plan=makePlan(current,generated,sha256(json(generated)));
+      const plan=makePlan(current,generated,sha256(json(generated)),{validUntil:(await readJson('rules/manifest.json')).serviceNetworks.validUntil});
       await mkdir('.private',{recursive:true,mode:0o700});await writeFile(await privateOutput(options['--plan'],options['--template']??''),json(plan),{mode:0o600,flag:'wx'});
       console.log(JSON.stringify({planCreated:true,revision:plan.revision,templateUpdated:false}));
     }else {

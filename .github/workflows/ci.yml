@@ -33,6 +33,11 @@ jobs:
           include-hidden-files: true
           retention-days: 14
   apk:
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        service: [2gis, tbank, ozon, vk]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -44,14 +49,14 @@ jobs:
       - name: Download a company-published APK without executing it
         id: download
         continue-on-error: true
-        run: node scripts/observe-apk.mjs --out .private/apk-source.json --download .private/official.apk
+        run: node scripts/observe-apk.mjs --service ${{ matrix.service }} --out .private/apk-source.json --download .private/official.apk
       - if: steps.download.outcome == 'success'
         run: |
           python3 scripts/inspect-apk.py --apk .private/official.apk --out .private/apk-candidates.json
           python3 -m unittest discover -s test -p '*_test.py'
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: apk-domain-observations
+          name: apk-domain-observations-${{ matrix.service }}
           path: |
             .private/apk-source.json
             .private/apk-candidates.json

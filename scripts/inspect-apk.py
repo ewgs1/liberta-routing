@@ -2,6 +2,7 @@
 """Extract hostname candidates from an APK, without executing or redistributing it."""
 import argparse, hashlib, ipaddress, json, re, struct, subprocess, zipfile
 from pathlib import Path
+from urllib.parse import urlsplit
 
 HOST = re.compile(r'(?<![a-z0-9_.-])(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:ru|su|com|net|org|io|app|tech|cloud|online|me|cc|link|by|kz|yandex|dev|pro|tv|one|aero)(?![a-z0-9_.-])', re.I)
 
@@ -41,8 +42,16 @@ def inspect(path):
             if item.file_size > 120_000_000 or item.flag_bits & 1: raise ValueError('unsupported APK entry')
             if not (item.filename.endswith(('.dex','.xml','.json','.txt','.html','.js','.so','.arsc','.properties'))): continue
             for value in strings(archive.read(item), item.filename):
-                for match in HOST.finditer(value):
-                    host = match.group().lower()
+                names=[match.group() for match in HOST.finditer(value)]
+                for match in re.finditer(r'(?:https?|wss?)://[^\s\x00<>"\x27]+',value,re.I):
+                    try:
+                        host=urlsplit(match.group()).hostname
+                        if host: names.append(host.encode('idna').decode())
+                    except (ValueError,UnicodeError): pass
+                for name in names:
+                    host=name.lower().rstrip('.')
+                    if len(host.split('.'))<2 or not all(re.fullmatch(r'[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?',label) for label in host.split('.')): continue
+                    if host.split('.')[-1] in ['local','lan','internal','invalid','test','example','localhost']: continue
                     try: ipaddress.ip_address(host); continue
                     except ValueError: pass
                     if len(host) <= 253: candidates.setdefault(host, set()).add('dex' if item.filename.endswith('.dex') else 'resources-or-native')
