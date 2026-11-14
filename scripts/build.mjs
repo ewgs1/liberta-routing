@@ -13,7 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 function parseArgs(argv) {
   const out = {
-    registry: path.join(ROOT, 'registry/registry.json'),
+    registry: path.join(ROOT, 'registry/compatibility-v1.json'),
     canary: '',
     baseline: '',
     // Тег gov по умолчанию выключен: geosite:category-ru уже включает
@@ -23,7 +23,7 @@ function parseArgs(argv) {
     gov: false,
     diag: false,
     checkTags: false,
-    out: path.join(ROOT, 'dist/smart.xray.json')
+    out: path.join(ROOT, 'dist/liberta-v1.xray.json')
   };
   for (let i = 0; i < argv.length; i += 1) {
     const key = argv[i];

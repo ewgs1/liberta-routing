@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "service": "tbank",
+  "source": "operator conversation; raw report remains private",
+  "reportedAddedDomains": [
+    "t-bank-app.ru",
+    "data-tscbank.ru",
+    "cdn-tinkoff.ru",
+    "t-calls.ru",
+    "t-tolk.ru",
+    "tbank-online.com",
+    "tinkoffmobile.ru",
+    "sbp.ru"
+  ],
+  "acceptedDomains": [
+    "t-bank-app.ru",
+    "data-tscbank.ru",
+    "cdn-tinkoff.ru",
+    "t-calls.ru",
+    "t-tolk.ru",
+    "tbank-online.com",
+    "tinkoffmobile.ru"
+  ],
+  "excludedDomains": [
+    "sbp.ru"
+  ],
+  "simultaneousChanges": [
+    "domain direct routing",
+    "domestic DNS domain selection"
+  ],
+  "reportedOutcome": "operator confirmed login after the group change",
+  "individuallyIsolatedDomains": [],
+  "device": null,
+  "clientVersion": null,
+  "configSha256": null,
+  "acceptanceForCurrentBuild": false
+}

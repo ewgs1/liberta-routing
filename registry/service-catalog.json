@@ -1,0 +1,5352 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-14",
+  "policy": "Catalog includes active rules and operator-selected candidates. Candidate membership does not enable direct routing.",
+  "operatorConfigSha256": "234dae9696ba04b58f2f0c90f5e7dde57e7f0e03d2149b6d7a73f4722aa58b2e",
+  "services": [
+    {
+      "id": "auto-ru",
+      "name": "Авто.ру",
+      "category": "auto",
+      "domains": [
+        "auto.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "auto.ru"
+      ],
+      "pages": [
+        "https://auto.ru/"
+      ],
+      "ctRoots": [
+        "auto.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "belkacar-ru",
+      "name": "belkacar.ru",
+      "category": "auto",
+      "domains": [
+        "belkacar.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "belkacar.ru"
+      ],
+      "pages": [
+        "https://belkacar.ru/"
+      ],
+      "ctRoots": [
+        "belkacar.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "citydrive-ru",
+      "name": "citydrive.ru",
+      "category": "auto",
+      "domains": [
+        "citydrive.ru"
+      ],
+      "activeDomains": [
+        "citydrive.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://citydrive.ru/"
+      ],
+      "ctRoots": [
+        "citydrive.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "delimobil-ru",
+      "name": "delimobil.ru",
+      "category": "auto",
+      "domains": [
+        "delimobil.ru"
+      ],
+      "activeDomains": [
+        "delimobil.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://delimobil.ru/"
+      ],
+      "ctRoots": [
+        "delimobil.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "drom-ru",
+      "name": "drom.ru",
+      "category": "auto",
+      "domains": [
+        "drom.ru"
+      ],
+      "activeDomains": [
+        "drom.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://drom.ru/"
+      ],
+      "ctRoots": [
+        "drom.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "whoosh-bike",
+      "name": "whoosh.bike",
+      "category": "auto",
+      "domains": [
+        "whoosh.bike"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "whoosh.bike"
+      ],
+      "pages": [
+        "https://whoosh.bike/"
+      ],
+      "ctRoots": [
+        "whoosh.bike"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "whoosh-bike-ru",
+      "name": "whoosh-bike.ru",
+      "category": "auto",
+      "domains": [
+        "whoosh-bike.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "whoosh-bike.ru"
+      ],
+      "pages": [
+        "https://whoosh-bike.ru/"
+      ],
+      "ctRoots": [
+        "whoosh-bike.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "absolutbank-ru",
+      "name": "Абсолют Банк",
+      "category": "banks",
+      "domains": [
+        "absolutbank.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "absolutbank.ru"
+      ],
+      "pages": [
+        "https://absolutbank.ru/"
+      ],
+      "ctRoots": [
+        "absolutbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "akbars-ru",
+      "name": "akbars.ru",
+      "category": "banks",
+      "domains": [
+        "akbars.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "akbars.ru"
+      ],
+      "pages": [
+        "https://akbars.ru/"
+      ],
+      "ctRoots": [
+        "akbars.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "alfabank-com",
+      "name": "alfabank.com",
+      "category": "banks",
+      "domains": [
+        "alfabank.com"
+      ],
+      "activeDomains": [
+        "alfabank.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://alfabank.com/"
+      ],
+      "ctRoots": [
+        "alfabank.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "alfabank-gcdn-co",
+      "name": "alfabank.gcdn.co",
+      "category": "banks",
+      "domains": [
+        "alfabank.gcdn.co"
+      ],
+      "activeDomains": [
+        "alfabank.gcdn.co"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://alfabank.gcdn.co/"
+      ],
+      "ctRoots": [
+        "alfabank.gcdn.co"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "alfabank-ru",
+      "name": "alfabank.ru",
+      "category": "banks",
+      "domains": [
+        "alfabank.ru"
+      ],
+      "activeDomains": [
+        "alfabank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://alfabank.ru/"
+      ],
+      "ctRoots": [
+        "alfabank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "bspb-ru",
+      "name": "bspb.ru",
+      "category": "banks",
+      "domains": [
+        "bspb.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "bspb.ru"
+      ],
+      "pages": [
+        "https://bspb.ru/"
+      ],
+      "ctRoots": [
+        "bspb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "bystrobank-ru",
+      "name": "bystrobank.ru",
+      "category": "banks",
+      "domains": [
+        "bystrobank.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "bystrobank.ru"
+      ],
+      "pages": [
+        "https://bystrobank.ru/"
+      ],
+      "ctRoots": [
+        "bystrobank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "domrfbank-ru",
+      "name": "domrfbank.ru",
+      "category": "banks",
+      "domains": [
+        "domrfbank.ru"
+      ],
+      "activeDomains": [
+        "domrfbank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://domrfbank.ru/"
+      ],
+      "ctRoots": [
+        "domrfbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "gazprombank-ru",
+      "name": "gazprombank.ru",
+      "category": "banks",
+      "domains": [
+        "gazprombank.ru"
+      ],
+      "activeDomains": [
+        "gazprombank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://gazprombank.ru/"
+      ],
+      "ctRoots": [
+        "gazprombank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "homecredit-ru",
+      "name": "homecredit.ru",
+      "category": "banks",
+      "domains": [
+        "homecredit.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "homecredit.ru"
+      ],
+      "pages": [
+        "https://homecredit.ru/"
+      ],
+      "ctRoots": [
+        "homecredit.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mkb-ru",
+      "name": "mkb.ru",
+      "category": "banks",
+      "domains": [
+        "mkb.ru"
+      ],
+      "activeDomains": [
+        "mkb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mkb.ru/"
+      ],
+      "ctRoots": [
+        "mkb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "modulbank-ru",
+      "name": "modulbank.ru",
+      "category": "banks",
+      "domains": [
+        "modulbank.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "modulbank.ru"
+      ],
+      "pages": [
+        "https://modulbank.ru/"
+      ],
+      "ctRoots": [
+        "modulbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "open-ru",
+      "name": "open.ru",
+      "category": "banks",
+      "domains": [
+        "open.ru"
+      ],
+      "activeDomains": [
+        "open.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://open.ru/"
+      ],
+      "ctRoots": [
+        "open.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "otpbank-ru",
+      "name": "otpbank.ru",
+      "category": "banks",
+      "domains": [
+        "otpbank.ru"
+      ],
+      "activeDomains": [
+        "otpbank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://otpbank.ru/"
+      ],
+      "ctRoots": [
+        "otpbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "psb-ru",
+      "name": "psb.ru",
+      "category": "banks",
+      "domains": [
+        "psb.ru"
+      ],
+      "activeDomains": [
+        "psb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://psb.ru/"
+      ],
+      "ctRoots": [
+        "psb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "psbank-ru",
+      "name": "psbank.ru",
+      "category": "banks",
+      "domains": [
+        "psbank.ru"
+      ],
+      "activeDomains": [
+        "psbank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://psbank.ru/"
+      ],
+      "ctRoots": [
+        "psbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "raiffeisen-ru",
+      "name": "raiffeisen.ru",
+      "category": "banks",
+      "domains": [
+        "raiffeisen.ru"
+      ],
+      "activeDomains": [
+        "raiffeisen.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://raiffeisen.ru/"
+      ],
+      "ctRoots": [
+        "raiffeisen.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rencredit-ru",
+      "name": "rencredit.ru",
+      "category": "banks",
+      "domains": [
+        "rencredit.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rencredit.ru"
+      ],
+      "pages": [
+        "https://rencredit.ru/"
+      ],
+      "ctRoots": [
+        "rencredit.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rosbank-ru",
+      "name": "rosbank.ru",
+      "category": "banks",
+      "domains": [
+        "rosbank.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rosbank.ru"
+      ],
+      "pages": [
+        "https://rosbank.ru/"
+      ],
+      "ctRoots": [
+        "rosbank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rsb-ru",
+      "name": "rsb.ru",
+      "category": "banks",
+      "domains": [
+        "rsb.ru"
+      ],
+      "activeDomains": [
+        "rsb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rsb.ru/"
+      ],
+      "ctRoots": [
+        "rsb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rshb-ru",
+      "name": "rshb.ru",
+      "category": "banks",
+      "domains": [
+        "rshb.ru"
+      ],
+      "activeDomains": [
+        "rshb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rshb.ru/"
+      ],
+      "ctRoots": [
+        "rshb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sber",
+      "name": "Сбер",
+      "category": "banks",
+      "domains": [
+        "sber.ru",
+        "sberbank-insurance.ru",
+        "sberbank-tele.com",
+        "sberbank.com",
+        "sberbank.ru",
+        "sbnk.ru"
+      ],
+      "activeDomains": [
+        "sber.ru",
+        "sberbank.com",
+        "sberbank.ru"
+      ],
+      "candidateDomains": [
+        "sberbank-insurance.ru",
+        "sberbank-tele.com",
+        "sbnk.ru"
+      ],
+      "pages": [
+        "https://sber.ru/"
+      ],
+      "ctRoots": [
+        "sber.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sovcombank-ru",
+      "name": "sovcombank.ru",
+      "category": "banks",
+      "domains": [
+        "sovcombank.ru"
+      ],
+      "activeDomains": [
+        "sovcombank.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sovcombank.ru/"
+      ],
+      "ctRoots": [
+        "sovcombank.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tbank",
+      "name": "Т-Банк",
+      "category": "banks",
+      "domains": [
+        "cdn-tinkoff.ru",
+        "data-tscbank.ru",
+        "t-bank-app.ru",
+        "t-calls.ru",
+        "t-static.ru",
+        "t-tolk.ru",
+        "tbank-online.com",
+        "tbank.ru",
+        "tcsbank.ru",
+        "tinkoff-edu.ru",
+        "tinkoff-group.com",
+        "tinkoff.com",
+        "tinkoff.ru",
+        "tinkoffcapital.ru",
+        "tinkoffinsurance.ru",
+        "tinkoffjournal.ru",
+        "tinkoffmobile.ru"
+      ],
+      "activeDomains": [
+        "cdn-tinkoff.ru",
+        "data-tscbank.ru",
+        "t-bank-app.ru",
+        "t-calls.ru",
+        "t-static.ru",
+        "t-tolk.ru",
+        "tbank-online.com",
+        "tbank.ru",
+        "tcsbank.ru",
+        "tinkoff.com",
+        "tinkoff.ru",
+        "tinkoffinsurance.ru",
+        "tinkoffmobile.ru"
+      ],
+      "candidateDomains": [
+        "tinkoff-edu.ru",
+        "tinkoff-group.com",
+        "tinkoffcapital.ru",
+        "tinkoffjournal.ru"
+      ],
+      "pages": [
+        "https://status.tbank-online.com/",
+        "https://status.tbank-online.com/android-bank/"
+      ],
+      "ctRoots": [
+        "tbank.ru"
+      ],
+      "asns": [],
+      "products": [
+        "Банк",
+        "Бизнес",
+        "Инвестиции",
+        "Мобайл",
+        "Страхование",
+        "Платежи"
+      ]
+    },
+    {
+      "id": "tochka-com",
+      "name": "tochka.com",
+      "category": "banks",
+      "domains": [
+        "tochka.com"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "tochka.com"
+      ],
+      "pages": [
+        "https://tochka.com/"
+      ],
+      "ctRoots": [
+        "tochka.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "uralsib-ru",
+      "name": "uralsib.ru",
+      "category": "banks",
+      "domains": [
+        "uralsib.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "uralsib.ru"
+      ],
+      "pages": [
+        "https://uralsib.ru/"
+      ],
+      "ctRoots": [
+        "uralsib.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vtb-ru",
+      "name": "vtb.ru",
+      "category": "banks",
+      "domains": [
+        "vtb.ru"
+      ],
+      "activeDomains": [
+        "vtb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://vtb.ru/"
+      ],
+      "ctRoots": [
+        "vtb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "delivery-club-ru",
+      "name": "delivery-club.ru",
+      "category": "delivery",
+      "domains": [
+        "delivery-club.ru"
+      ],
+      "activeDomains": [
+        "delivery-club.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://delivery-club.ru/"
+      ],
+      "ctRoots": [
+        "delivery-club.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kuper-ru",
+      "name": "Купер",
+      "category": "delivery",
+      "domains": [
+        "kuper.ru"
+      ],
+      "activeDomains": [
+        "kuper.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kuper.ru/"
+      ],
+      "ctRoots": [
+        "kuper.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "samokat-ru",
+      "name": "Самокат",
+      "category": "delivery",
+      "domains": [
+        "samokat.ru"
+      ],
+      "activeDomains": [
+        "samokat.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://samokat.ru/"
+      ],
+      "ctRoots": [
+        "samokat.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dnevnik-ru",
+      "name": "dnevnik.ru",
+      "category": "education",
+      "domains": [
+        "dnevnik.ru"
+      ],
+      "activeDomains": [
+        "dnevnik.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://dnevnik.ru/"
+      ],
+      "ctRoots": [
+        "dnevnik.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "foxford-ru",
+      "name": "foxford.ru",
+      "category": "education",
+      "domains": [
+        "foxford.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "foxford.ru"
+      ],
+      "pages": [
+        "https://foxford.ru/"
+      ],
+      "ctRoots": [
+        "foxford.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "htmlacademy-ru",
+      "name": "htmlacademy.ru",
+      "category": "education",
+      "domains": [
+        "htmlacademy.ru"
+      ],
+      "activeDomains": [
+        "htmlacademy.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://htmlacademy.ru/"
+      ],
+      "ctRoots": [
+        "htmlacademy.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "netology-ru",
+      "name": "netology.ru",
+      "category": "education",
+      "domains": [
+        "netology.ru"
+      ],
+      "activeDomains": [
+        "netology.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://netology.ru/"
+      ],
+      "ctRoots": [
+        "netology.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "otus-ru",
+      "name": "otus.ru",
+      "category": "education",
+      "domains": [
+        "otus.ru"
+      ],
+      "activeDomains": [
+        "otus.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://otus.ru/"
+      ],
+      "ctRoots": [
+        "otus.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "resh-edu-ru",
+      "name": "resh.edu.ru",
+      "category": "education",
+      "domains": [
+        "resh.edu.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "resh.edu.ru"
+      ],
+      "pages": [
+        "https://resh.edu.ru/"
+      ],
+      "ctRoots": [
+        "resh.edu.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skillbox-ru",
+      "name": "skillbox.ru",
+      "category": "education",
+      "domains": [
+        "skillbox.ru"
+      ],
+      "activeDomains": [
+        "skillbox.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skillbox.ru/"
+      ],
+      "ctRoots": [
+        "skillbox.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skillfactory-ru",
+      "name": "skillfactory.ru",
+      "category": "education",
+      "domains": [
+        "skillfactory.ru"
+      ],
+      "activeDomains": [
+        "skillfactory.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skillfactory.ru/"
+      ],
+      "ctRoots": [
+        "skillfactory.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skyeng-ru",
+      "name": "skyeng.ru",
+      "category": "education",
+      "domains": [
+        "skyeng.ru"
+      ],
+      "activeDomains": [
+        "skyeng.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skyeng.ru/"
+      ],
+      "ctRoots": [
+        "skyeng.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skysmart-ru",
+      "name": "skysmart.ru",
+      "category": "education",
+      "domains": [
+        "skysmart.ru"
+      ],
+      "activeDomains": [
+        "skysmart.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skysmart.ru/"
+      ],
+      "ctRoots": [
+        "skysmart.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "stepik-org",
+      "name": "stepik.org",
+      "category": "education",
+      "domains": [
+        "stepik.org"
+      ],
+      "activeDomains": [
+        "stepik.org"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://stepik.org/"
+      ],
+      "ctRoots": [
+        "stepik.org"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "uchi-ru",
+      "name": "uchi.ru",
+      "category": "education",
+      "domains": [
+        "uchi.ru"
+      ],
+      "activeDomains": [
+        "uchi.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://uchi.ru/"
+      ],
+      "ctRoots": [
+        "uchi.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "burgerkingrus-ru",
+      "name": "burgerkingrus.ru",
+      "category": "food",
+      "domains": [
+        "burgerkingrus.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "burgerkingrus.ru"
+      ],
+      "pages": [
+        "https://burgerkingrus.ru/"
+      ],
+      "ctRoots": [
+        "burgerkingrus.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dodopizza-com",
+      "name": "dodopizza.com",
+      "category": "food",
+      "domains": [
+        "dodopizza.com"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "dodopizza.com"
+      ],
+      "pages": [
+        "https://dodopizza.com/"
+      ],
+      "ctRoots": [
+        "dodopizza.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dodopizza-ru",
+      "name": "dodopizza.ru",
+      "category": "food",
+      "domains": [
+        "dodopizza.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "dodopizza.ru"
+      ],
+      "pages": [
+        "https://dodopizza.ru/"
+      ],
+      "ctRoots": [
+        "dodopizza.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rostics-ru",
+      "name": "rostics.ru",
+      "category": "food",
+      "domains": [
+        "rostics.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rostics.ru"
+      ],
+      "pages": [
+        "https://rostics.ru/"
+      ],
+      "ctRoots": [
+        "rostics.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tanuki-ru",
+      "name": "tanuki.ru",
+      "category": "food",
+      "domains": [
+        "tanuki.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "tanuki.ru"
+      ],
+      "pages": [
+        "https://tanuki.ru/"
+      ],
+      "ctRoots": [
+        "tanuki.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vkusnoitochka-ru",
+      "name": "vkusnoitochka.ru",
+      "category": "food",
+      "domains": [
+        "vkusnoitochka.ru"
+      ],
+      "activeDomains": [
+        "vkusnoitochka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://vkusnoitochka.ru/"
+      ],
+      "ctRoots": [
+        "vkusnoitochka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ebs-ru",
+      "name": "ebs.ru",
+      "category": "gov",
+      "domains": [
+        "ebs.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "ebs.ru"
+      ],
+      "pages": [
+        "https://ebs.ru/"
+      ],
+      "ctRoots": [
+        "ebs.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "fssp-gov-ru",
+      "name": "fssp.gov.ru",
+      "category": "gov",
+      "domains": [
+        "fssp.gov.ru"
+      ],
+      "activeDomains": [
+        "fssp.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://fssp.gov.ru/"
+      ],
+      "ctRoots": [
+        "fssp.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "goskey-ru",
+      "name": "goskey.ru",
+      "category": "gov",
+      "domains": [
+        "goskey.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "goskey.ru"
+      ],
+      "pages": [
+        "https://goskey.ru/"
+      ],
+      "ctRoots": [
+        "goskey.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "gosuslugi",
+      "name": "Госуслуги",
+      "category": "gov",
+      "domains": [
+        "esia.gosuslugi.ru",
+        "gosuslugi.ru"
+      ],
+      "activeDomains": [
+        "esia.gosuslugi.ru",
+        "gosuslugi.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://www.gosuslugi.ru/"
+      ],
+      "ctRoots": [
+        "gosuslugi.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "government-ru",
+      "name": "government.ru",
+      "category": "gov",
+      "domains": [
+        "government.ru"
+      ],
+      "activeDomains": [
+        "government.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://government.ru/"
+      ],
+      "ctRoots": [
+        "government.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kremlin-ru",
+      "name": "kremlin.ru",
+      "category": "gov",
+      "domains": [
+        "kremlin.ru"
+      ],
+      "activeDomains": [
+        "kremlin.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kremlin.ru/"
+      ],
+      "ctRoots": [
+        "kremlin.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mos-ru",
+      "name": "mos.ru",
+      "category": "gov",
+      "domains": [
+        "mos.ru"
+      ],
+      "activeDomains": [
+        "mos.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mos.ru/"
+      ],
+      "ctRoots": [
+        "mos.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mosreg-ru",
+      "name": "mosreg.ru",
+      "category": "gov",
+      "domains": [
+        "mosreg.ru"
+      ],
+      "activeDomains": [
+        "mosreg.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mosreg.ru/"
+      ],
+      "ctRoots": [
+        "mosreg.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mvd-ru",
+      "name": "mvd.ru",
+      "category": "gov",
+      "domains": [
+        "mvd.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "mvd.ru"
+      ],
+      "pages": [
+        "https://mvd.ru/"
+      ],
+      "ctRoots": [
+        "mvd.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nalog-gov-ru",
+      "name": "nalog.gov.ru",
+      "category": "gov",
+      "domains": [
+        "nalog.gov.ru"
+      ],
+      "activeDomains": [
+        "nalog.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://nalog.gov.ru/"
+      ],
+      "ctRoots": [
+        "nalog.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nalog-ru",
+      "name": "nalog.ru",
+      "category": "gov",
+      "domains": [
+        "nalog.ru"
+      ],
+      "activeDomains": [
+        "nalog.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://nalog.ru/"
+      ],
+      "ctRoots": [
+        "nalog.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nspd-gov-ru",
+      "name": "nspd.gov.ru",
+      "category": "gov",
+      "domains": [
+        "nspd.gov.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "nspd.gov.ru"
+      ],
+      "pages": [
+        "https://nspd.gov.ru/"
+      ],
+      "ctRoots": [
+        "nspd.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "pochta-ru",
+      "name": "pochta.ru",
+      "category": "gov",
+      "domains": [
+        "pochta.ru"
+      ],
+      "activeDomains": [
+        "pochta.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://pochta.ru/"
+      ],
+      "ctRoots": [
+        "pochta.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "pravo-gov-ru",
+      "name": "pravo.gov.ru",
+      "category": "gov",
+      "domains": [
+        "pravo.gov.ru"
+      ],
+      "activeDomains": [
+        "pravo.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://pravo.gov.ru/"
+      ],
+      "ctRoots": [
+        "pravo.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "regulation-gov-ru",
+      "name": "regulation.gov.ru",
+      "category": "gov",
+      "domains": [
+        "regulation.gov.ru"
+      ],
+      "activeDomains": [
+        "regulation.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://regulation.gov.ru/"
+      ],
+      "ctRoots": [
+        "regulation.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rkn-gov-ru",
+      "name": "rkn.gov.ru",
+      "category": "gov",
+      "domains": [
+        "rkn.gov.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rkn.gov.ru"
+      ],
+      "pages": [
+        "https://rkn.gov.ru/"
+      ],
+      "ctRoots": [
+        "rkn.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rosreestr-gov-ru",
+      "name": "rosreestr.gov.ru",
+      "category": "gov",
+      "domains": [
+        "rosreestr.gov.ru"
+      ],
+      "activeDomains": [
+        "rosreestr.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rosreestr.gov.ru/"
+      ],
+      "ctRoots": [
+        "rosreestr.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rostrud-gov-ru",
+      "name": "rostrud.gov.ru",
+      "category": "gov",
+      "domains": [
+        "rostrud.gov.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rostrud.gov.ru"
+      ],
+      "pages": [
+        "https://rostrud.gov.ru/"
+      ],
+      "ctRoots": [
+        "rostrud.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sfr-gov-ru",
+      "name": "sfr.gov.ru",
+      "category": "gov",
+      "domains": [
+        "sfr.gov.ru"
+      ],
+      "activeDomains": [
+        "sfr.gov.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sfr.gov.ru/"
+      ],
+      "ctRoots": [
+        "sfr.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sudrf-ru",
+      "name": "sudrf.ru",
+      "category": "gov",
+      "domains": [
+        "sudrf.ru"
+      ],
+      "activeDomains": [
+        "sudrf.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sudrf.ru/"
+      ],
+      "ctRoots": [
+        "sudrf.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "trudvsem-ru",
+      "name": "trudvsem.ru",
+      "category": "gov",
+      "domains": [
+        "trudvsem.ru"
+      ],
+      "activeDomains": [
+        "trudvsem.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://trudvsem.ru/"
+      ],
+      "ctRoots": [
+        "trudvsem.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "zakupki-gov-ru",
+      "name": "zakupki.gov.ru",
+      "category": "gov",
+      "domains": [
+        "zakupki.gov.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "zakupki.gov.ru"
+      ],
+      "pages": [
+        "https://zakupki.gov.ru/"
+      ],
+      "ctRoots": [
+        "zakupki.gov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "alfastrah-ru",
+      "name": "alfastrah.ru",
+      "category": "insurance",
+      "domains": [
+        "alfastrah.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "alfastrah.ru"
+      ],
+      "pages": [
+        "https://alfastrah.ru/"
+      ],
+      "ctRoots": [
+        "alfastrah.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ingos-ru",
+      "name": "ingos.ru",
+      "category": "insurance",
+      "domains": [
+        "ingos.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "ingos.ru"
+      ],
+      "pages": [
+        "https://ingos.ru/"
+      ],
+      "ctRoots": [
+        "ingos.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "renins-ru",
+      "name": "renins.ru",
+      "category": "insurance",
+      "domains": [
+        "renins.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "renins.ru"
+      ],
+      "pages": [
+        "https://renins.ru/"
+      ],
+      "ctRoots": [
+        "renins.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rgs-ru",
+      "name": "rgs.ru",
+      "category": "insurance",
+      "domains": [
+        "rgs.ru"
+      ],
+      "activeDomains": [
+        "rgs.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rgs.ru/"
+      ],
+      "ctRoots": [
+        "rgs.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sogaz-ru",
+      "name": "sogaz.ru",
+      "category": "insurance",
+      "domains": [
+        "sogaz.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "sogaz.ru"
+      ],
+      "pages": [
+        "https://sogaz.ru/"
+      ],
+      "ctRoots": [
+        "sogaz.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "soglasie-ru",
+      "name": "soglasie.ru",
+      "category": "insurance",
+      "domains": [
+        "soglasie.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "soglasie.ru"
+      ],
+      "pages": [
+        "https://soglasie.ru/"
+      ],
+      "ctRoots": [
+        "soglasie.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "cian-ru",
+      "name": "cian.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "cian.ru"
+      ],
+      "activeDomains": [
+        "cian.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://cian.ru/"
+      ],
+      "ctRoots": [
+        "cian.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "domclick-ru",
+      "name": "domclick.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "domclick.ru"
+      ],
+      "activeDomains": [
+        "domclick.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://domclick.ru/"
+      ],
+      "ctRoots": [
+        "domclick.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "domofond-ru",
+      "name": "domofond.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "domofond.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "domofond.ru"
+      ],
+      "pages": [
+        "https://domofond.ru/"
+      ],
+      "ctRoots": [
+        "domofond.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "etagi-com",
+      "name": "etagi.com",
+      "category": "jobs_realty",
+      "domains": [
+        "etagi.com"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "etagi.com"
+      ],
+      "pages": [
+        "https://etagi.com/"
+      ],
+      "ctRoots": [
+        "etagi.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "hh-ru",
+      "name": "hh.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "hh.ru"
+      ],
+      "activeDomains": [
+        "hh.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://hh.ru/"
+      ],
+      "ctRoots": [
+        "hh.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rabota-ru",
+      "name": "rabota.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "rabota.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rabota.ru"
+      ],
+      "pages": [
+        "https://rabota.ru/"
+      ],
+      "ctRoots": [
+        "rabota.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "superjob-ru",
+      "name": "superjob.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "superjob.ru"
+      ],
+      "activeDomains": [
+        "superjob.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://superjob.ru/"
+      ],
+      "ctRoots": [
+        "superjob.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "youla-ru",
+      "name": "youla.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "youla.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "youla.ru"
+      ],
+      "pages": [
+        "https://youla.ru/"
+      ],
+      "ctRoots": [
+        "youla.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "zarplata-ru",
+      "name": "zarplata.ru",
+      "category": "jobs_realty",
+      "domains": [
+        "zarplata.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "zarplata.ru"
+      ],
+      "pages": [
+        "https://zarplata.ru/"
+      ],
+      "ctRoots": [
+        "zarplata.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "5post-ru",
+      "name": "5post.ru",
+      "category": "logistics",
+      "domains": [
+        "5post.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "5post.ru"
+      ],
+      "pages": [
+        "https://5post.ru/"
+      ],
+      "ctRoots": [
+        "5post.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "boxberry-ru",
+      "name": "boxberry.ru",
+      "category": "logistics",
+      "domains": [
+        "boxberry.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "boxberry.ru"
+      ],
+      "pages": [
+        "https://boxberry.ru/"
+      ],
+      "ctRoots": [
+        "boxberry.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "cdek-com",
+      "name": "cdek.com",
+      "category": "logistics",
+      "domains": [
+        "cdek.com"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "cdek.com"
+      ],
+      "pages": [
+        "https://cdek.com/"
+      ],
+      "ctRoots": [
+        "cdek.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "cdek-ru",
+      "name": "cdek.ru",
+      "category": "logistics",
+      "domains": [
+        "cdek.ru"
+      ],
+      "activeDomains": [
+        "cdek.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://cdek.ru/"
+      ],
+      "ctRoots": [
+        "cdek.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dostavista-ru",
+      "name": "dostavista.ru",
+      "category": "logistics",
+      "domains": [
+        "dostavista.ru"
+      ],
+      "activeDomains": [
+        "dostavista.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://dostavista.ru/"
+      ],
+      "ctRoots": [
+        "dostavista.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dpd-ru",
+      "name": "dpd.ru",
+      "category": "logistics",
+      "domains": [
+        "dpd.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "dpd.ru"
+      ],
+      "pages": [
+        "https://dpd.ru/"
+      ],
+      "ctRoots": [
+        "dpd.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ponyexpress-ru",
+      "name": "ponyexpress.ru",
+      "category": "logistics",
+      "domains": [
+        "ponyexpress.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "ponyexpress.ru"
+      ],
+      "pages": [
+        "https://ponyexpress.ru/"
+      ],
+      "ctRoots": [
+        "ponyexpress.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "avito-ru",
+      "name": "Авито",
+      "category": "marketplaces",
+      "domains": [
+        "avito.ru"
+      ],
+      "activeDomains": [
+        "avito.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://avito.ru/"
+      ],
+      "ctRoots": [
+        "avito.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "megamarket-ru",
+      "name": "megamarket.ru",
+      "category": "marketplaces",
+      "domains": [
+        "megamarket.ru"
+      ],
+      "activeDomains": [
+        "megamarket.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://megamarket.ru/"
+      ],
+      "ctRoots": [
+        "megamarket.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ozon",
+      "name": "Ozon",
+      "category": "marketplaces",
+      "domains": [
+        "o3.ru",
+        "o3t.ru",
+        "o3team.ru",
+        "ozon-dostavka.ru",
+        "ozon.app",
+        "ozon.by",
+        "ozon.com",
+        "ozon.express",
+        "ozon.kz",
+        "ozon.ru",
+        "ozon.tech",
+        "ozon.travel",
+        "ozonbank.ru",
+        "ozoncard.ru",
+        "ozone.ru",
+        "ozonpartners.ru",
+        "ozonusercontent.com"
+      ],
+      "activeDomains": [
+        "o3.ru",
+        "o3t.ru",
+        "o3team.ru",
+        "ozon-dostavka.ru",
+        "ozon.ru",
+        "ozone.ru",
+        "ozonpartners.ru",
+        "ozonusercontent.com"
+      ],
+      "candidateDomains": [
+        "ozon.app",
+        "ozon.by",
+        "ozon.com",
+        "ozon.express",
+        "ozon.kz",
+        "ozon.tech",
+        "ozon.travel",
+        "ozonbank.ru",
+        "ozoncard.ru"
+      ],
+      "pages": [
+        "https://dev.ozon.ru/community/1823-Ozon-Logistika-raschet-stoimosti-dostavki/",
+        "https://bugbounty.standoff365.com/en-US/programs/ozon/"
+      ],
+      "ctRoots": [
+        "ozon.ru"
+      ],
+      "asns": [],
+      "products": [
+        "Маркетплейс",
+        "Банк",
+        "Travel",
+        "Доставка",
+        "Партнёры"
+      ]
+    },
+    {
+      "id": "sbermegamarket-ru",
+      "name": "sbermegamarket.ru",
+      "category": "marketplaces",
+      "domains": [
+        "sbermegamarket.ru"
+      ],
+      "activeDomains": [
+        "sbermegamarket.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sbermegamarket.ru/"
+      ],
+      "ctRoots": [
+        "sbermegamarket.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "wildberries",
+      "name": "Wildberries",
+      "category": "marketplaces",
+      "domains": [
+        "paywb.com",
+        "paywb.ru",
+        "rwb.ru",
+        "wb-bank.ru",
+        "wb-basket.ru",
+        "wb.ru",
+        "wbbasket.ru",
+        "wbcontent.net",
+        "wbheld.ru",
+        "wbpay.ru",
+        "wbstatic.net",
+        "wbstatic.ru",
+        "wbwh.ru",
+        "wbwh.tech",
+        "wibes.ru",
+        "wildberries.ru"
+      ],
+      "activeDomains": [
+        "paywb.com",
+        "paywb.ru",
+        "rwb.ru",
+        "wb-bank.ru",
+        "wb-basket.ru",
+        "wb.ru",
+        "wbbasket.ru",
+        "wbcontent.net",
+        "wbheld.ru",
+        "wbstatic.net",
+        "wbwh.ru",
+        "wbwh.tech",
+        "wibes.ru",
+        "wildberries.ru"
+      ],
+      "candidateDomains": [
+        "wbpay.ru",
+        "wbstatic.ru"
+      ],
+      "pages": [
+        "https://www.wildberries.ru/",
+        "https://bugbounty.standoff365.com/en-US/programs/wildberries/"
+      ],
+      "ctRoots": [
+        "wildberries.ru"
+      ],
+      "asns": [
+        {
+          "number": 49053,
+          "holderIncludes": "wildberries",
+          "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/"
+        },
+        {
+          "number": 57073,
+          "holderIncludes": "wildberries",
+          "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/"
+        },
+        {
+          "number": 201513,
+          "holderIncludes": "wildberries",
+          "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/"
+        },
+        {
+          "number": 201512,
+          "holderIncludes": "wildberries",
+          "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/"
+        }
+      ],
+      "products": [
+        "Маркетплейс",
+        "Партнёры",
+        "Банк",
+        "Платежи",
+        "Wibes"
+      ]
+    },
+    {
+      "id": "band-link",
+      "name": "band.link",
+      "category": "media",
+      "domains": [
+        "band.link"
+      ],
+      "activeDomains": [
+        "band.link"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://band.link/"
+      ],
+      "ctRoots": [
+        "band.link"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "bookmate-ru",
+      "name": "bookmate.ru",
+      "category": "media",
+      "domains": [
+        "bookmate.ru"
+      ],
+      "activeDomains": [
+        "bookmate.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://bookmate.ru/"
+      ],
+      "ctRoots": [
+        "bookmate.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ivi-ru",
+      "name": "ivi.ru",
+      "category": "media",
+      "domains": [
+        "ivi.ru"
+      ],
+      "activeDomains": [
+        "ivi.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://ivi.ru/"
+      ],
+      "ctRoots": [
+        "ivi.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kinopoisk-ru",
+      "name": "kinopoisk.ru",
+      "category": "media",
+      "domains": [
+        "kinopoisk.ru"
+      ],
+      "activeDomains": [
+        "kinopoisk.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kinopoisk.ru/"
+      ],
+      "ctRoots": [
+        "kinopoisk.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "more-tv",
+      "name": "more.tv",
+      "category": "media",
+      "domains": [
+        "more.tv"
+      ],
+      "activeDomains": [
+        "more.tv"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://more.tv/"
+      ],
+      "ctRoots": [
+        "more.tv"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "okko-tv",
+      "name": "okko.tv",
+      "category": "media",
+      "domains": [
+        "okko.tv"
+      ],
+      "activeDomains": [
+        "okko.tv"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://okko.tv/"
+      ],
+      "ctRoots": [
+        "okko.tv"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "premier-one",
+      "name": "premier.one",
+      "category": "media",
+      "domains": [
+        "premier.one"
+      ],
+      "activeDomains": [
+        "premier.one"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://premier.one/"
+      ],
+      "ctRoots": [
+        "premier.one"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rutube-ru",
+      "name": "rutube.ru",
+      "category": "media",
+      "domains": [
+        "rutube.ru"
+      ],
+      "activeDomains": [
+        "rutube.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rutube.ru/"
+      ],
+      "ctRoots": [
+        "rutube.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "smotrim-ru",
+      "name": "smotrim.ru",
+      "category": "media",
+      "domains": [
+        "smotrim.ru"
+      ],
+      "activeDomains": [
+        "smotrim.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://smotrim.ru/"
+      ],
+      "ctRoots": [
+        "smotrim.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "start-ru",
+      "name": "start.ru",
+      "category": "media",
+      "domains": [
+        "start.ru"
+      ],
+      "activeDomains": [
+        "start.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://start.ru/"
+      ],
+      "ctRoots": [
+        "start.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vkvideo-ru",
+      "name": "vkvideo.ru",
+      "category": "media",
+      "domains": [
+        "vkvideo.ru"
+      ],
+      "activeDomains": [
+        "vkvideo.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://vkvideo.ru/"
+      ],
+      "ctRoots": [
+        "vkvideo.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "wink-ru",
+      "name": "wink.ru",
+      "category": "media",
+      "domains": [
+        "wink.ru"
+      ],
+      "activeDomains": [
+        "wink.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://wink.ru/"
+      ],
+      "ctRoots": [
+        "wink.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "apteka-ru",
+      "name": "apteka.ru",
+      "category": "medicine",
+      "domains": [
+        "apteka.ru"
+      ],
+      "activeDomains": [
+        "apteka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://apteka.ru/"
+      ],
+      "ctRoots": [
+        "apteka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "apteki-ru",
+      "name": "apteki.ru",
+      "category": "medicine",
+      "domains": [
+        "apteki.ru"
+      ],
+      "activeDomains": [
+        "apteki.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://apteki.ru/"
+      ],
+      "ctRoots": [
+        "apteki.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "docdoc-ru",
+      "name": "docdoc.ru",
+      "category": "medicine",
+      "domains": [
+        "docdoc.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "docdoc.ru"
+      ],
+      "pages": [
+        "https://docdoc.ru/"
+      ],
+      "ctRoots": [
+        "docdoc.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "eapteka-ru",
+      "name": "eapteka.ru",
+      "category": "medicine",
+      "domains": [
+        "eapteka.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "eapteka.ru"
+      ],
+      "pages": [
+        "https://eapteka.ru/"
+      ],
+      "ctRoots": [
+        "eapteka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "emias-info",
+      "name": "emias.info",
+      "category": "medicine",
+      "domains": [
+        "emias.info"
+      ],
+      "activeDomains": [
+        "emias.info"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://emias.info/"
+      ],
+      "ctRoots": [
+        "emias.info"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "gemotest-ru",
+      "name": "gemotest.ru",
+      "category": "medicine",
+      "domains": [
+        "gemotest.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "gemotest.ru"
+      ],
+      "pages": [
+        "https://gemotest.ru/"
+      ],
+      "ctRoots": [
+        "gemotest.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "helix-ru",
+      "name": "helix.ru",
+      "category": "medicine",
+      "domains": [
+        "helix.ru"
+      ],
+      "activeDomains": [
+        "helix.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://helix.ru/"
+      ],
+      "ctRoots": [
+        "helix.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "invitro-ru",
+      "name": "invitro.ru",
+      "category": "medicine",
+      "domains": [
+        "invitro.ru"
+      ],
+      "activeDomains": [
+        "invitro.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://invitro.ru/"
+      ],
+      "ctRoots": [
+        "invitro.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "medsi-ru",
+      "name": "medsi.ru",
+      "category": "medicine",
+      "domains": [
+        "medsi.ru"
+      ],
+      "activeDomains": [
+        "medsi.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://medsi.ru/"
+      ],
+      "ctRoots": [
+        "medsi.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "megapteka-ru",
+      "name": "megapteka.ru",
+      "category": "medicine",
+      "domains": [
+        "megapteka.ru"
+      ],
+      "activeDomains": [
+        "megapteka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://megapteka.ru/"
+      ],
+      "ctRoots": [
+        "megapteka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "prodoctorov-ru",
+      "name": "prodoctorov.ru",
+      "category": "medicine",
+      "domains": [
+        "prodoctorov.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "prodoctorov.ru"
+      ],
+      "pages": [
+        "https://prodoctorov.ru/"
+      ],
+      "ctRoots": [
+        "prodoctorov.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rigla-ru",
+      "name": "rigla.ru",
+      "category": "medicine",
+      "domains": [
+        "rigla.ru"
+      ],
+      "activeDomains": [
+        "rigla.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rigla.ru/"
+      ],
+      "ctRoots": [
+        "rigla.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "uteka-ru",
+      "name": "uteka.ru",
+      "category": "medicine",
+      "domains": [
+        "uteka.ru"
+      ],
+      "activeDomains": [
+        "uteka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://uteka.ru/"
+      ],
+      "ctRoots": [
+        "uteka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "zdravcity-ru",
+      "name": "zdravcity.ru",
+      "category": "medicine",
+      "domains": [
+        "zdravcity.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "zdravcity.ru"
+      ],
+      "pages": [
+        "https://zdravcity.ru/"
+      ],
+      "ctRoots": [
+        "zdravcity.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "championat-com",
+      "name": "championat.com",
+      "category": "news",
+      "domains": [
+        "championat.com"
+      ],
+      "activeDomains": [
+        "championat.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://championat.com/"
+      ],
+      "ctRoots": [
+        "championat.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "fontanka-ru",
+      "name": "fontanka.ru",
+      "category": "news",
+      "domains": [
+        "fontanka.ru"
+      ],
+      "activeDomains": [
+        "fontanka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://fontanka.ru/"
+      ],
+      "ctRoots": [
+        "fontanka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "gazeta-ru",
+      "name": "gazeta.ru",
+      "category": "news",
+      "domains": [
+        "gazeta.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "gazeta.ru"
+      ],
+      "pages": [
+        "https://gazeta.ru/"
+      ],
+      "ctRoots": [
+        "gazeta.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "iz-ru",
+      "name": "iz.ru",
+      "category": "news",
+      "domains": [
+        "iz.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "iz.ru"
+      ],
+      "pages": [
+        "https://iz.ru/"
+      ],
+      "ctRoots": [
+        "iz.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kommersant-ru",
+      "name": "kommersant.ru",
+      "category": "news",
+      "domains": [
+        "kommersant.ru"
+      ],
+      "activeDomains": [
+        "kommersant.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kommersant.ru/"
+      ],
+      "ctRoots": [
+        "kommersant.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kp-ru",
+      "name": "kp.ru",
+      "category": "news",
+      "domains": [
+        "kp.ru"
+      ],
+      "activeDomains": [
+        "kp.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kp.ru/"
+      ],
+      "ctRoots": [
+        "kp.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "lenta-ru",
+      "name": "lenta.ru",
+      "category": "news",
+      "domains": [
+        "lenta.ru"
+      ],
+      "activeDomains": [
+        "lenta.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://lenta.ru/"
+      ],
+      "ctRoots": [
+        "lenta.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rbc-ru",
+      "name": "rbc.ru",
+      "category": "news",
+      "domains": [
+        "rbc.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rbc.ru"
+      ],
+      "pages": [
+        "https://rbc.ru/"
+      ],
+      "ctRoots": [
+        "rbc.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rg-ru",
+      "name": "rg.ru",
+      "category": "news",
+      "domains": [
+        "rg.ru"
+      ],
+      "activeDomains": [
+        "rg.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rg.ru/"
+      ],
+      "ctRoots": [
+        "rg.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ria-ru",
+      "name": "ria.ru",
+      "category": "news",
+      "domains": [
+        "ria.ru"
+      ],
+      "activeDomains": [
+        "ria.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://ria.ru/"
+      ],
+      "ctRoots": [
+        "ria.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sports-ru",
+      "name": "sports.ru",
+      "category": "news",
+      "domains": [
+        "sports.ru"
+      ],
+      "activeDomains": [
+        "sports.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sports.ru/"
+      ],
+      "ctRoots": [
+        "sports.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tass-ru",
+      "name": "tass.ru",
+      "category": "news",
+      "domains": [
+        "tass.ru"
+      ],
+      "activeDomains": [
+        "tass.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://tass.ru/"
+      ],
+      "ctRoots": [
+        "tass.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vedomosti-ru",
+      "name": "vedomosti.ru",
+      "category": "news",
+      "domains": [
+        "vedomosti.ru"
+      ],
+      "activeDomains": [
+        "vedomosti.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://vedomosti.ru/"
+      ],
+      "ctRoots": [
+        "vedomosti.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "cbr-ru",
+      "name": "cbr.ru",
+      "category": "payments",
+      "domains": [
+        "cbr.ru"
+      ],
+      "activeDomains": [
+        "cbr.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://cbr.ru/"
+      ],
+      "ctRoots": [
+        "cbr.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "cloudpayments-ru",
+      "name": "cloudpayments.ru",
+      "category": "payments",
+      "domains": [
+        "cloudpayments.ru"
+      ],
+      "activeDomains": [
+        "cloudpayments.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://cloudpayments.ru/"
+      ],
+      "ctRoots": [
+        "cloudpayments.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "inplat-ru",
+      "name": "inplat.ru",
+      "category": "payments",
+      "domains": [
+        "inplat.ru"
+      ],
+      "activeDomains": [
+        "inplat.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://inplat.ru/"
+      ],
+      "ctRoots": [
+        "inplat.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nspk-com",
+      "name": "nspk.com",
+      "category": "payments",
+      "domains": [
+        "nspk.com"
+      ],
+      "activeDomains": [
+        "nspk.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://nspk.com/"
+      ],
+      "ctRoots": [
+        "nspk.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nspk-ru",
+      "name": "nspk.ru",
+      "category": "payments",
+      "domains": [
+        "nspk.ru"
+      ],
+      "activeDomains": [
+        "nspk.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://nspk.ru/"
+      ],
+      "ctRoots": [
+        "nspk.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "payanyway-ru",
+      "name": "payanyway.ru",
+      "category": "payments",
+      "domains": [
+        "payanyway.ru"
+      ],
+      "activeDomains": [
+        "payanyway.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://payanyway.ru/"
+      ],
+      "ctRoots": [
+        "payanyway.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "paymaster-ru",
+      "name": "paymaster.ru",
+      "category": "payments",
+      "domains": [
+        "paymaster.ru"
+      ],
+      "activeDomains": [
+        "paymaster.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://paymaster.ru/"
+      ],
+      "ctRoots": [
+        "paymaster.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "platron-ru",
+      "name": "platron.ru",
+      "category": "payments",
+      "domains": [
+        "platron.ru"
+      ],
+      "activeDomains": [
+        "platron.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://platron.ru/"
+      ],
+      "ctRoots": [
+        "platron.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "robokassa-ru",
+      "name": "robokassa.ru",
+      "category": "payments",
+      "domains": [
+        "robokassa.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "robokassa.ru"
+      ],
+      "pages": [
+        "https://robokassa.ru/"
+      ],
+      "ctRoots": [
+        "robokassa.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "yoobusiness-ru",
+      "name": "ЮBusiness",
+      "category": "payments",
+      "domains": [
+        "yoobusiness.ru"
+      ],
+      "activeDomains": [
+        "yoobusiness.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://yoobusiness.ru/"
+      ],
+      "ctRoots": [
+        "yoobusiness.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "yookassa-ru",
+      "name": "ЮKassa",
+      "category": "payments",
+      "domains": [
+        "yookassa.ru"
+      ],
+      "activeDomains": [
+        "yookassa.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://yookassa.ru/"
+      ],
+      "ctRoots": [
+        "yookassa.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "yoomoney-ru",
+      "name": "yoomoney.ru",
+      "category": "payments",
+      "domains": [
+        "yoomoney.ru"
+      ],
+      "activeDomains": [
+        "yoomoney.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://yoomoney.ru/"
+      ],
+      "ctRoots": [
+        "yoomoney.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "auchan-ru",
+      "name": "auchan.ru",
+      "category": "retail",
+      "domains": [
+        "auchan.ru"
+      ],
+      "activeDomains": [
+        "auchan.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://auchan.ru/"
+      ],
+      "ctRoots": [
+        "auchan.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "chitai-gorod-ru",
+      "name": "chitai-gorod.ru",
+      "category": "retail",
+      "domains": [
+        "chitai-gorod.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "chitai-gorod.ru"
+      ],
+      "pages": [
+        "https://chitai-gorod.ru/"
+      ],
+      "ctRoots": [
+        "chitai-gorod.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "citilink-ru",
+      "name": "citilink.ru",
+      "category": "retail",
+      "domains": [
+        "citilink.ru"
+      ],
+      "activeDomains": [
+        "citilink.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://citilink.ru/"
+      ],
+      "ctRoots": [
+        "citilink.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "detmir-ru",
+      "name": "detmir.ru",
+      "category": "retail",
+      "domains": [
+        "detmir.ru"
+      ],
+      "activeDomains": [
+        "detmir.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://detmir.ru/"
+      ],
+      "ctRoots": [
+        "detmir.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dixy-ru",
+      "name": "dixy.ru",
+      "category": "retail",
+      "domains": [
+        "dixy.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "dixy.ru"
+      ],
+      "pages": [
+        "https://dixy.ru/"
+      ],
+      "ctRoots": [
+        "dixy.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dns-shop-ru",
+      "name": "dns-shop.ru",
+      "category": "retail",
+      "domains": [
+        "dns-shop.ru"
+      ],
+      "activeDomains": [
+        "dns-shop.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://dns-shop.ru/"
+      ],
+      "ctRoots": [
+        "dns-shop.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "edadeal-ru",
+      "name": "edadeal.ru",
+      "category": "retail",
+      "domains": [
+        "edadeal.ru"
+      ],
+      "activeDomains": [
+        "edadeal.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://edadeal.ru/"
+      ],
+      "ctRoots": [
+        "edadeal.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "eldorado-ru",
+      "name": "eldorado.ru",
+      "category": "retail",
+      "domains": [
+        "eldorado.ru"
+      ],
+      "activeDomains": [
+        "eldorado.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://eldorado.ru/"
+      ],
+      "ctRoots": [
+        "eldorado.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "fix-price-ru",
+      "name": "fix-price.ru",
+      "category": "retail",
+      "domains": [
+        "fix-price.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "fix-price.ru"
+      ],
+      "pages": [
+        "https://fix-price.ru/"
+      ],
+      "ctRoots": [
+        "fix-price.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "goldapple-ru",
+      "name": "goldapple.ru",
+      "category": "retail",
+      "domains": [
+        "goldapple.ru"
+      ],
+      "activeDomains": [
+        "goldapple.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://goldapple.ru/"
+      ],
+      "ctRoots": [
+        "goldapple.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "hoff-ru",
+      "name": "hoff.ru",
+      "category": "retail",
+      "domains": [
+        "hoff.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "hoff.ru"
+      ],
+      "pages": [
+        "https://hoff.ru/"
+      ],
+      "ctRoots": [
+        "hoff.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "lamoda-ru",
+      "name": "lamoda.ru",
+      "category": "retail",
+      "domains": [
+        "lamoda.ru"
+      ],
+      "activeDomains": [
+        "lamoda.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://lamoda.ru/"
+      ],
+      "ctRoots": [
+        "lamoda.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "lenta-com",
+      "name": "lenta.com",
+      "category": "retail",
+      "domains": [
+        "lenta.com"
+      ],
+      "activeDomains": [
+        "lenta.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://lenta.com/"
+      ],
+      "ctRoots": [
+        "lenta.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "letu-ru",
+      "name": "letu.ru",
+      "category": "retail",
+      "domains": [
+        "letu.ru"
+      ],
+      "activeDomains": [
+        "letu.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://letu.ru/"
+      ],
+      "ctRoots": [
+        "letu.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "magnit-ru",
+      "name": "magnit.ru",
+      "category": "retail",
+      "domains": [
+        "magnit.ru"
+      ],
+      "activeDomains": [
+        "magnit.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://magnit.ru/"
+      ],
+      "ctRoots": [
+        "magnit.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "metro-cc-ru",
+      "name": "metro-cc.ru",
+      "category": "retail",
+      "domains": [
+        "metro-cc.ru"
+      ],
+      "activeDomains": [
+        "metro-cc.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://metro-cc.ru/"
+      ],
+      "ctRoots": [
+        "metro-cc.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mvideo-ru",
+      "name": "mvideo.ru",
+      "category": "retail",
+      "domains": [
+        "mvideo.ru"
+      ],
+      "activeDomains": [
+        "mvideo.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mvideo.ru/"
+      ],
+      "ctRoots": [
+        "mvideo.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "okey-ru",
+      "name": "okey.ru",
+      "category": "retail",
+      "domains": [
+        "okey.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "okey.ru"
+      ],
+      "pages": [
+        "https://okey.ru/"
+      ],
+      "ctRoots": [
+        "okey.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "onlinetrade-ru",
+      "name": "onlinetrade.ru",
+      "category": "retail",
+      "domains": [
+        "onlinetrade.ru"
+      ],
+      "activeDomains": [
+        "onlinetrade.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://onlinetrade.ru/"
+      ],
+      "ctRoots": [
+        "onlinetrade.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "perekrestok-ru",
+      "name": "perekrestok.ru",
+      "category": "retail",
+      "domains": [
+        "perekrestok.ru"
+      ],
+      "activeDomains": [
+        "perekrestok.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://perekrestok.ru/"
+      ],
+      "ctRoots": [
+        "perekrestok.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "petrovich-ru",
+      "name": "petrovich.ru",
+      "category": "retail",
+      "domains": [
+        "petrovich.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "petrovich.ru"
+      ],
+      "pages": [
+        "https://petrovich.ru/"
+      ],
+      "ctRoots": [
+        "petrovich.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "pyaterochka-ru",
+      "name": "pyaterochka.ru",
+      "category": "retail",
+      "domains": [
+        "pyaterochka.ru"
+      ],
+      "activeDomains": [
+        "pyaterochka.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://pyaterochka.ru/"
+      ],
+      "ctRoots": [
+        "pyaterochka.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sportmaster-ru",
+      "name": "sportmaster.ru",
+      "category": "retail",
+      "domains": [
+        "sportmaster.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "sportmaster.ru"
+      ],
+      "pages": [
+        "https://sportmaster.ru/"
+      ],
+      "ctRoots": [
+        "sportmaster.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "technopark-ru",
+      "name": "technopark.ru",
+      "category": "retail",
+      "domains": [
+        "technopark.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "technopark.ru"
+      ],
+      "pages": [
+        "https://technopark.ru/"
+      ],
+      "ctRoots": [
+        "technopark.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vkusvill-ru",
+      "name": "vkusvill.ru",
+      "category": "retail",
+      "domains": [
+        "vkusvill.ru"
+      ],
+      "activeDomains": [
+        "vkusvill.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://vkusvill.ru/"
+      ],
+      "ctRoots": [
+        "vkusvill.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vseinstrumenti-ru",
+      "name": "vseinstrumenti.ru",
+      "category": "retail",
+      "domains": [
+        "vseinstrumenti.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "vseinstrumenti.ru"
+      ],
+      "pages": [
+        "https://vseinstrumenti.ru/"
+      ],
+      "ctRoots": [
+        "vseinstrumenti.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "afisha-ru",
+      "name": "afisha.ru",
+      "category": "services",
+      "domains": [
+        "afisha.ru"
+      ],
+      "activeDomains": [
+        "afisha.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://afisha.ru/"
+      ],
+      "ctRoots": [
+        "afisha.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "avito-st",
+      "name": "avito.st",
+      "category": "services",
+      "domains": [
+        "avito.st"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "avito.st"
+      ],
+      "pages": [
+        "https://avito.st/"
+      ],
+      "ctRoots": [
+        "avito.st"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "geekbrains-ru",
+      "name": "geekbrains.ru",
+      "category": "services",
+      "domains": [
+        "geekbrains.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "geekbrains.ru"
+      ],
+      "pages": [
+        "https://geekbrains.ru/"
+      ],
+      "ctRoots": [
+        "geekbrains.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kion-ru",
+      "name": "kion.ru",
+      "category": "services",
+      "domains": [
+        "kion.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "kion.ru"
+      ],
+      "pages": [
+        "https://kion.ru/"
+      ],
+      "ctRoots": [
+        "kion.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "matchtv-ru",
+      "name": "matchtv.ru",
+      "category": "services",
+      "domains": [
+        "matchtv.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "matchtv.ru"
+      ],
+      "pages": [
+        "https://matchtv.ru/"
+      ],
+      "ctRoots": [
+        "matchtv.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "pickpoint-ru",
+      "name": "pickpoint.ru",
+      "category": "services",
+      "domains": [
+        "pickpoint.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "pickpoint.ru"
+      ],
+      "pages": [
+        "https://pickpoint.ru/"
+      ],
+      "ctRoots": [
+        "pickpoint.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "russoutdoor-ru",
+      "name": "russoutdoor.ru",
+      "category": "services",
+      "domains": [
+        "russoutdoor.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "russoutdoor.ru"
+      ],
+      "pages": [
+        "https://russoutdoor.ru/"
+      ],
+      "ctRoots": [
+        "russoutdoor.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sberauto-com",
+      "name": "sberauto.com",
+      "category": "services",
+      "domains": [
+        "sberauto.com"
+      ],
+      "activeDomains": [
+        "sberauto.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sberauto.com/"
+      ],
+      "ctRoots": [
+        "sberauto.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sberdisk-ru",
+      "name": "sberdisk.ru",
+      "category": "services",
+      "domains": [
+        "sberdisk.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "sberdisk.ru"
+      ],
+      "pages": [
+        "https://sberdisk.ru/"
+      ],
+      "ctRoots": [
+        "sberdisk.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sberhealth-ru",
+      "name": "sberhealth.ru",
+      "category": "services",
+      "domains": [
+        "sberhealth.ru"
+      ],
+      "activeDomains": [
+        "sberhealth.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sberhealth.ru/"
+      ],
+      "ctRoots": [
+        "sberhealth.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sbermarket-ru",
+      "name": "sbermarket.ru",
+      "category": "services",
+      "domains": [
+        "sbermarket.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "sbermarket.ru"
+      ],
+      "pages": [
+        "https://sbermarket.ru/"
+      ],
+      "ctRoots": [
+        "sbermarket.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sbpgpb-ru",
+      "name": "sbpgpb.ru",
+      "category": "services",
+      "domains": [
+        "sbpgpb.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "sbpgpb.ru"
+      ],
+      "pages": [
+        "https://sbpgpb.ru/"
+      ],
+      "ctRoots": [
+        "sbpgpb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "smartcaptcha-yandexcloud-net",
+      "name": "smartcaptcha.yandexcloud.net",
+      "category": "services",
+      "domains": [
+        "smartcaptcha.yandexcloud.net"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "smartcaptcha.yandexcloud.net"
+      ],
+      "pages": [
+        "https://smartcaptcha.yandexcloud.net/"
+      ],
+      "ctRoots": [
+        "smartcaptcha.yandexcloud.net"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "storage-yandexcloud-net",
+      "name": "storage.yandexcloud.net",
+      "category": "services",
+      "domains": [
+        "storage.yandexcloud.net"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "storage.yandexcloud.net"
+      ],
+      "pages": [
+        "https://storage.yandexcloud.net/"
+      ],
+      "ctRoots": [
+        "storage.yandexcloud.net"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ui-cdn-yandexcloud-net",
+      "name": "ui-cdn.yandexcloud.net",
+      "category": "services",
+      "domains": [
+        "ui-cdn.yandexcloud.net"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "ui-cdn.yandexcloud.net"
+      ],
+      "pages": [
+        "https://ui-cdn.yandexcloud.net/"
+      ],
+      "ctRoots": [
+        "ui-cdn.yandexcloud.net"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "userapi-ru",
+      "name": "userapi.ru",
+      "category": "services",
+      "domains": [
+        "userapi.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "userapi.ru"
+      ],
+      "pages": [
+        "https://userapi.ru/"
+      ],
+      "ctRoots": [
+        "userapi.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vkcloud-static-ru",
+      "name": "vkcloud-static.ru",
+      "category": "services",
+      "domains": [
+        "vkcloud-static.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "vkcloud-static.ru"
+      ],
+      "pages": [
+        "https://vkcloud-static.ru/"
+      ],
+      "ctRoots": [
+        "vkcloud-static.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vkplay-ru",
+      "name": "vkplay.ru",
+      "category": "services",
+      "domains": [
+        "vkplay.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "vkplay.ru"
+      ],
+      "pages": [
+        "https://vkplay.ru/"
+      ],
+      "ctRoots": [
+        "vkplay.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dzen",
+      "name": "Дзен",
+      "category": "social",
+      "domains": [
+        "dzen.ru",
+        "dzeninfra.ru"
+      ],
+      "activeDomains": [
+        "dzen.ru",
+        "dzeninfra.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://dzen.ru/"
+      ],
+      "ctRoots": [
+        "dzen.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mail-ru",
+      "name": "mail.ru",
+      "category": "social",
+      "domains": [
+        "mail.ru"
+      ],
+      "activeDomains": [
+        "mail.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mail.ru/"
+      ],
+      "ctRoots": [
+        "mail.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "max-ru",
+      "name": "max.ru",
+      "category": "social",
+      "domains": [
+        "max.ru"
+      ],
+      "activeDomains": [
+        "max.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://max.ru/"
+      ],
+      "ctRoots": [
+        "max.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ok",
+      "name": "Одноклассники",
+      "category": "social",
+      "domains": [
+        "api-hprof.odkl.ru",
+        "apiok.ru",
+        "insideok.ru",
+        "mycdn.me",
+        "odkl.ru",
+        "ok.me",
+        "ok.ru",
+        "okcdn.ru"
+      ],
+      "activeDomains": [
+        "api-hprof.odkl.ru",
+        "apiok.ru",
+        "mycdn.me",
+        "ok.me",
+        "ok.ru",
+        "okcdn.ru"
+      ],
+      "candidateDomains": [
+        "insideok.ru",
+        "odkl.ru"
+      ],
+      "pages": [
+        "https://api-hprof.odkl.ru/"
+      ],
+      "ctRoots": [
+        "api-hprof.odkl.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tamtam-chat",
+      "name": "tamtam.chat",
+      "category": "social",
+      "domains": [
+        "tamtam.chat"
+      ],
+      "activeDomains": [
+        "tamtam.chat"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://tamtam.chat/"
+      ],
+      "ctRoots": [
+        "tamtam.chat"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "vk",
+      "name": "VK",
+      "category": "social",
+      "domains": [
+        "userapi.com",
+        "vk-cdn.net",
+        "vk.cc",
+        "vk.com",
+        "vk.link",
+        "vk.me",
+        "vk.ru",
+        "vkcdnservice.com",
+        "vkmessenger.app",
+        "vkmessenger.com",
+        "vkontakte.com",
+        "vkontakte.ru",
+        "vkpay.app",
+        "vkpay.com",
+        "vkpay.io",
+        "vkpay.ru",
+        "vkuser.net",
+        "vkuseraudio.com",
+        "vkuseraudio.net",
+        "vkuseraudio.ru",
+        "vkuserlive.com",
+        "vkuserlive.net",
+        "vkuserphoto.ru",
+        "vkuservideo.com",
+        "vkuservideo.net",
+        "vkuservideo.ru"
+      ],
+      "activeDomains": [
+        "userapi.com",
+        "vk-cdn.net",
+        "vk.cc",
+        "vk.com",
+        "vk.link",
+        "vk.ru",
+        "vkontakte.com",
+        "vkontakte.ru",
+        "vkuser.net",
+        "vkuseraudio.com",
+        "vkuseraudio.net",
+        "vkuserlive.com",
+        "vkuserlive.net",
+        "vkuservideo.com",
+        "vkuservideo.net"
+      ],
+      "candidateDomains": [
+        "vk.me",
+        "vkcdnservice.com",
+        "vkmessenger.app",
+        "vkmessenger.com",
+        "vkpay.app",
+        "vkpay.com",
+        "vkpay.io",
+        "vkpay.ru",
+        "vkuseraudio.ru",
+        "vkuserphoto.ru",
+        "vkuservideo.ru"
+      ],
+      "pages": [
+        "https://bugbounty.standoff365.com/en-US/programs/vkontakte_vk/",
+        "https://vk.com/"
+      ],
+      "ctRoots": [
+        "vk.com"
+      ],
+      "asns": [],
+      "products": [
+        "Соцсеть",
+        "Мессенджер",
+        "Видео",
+        "Музыка",
+        "VK Pay"
+      ]
+    },
+    {
+      "id": "yandex",
+      "name": "Яндекс",
+      "category": "social",
+      "domains": [
+        "eda.yandex.ru",
+        "go.yandex",
+        "lavka.yandex.ru",
+        "taxi.yandex.ru",
+        "ya.cc",
+        "ya.ru",
+        "yandex-bank.net",
+        "yandex.by",
+        "yandex.cloud",
+        "yandex.com",
+        "yandex.com.tr",
+        "yandex.kz",
+        "yandex.net",
+        "yandex.ru",
+        "yandex.st",
+        "yandexgo.com",
+        "yastat.net",
+        "yastatic.net"
+      ],
+      "activeDomains": [
+        "eda.yandex.ru",
+        "go.yandex",
+        "lavka.yandex.ru",
+        "taxi.yandex.ru",
+        "ya.cc",
+        "ya.ru",
+        "yandex-bank.net",
+        "yandex.by",
+        "yandex.com",
+        "yandex.com.tr",
+        "yandex.kz",
+        "yandex.net",
+        "yandex.ru",
+        "yandex.st",
+        "yastatic.net"
+      ],
+      "candidateDomains": [
+        "yandex.cloud",
+        "yandexgo.com",
+        "yastat.net"
+      ],
+      "pages": [
+        "https://yandex.ru/bugbounty/i/main-scope",
+        "https://yandex.ru/support/yandex-360/business/admin/ru/network-settings"
+      ],
+      "ctRoots": [
+        "yandex.ru"
+      ],
+      "asns": [],
+      "products": [
+        "Поиск",
+        "Маркет",
+        "Музыка",
+        "Путешествия",
+        "Такси",
+        "Еда",
+        "Лавка",
+        "Почта",
+        "Диск",
+        "Карты",
+        "Браузер",
+        "360"
+      ]
+    },
+    {
+      "id": "1c-bitrix-ru",
+      "name": "1c-bitrix.ru",
+      "category": "software",
+      "domains": [
+        "1c-bitrix.ru"
+      ],
+      "activeDomains": [
+        "1c-bitrix.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://1c-bitrix.ru/"
+      ],
+      "ctRoots": [
+        "1c-bitrix.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "1c-ru",
+      "name": "1С",
+      "category": "software",
+      "domains": [
+        "1c.ru"
+      ],
+      "activeDomains": [
+        "1c.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://1c.ru/"
+      ],
+      "ctRoots": [
+        "1c.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "altlinux-org",
+      "name": "altlinux.org",
+      "category": "software",
+      "domains": [
+        "altlinux.org"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "altlinux.org"
+      ],
+      "pages": [
+        "https://altlinux.org/"
+      ],
+      "ctRoots": [
+        "altlinux.org"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ascon-ru",
+      "name": "ascon.ru",
+      "category": "software",
+      "domains": [
+        "ascon.ru"
+      ],
+      "activeDomains": [
+        "ascon.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://ascon.ru/"
+      ],
+      "ctRoots": [
+        "ascon.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "astralinux-ru",
+      "name": "astralinux.ru",
+      "category": "software",
+      "domains": [
+        "astralinux.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "astralinux.ru"
+      ],
+      "pages": [
+        "https://astralinux.ru/"
+      ],
+      "ctRoots": [
+        "astralinux.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "bitrix24-ru",
+      "name": "bitrix24.ru",
+      "category": "software",
+      "domains": [
+        "bitrix24.ru"
+      ],
+      "activeDomains": [
+        "bitrix24.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://bitrix24.ru/"
+      ],
+      "ctRoots": [
+        "bitrix24.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "drweb-ru",
+      "name": "drweb.ru",
+      "category": "software",
+      "domains": [
+        "drweb.ru"
+      ],
+      "activeDomains": [
+        "drweb.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://drweb.ru/"
+      ],
+      "ctRoots": [
+        "drweb.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kaspersky-ru",
+      "name": "kaspersky.ru",
+      "category": "software",
+      "domains": [
+        "kaspersky.ru"
+      ],
+      "activeDomains": [
+        "kaspersky.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kaspersky.ru/"
+      ],
+      "ctRoots": [
+        "kaspersky.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kompas-ru",
+      "name": "kompas.ru",
+      "category": "software",
+      "domains": [
+        "kompas.ru"
+      ],
+      "activeDomains": [
+        "kompas.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kompas.ru/"
+      ],
+      "ctRoots": [
+        "kompas.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "kontur-ru",
+      "name": "Контур",
+      "category": "software",
+      "domains": [
+        "kontur.ru"
+      ],
+      "activeDomains": [
+        "kontur.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://kontur.ru/"
+      ],
+      "ctRoots": [
+        "kontur.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "myoffice-ru",
+      "name": "МойОфис",
+      "category": "software",
+      "domains": [
+        "myoffice.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "myoffice.ru"
+      ],
+      "pages": [
+        "https://myoffice.ru/"
+      ],
+      "ctRoots": [
+        "myoffice.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nanocad-ru",
+      "name": "nanocad.ru",
+      "category": "software",
+      "domains": [
+        "nanocad.ru"
+      ],
+      "activeDomains": [
+        "nanocad.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://nanocad.ru/"
+      ],
+      "ctRoots": [
+        "nanocad.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "p7-office-ru",
+      "name": "p7-office.ru",
+      "category": "software",
+      "domains": [
+        "p7-office.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "p7-office.ru"
+      ],
+      "pages": [
+        "https://p7-office.ru/"
+      ],
+      "ctRoots": [
+        "p7-office.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "r7-office-ru",
+      "name": "Р7-Офис",
+      "category": "software",
+      "domains": [
+        "r7-office.ru"
+      ],
+      "activeDomains": [
+        "r7-office.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://r7-office.ru/"
+      ],
+      "ctRoots": [
+        "r7-office.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "redos-red-soft-ru",
+      "name": "redos.red-soft.ru",
+      "category": "software",
+      "domains": [
+        "redos.red-soft.ru"
+      ],
+      "activeDomains": [
+        "redos.red-soft.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://redos.red-soft.ru/"
+      ],
+      "ctRoots": [
+        "redos.red-soft.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rosa-ru",
+      "name": "rosa.ru",
+      "category": "software",
+      "domains": [
+        "rosa.ru"
+      ],
+      "activeDomains": [
+        "rosa.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rosa.ru/"
+      ],
+      "ctRoots": [
+        "rosa.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skbkontur-ru",
+      "name": "skbkontur.ru",
+      "category": "software",
+      "domains": [
+        "skbkontur.ru"
+      ],
+      "activeDomains": [
+        "skbkontur.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skbkontur.ru/"
+      ],
+      "ctRoots": [
+        "skbkontur.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "trueconf-ru",
+      "name": "trueconf.ru",
+      "category": "software",
+      "domains": [
+        "trueconf.ru"
+      ],
+      "activeDomains": [
+        "trueconf.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://trueconf.ru/"
+      ],
+      "ctRoots": [
+        "trueconf.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "akado-ru",
+      "name": "akado.ru",
+      "category": "telecom",
+      "domains": [
+        "akado.ru"
+      ],
+      "activeDomains": [
+        "akado.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://akado.ru/"
+      ],
+      "ctRoots": [
+        "akado.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "beeline-ru",
+      "name": "beeline.ru",
+      "category": "telecom",
+      "domains": [
+        "beeline.ru"
+      ],
+      "activeDomains": [
+        "beeline.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://beeline.ru/"
+      ],
+      "ctRoots": [
+        "beeline.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "dom-ru",
+      "name": "dom.ru",
+      "category": "telecom",
+      "domains": [
+        "dom.ru"
+      ],
+      "activeDomains": [
+        "dom.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://dom.ru/"
+      ],
+      "ctRoots": [
+        "dom.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "megafon-ru",
+      "name": "megafon.ru",
+      "category": "telecom",
+      "domains": [
+        "megafon.ru"
+      ],
+      "activeDomains": [
+        "megafon.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://megafon.ru/"
+      ],
+      "ctRoots": [
+        "megafon.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mgts-ru",
+      "name": "mgts.ru",
+      "category": "telecom",
+      "domains": [
+        "mgts.ru"
+      ],
+      "activeDomains": [
+        "mgts.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mgts.ru/"
+      ],
+      "ctRoots": [
+        "mgts.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "mts-ru",
+      "name": "mts.ru",
+      "category": "telecom",
+      "domains": [
+        "mts.ru"
+      ],
+      "activeDomains": [
+        "mts.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://mts.ru/"
+      ],
+      "ctRoots": [
+        "mts.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rostelecom-ru",
+      "name": "rostelecom.ru",
+      "category": "telecom",
+      "domains": [
+        "rostelecom.ru"
+      ],
+      "activeDomains": [
+        "rostelecom.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rostelecom.ru/"
+      ],
+      "ctRoots": [
+        "rostelecom.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rt-ru",
+      "name": "rt.ru",
+      "category": "telecom",
+      "domains": [
+        "rt.ru"
+      ],
+      "activeDomains": [
+        "rt.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rt.ru/"
+      ],
+      "ctRoots": [
+        "rt.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "t2-ru",
+      "name": "t2.ru",
+      "category": "telecom",
+      "domains": [
+        "t2.ru"
+      ],
+      "activeDomains": [
+        "t2.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://t2.ru/"
+      ],
+      "ctRoots": [
+        "t2.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tele2-ru",
+      "name": "tele2.ru",
+      "category": "telecom",
+      "domains": [
+        "tele2.ru"
+      ],
+      "activeDomains": [
+        "tele2.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://tele2.ru/"
+      ],
+      "ctRoots": [
+        "tele2.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "yota-ru",
+      "name": "yota.ru",
+      "category": "telecom",
+      "domains": [
+        "yota.ru"
+      ],
+      "activeDomains": [
+        "yota.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://yota.ru/"
+      ],
+      "ctRoots": [
+        "yota.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "2gis",
+      "name": "2ГИС",
+      "category": "transport",
+      "domains": [
+        "2gis.by",
+        "2gis.com",
+        "2gis.kz",
+        "2gis.ru"
+      ],
+      "activeDomains": [
+        "2gis.com",
+        "2gis.ru"
+      ],
+      "candidateDomains": [
+        "2gis.by",
+        "2gis.kz"
+      ],
+      "pages": [
+        "https://2gis.ru/"
+      ],
+      "ctRoots": [
+        "2gis.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "aeroflot-ru",
+      "name": "aeroflot.ru",
+      "category": "transport",
+      "domains": [
+        "aeroflot.ru"
+      ],
+      "activeDomains": [
+        "aeroflot.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://aeroflot.ru/"
+      ],
+      "ctRoots": [
+        "aeroflot.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "aviasales-ru",
+      "name": "aviasales.ru",
+      "category": "transport",
+      "domains": [
+        "aviasales.ru"
+      ],
+      "activeDomains": [
+        "aviasales.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://aviasales.ru/"
+      ],
+      "ctRoots": [
+        "aviasales.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "azimuth-aero",
+      "name": "azimuth.aero",
+      "category": "transport",
+      "domains": [
+        "azimuth.aero"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "azimuth.aero"
+      ],
+      "pages": [
+        "https://azimuth.aero/"
+      ],
+      "ctRoots": [
+        "azimuth.aero"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "flysmartavia-com",
+      "name": "flysmartavia.com",
+      "category": "transport",
+      "domains": [
+        "flysmartavia.com"
+      ],
+      "activeDomains": [
+        "flysmartavia.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://flysmartavia.com/"
+      ],
+      "ctRoots": [
+        "flysmartavia.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "level-travel",
+      "name": "level.travel",
+      "category": "transport",
+      "domains": [
+        "level.travel"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "level.travel"
+      ],
+      "pages": [
+        "https://level.travel/"
+      ],
+      "ctRoots": [
+        "level.travel"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "nordwindairlines-ru",
+      "name": "nordwindairlines.ru",
+      "category": "transport",
+      "domains": [
+        "nordwindairlines.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "nordwindairlines.ru"
+      ],
+      "pages": [
+        "https://nordwindairlines.ru/"
+      ],
+      "ctRoots": [
+        "nordwindairlines.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "onetwotrip-com",
+      "name": "onetwotrip.com",
+      "category": "transport",
+      "domains": [
+        "onetwotrip.com"
+      ],
+      "activeDomains": [
+        "onetwotrip.com"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://onetwotrip.com/"
+      ],
+      "ctRoots": [
+        "onetwotrip.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "ostrovok-ru",
+      "name": "ostrovok.ru",
+      "category": "transport",
+      "domains": [
+        "ostrovok.ru"
+      ],
+      "activeDomains": [
+        "ostrovok.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://ostrovok.ru/"
+      ],
+      "ctRoots": [
+        "ostrovok.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "pobeda-aero",
+      "name": "pobeda.aero",
+      "category": "transport",
+      "domains": [
+        "pobeda.aero"
+      ],
+      "activeDomains": [
+        "pobeda.aero"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://pobeda.aero/"
+      ],
+      "ctRoots": [
+        "pobeda.aero"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rossiya-airlines-com",
+      "name": "rossiya-airlines.com",
+      "category": "transport",
+      "domains": [
+        "rossiya-airlines.com"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "rossiya-airlines.com"
+      ],
+      "pages": [
+        "https://rossiya-airlines.com/"
+      ],
+      "ctRoots": [
+        "rossiya-airlines.com"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "rzd-ru",
+      "name": "rzd.ru",
+      "category": "transport",
+      "domains": [
+        "rzd.ru"
+      ],
+      "activeDomains": [
+        "rzd.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://rzd.ru/"
+      ],
+      "ctRoots": [
+        "rzd.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "s7-ru",
+      "name": "s7.ru",
+      "category": "transport",
+      "domains": [
+        "s7.ru"
+      ],
+      "activeDomains": [
+        "s7.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://s7.ru/"
+      ],
+      "ctRoots": [
+        "s7.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "sutochno-ru",
+      "name": "sutochno.ru",
+      "category": "transport",
+      "domains": [
+        "sutochno.ru"
+      ],
+      "activeDomains": [
+        "sutochno.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://sutochno.ru/"
+      ],
+      "ctRoots": [
+        "sutochno.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "travelata-ru",
+      "name": "travelata.ru",
+      "category": "transport",
+      "domains": [
+        "travelata.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "travelata.ru"
+      ],
+      "pages": [
+        "https://travelata.ru/"
+      ],
+      "ctRoots": [
+        "travelata.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "tutu-ru",
+      "name": "tutu.ru",
+      "category": "transport",
+      "domains": [
+        "tutu.ru"
+      ],
+      "activeDomains": [
+        "tutu.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://tutu.ru/"
+      ],
+      "ctRoots": [
+        "tutu.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "uralairlines-ru",
+      "name": "uralairlines.ru",
+      "category": "transport",
+      "domains": [
+        "uralairlines.ru"
+      ],
+      "activeDomains": [
+        "uralairlines.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://uralairlines.ru/"
+      ],
+      "ctRoots": [
+        "uralairlines.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "utair-ru",
+      "name": "utair.ru",
+      "category": "transport",
+      "domains": [
+        "utair.ru"
+      ],
+      "activeDomains": [
+        "utair.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://utair.ru/"
+      ],
+      "ctRoots": [
+        "utair.ru"
+      ],
+      "asns": [],
+      "products": []
+    }
+  ]
+}

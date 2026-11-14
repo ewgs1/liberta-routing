@@ -1,0 +1,9 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:citydrive.ru",
+    "domain:delimobil.ru",
+    "domain:drom.ru"
+  ],
+  "outboundTag": "direct"
+}

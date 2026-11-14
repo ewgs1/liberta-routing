@@ -11,6 +11,7 @@
     "domain:rt.ru",
     "domain:t2.ru",
     "domain:tele2.ru",
+    "domain:tinkoffmobile.ru",
     "domain:yota.ru"
   ],
   "outboundTag": "direct"

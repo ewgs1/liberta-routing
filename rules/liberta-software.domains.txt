@@ -1,0 +1,14 @@
+domain:1c-bitrix.ru
+domain:1c.ru
+domain:ascon.ru
+domain:bitrix24.ru
+domain:drweb.ru
+domain:kaspersky.ru
+domain:kompas.ru
+domain:kontur.ru
+domain:nanocad.ru
+domain:r7-office.ru
+domain:redos.red-soft.ru
+domain:rosa.ru
+domain:skbkontur.ru
+domain:trueconf.ru

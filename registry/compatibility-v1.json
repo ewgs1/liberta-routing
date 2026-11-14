@@ -1,0 +1,219 @@
+{
+  "version": 3,
+  "updated": "2026-11-12",
+  "note": "Собственный реестр Liberta. Все классы policy:direct входят в независимые списки. Флаг explicit используется только прежним совместимым профилем и не исключает домены из собственных наборов.",
+  "classes": {
+    "banks": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "отказ по иностранному адресу необратим и стоит денег",
+      "domains": [
+        "tbank.ru",
+        "tinkoff.ru",
+        "tinkoff.com",
+        "tcsbank.ru",
+        "tbank.com",
+        "sberbank.ru",
+        "sber.ru",
+        "online.sberbank.ru",
+        "sberbank.com",
+        "vtb.ru",
+        "alfabank.ru",
+        "alfabank.com",
+        "gazprombank.ru",
+        "psbank.ru",
+        "rshb.ru",
+        "sovcombank.ru",
+        "otpbank.ru",
+        "raiffeisen.ru",
+        "mkb.ru",
+        "open.ru",
+        "domrfbank.ru",
+        "rsb.ru",
+        "alfabank.gcdn.co"
+      ]
+    },
+    "payments": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "платёжный шлюз блокирует транзакцию, а не страницу",
+      "domains": [
+        "nspk.ru",
+        "nspk.com",
+        "cbr.ru",
+        "yoomoney.ru"
+      ]
+    },
+    "gov": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "вход по иностранному адресу закрыт, восстановление через поддержку",
+      "domains": [
+        "gosuslugi.ru",
+        "esia.gosuslugi.ru",
+        "nalog.ru",
+        "nalog.gov.ru",
+        "sfr.gov.ru",
+        "fssp.gov.ru",
+        "mos.ru",
+        "mosreg.ru",
+        "pravo.gov.ru",
+        "regulation.gov.ru",
+        "rosreestr.gov.ru",
+        "sudrf.ru",
+        "government.ru",
+        "kremlin.ru",
+        "trudvsem.ru",
+        "pochta.ru"
+      ]
+    },
+    "telecom": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "приложение оператора привязано к домашней сети, иностранный адрес даёт отказ",
+      "domains": [
+        "mts.ru",
+        "beeline.ru",
+        "megafon.ru",
+        "t2.ru",
+        "tele2.ru",
+        "yota.ru",
+        "rostelecom.ru",
+        "rt.ru",
+        "dom.ru",
+        "mgts.ru",
+        "akado.ru"
+      ]
+    },
+    "marketplaces": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "с апреля 2026 сами ограничивают вход с VPN",
+      "domains": [
+        "ozon.ru",
+        "wildberries.ru",
+        "wb.ru",
+        "wbstatic.net",
+        "avito.ru",
+        "megamarket.ru",
+        "sbermegamarket.ru"
+      ]
+    },
+    "retail": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "магазины и аптеки режут вход по адресу, чаще всего молча",
+      "domains": [
+        "dns-shop.ru",
+        "mvideo.ru",
+        "eldorado.ru",
+        "citilink.ru",
+        "detmir.ru",
+        "goldapple.ru",
+        "letu.ru",
+        "lamoda.ru",
+        "perekrestok.ru",
+        "pyaterochka.ru",
+        "magnit.ru",
+        "vkusvill.ru",
+        "auchan.ru",
+        "lenta.com"
+      ]
+    },
+    "delivery": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "заказ привязан к адресу и оплате, отказ по гео выглядит как сбой",
+      "domains": [
+        "eda.yandex.ru",
+        "lavka.yandex.ru",
+        "samokat.ru",
+        "kuper.ru",
+        "delivery-club.ru"
+      ]
+    },
+    "taxi": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "поездка и оплата ломаются в середине сценария",
+      "domains": [
+        "taxi.yandex.ru",
+        "go.yandex"
+      ]
+    },
+    "transport": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "билеты и посадочные не отдаются на зарубежный адрес",
+      "domains": [
+        "rzd.ru",
+        "aeroflot.ru",
+        "s7.ru",
+        "pobeda.aero",
+        "utair.ru",
+        "aviasales.ru",
+        "tutu.ru",
+        "onetwotrip.com"
+      ]
+    },
+    "medicine": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "запись к врачу привязана к полису и региону",
+      "domains": [
+        "emias.info",
+        "medsi.ru"
+      ]
+    },
+    "media": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "ограничивают показ с зарубежного адреса, часть просто зависает",
+      "domains": [
+        "kinopoisk.ru",
+        "ivi.ru",
+        "okko.tv",
+        "wink.ru",
+        "more.tv",
+        "start.ru",
+        "premier.one",
+        "rutube.ru",
+        "vkvideo.ru",
+        "smotrim.ru"
+      ]
+    },
+    "social": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "вход и платежи внутри сервиса, иностранный адрес даёт проверку",
+      "domains": [
+        "vk.com",
+        "vk.ru",
+        "ok.ru",
+        "mail.ru",
+        "max.ru"
+      ]
+    },
+    "jobs_realty": {
+      "policy": "direct",
+      "explicit": false,
+      "why": "отклики и сделки с проверкой личности",
+      "domains": [
+        "hh.ru",
+        "superjob.ru",
+        "cian.ru",
+        "domclick.ru"
+      ]
+    }
+  },
+  "measured_exceptions": [
+    {
+      "domain": "rostelecom.ru",
+      "why": "Сохранённое исключение из рабочего профиля: различие ответов при прямом и зарубежном подключении. Сетевые подробности остаются закрытыми."
+    },
+    {
+      "domain": "megamarket.ru",
+      "why": "Сохранённое исключение из рабочего профиля: различие ответов при прямом и зарубежном подключении. Сетевые подробности остаются закрытыми."
+    }
+  ]
+}

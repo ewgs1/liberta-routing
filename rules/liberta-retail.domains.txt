@@ -2,13 +2,16 @@ domain:auchan.ru
 domain:citilink.ru
 domain:detmir.ru
 domain:dns-shop.ru
+domain:edadeal.ru
 domain:eldorado.ru
 domain:goldapple.ru
 domain:lamoda.ru
 domain:lenta.com
 domain:letu.ru
 domain:magnit.ru
+domain:metro-cc.ru
 domain:mvideo.ru
+domain:onlinetrade.ru
 domain:perekrestok.ru
 domain:pyaterochka.ru
 domain:vkusvill.ru

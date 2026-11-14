@@ -1,0 +1,66 @@
+name: Discover service dependencies
+on:
+  push:
+    branches: [main]
+    paths: ['registry/service-catalog.json', 'scripts/discover-*.mjs', '.github/workflows/discovery.yml']
+  schedule:
+    - cron: '19 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: dependency-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - name: Collect public candidates
+        run: node scripts/discover-catalog.mjs --shard ${{ matrix.shard }} --shards 10 --out .private/discovery.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: dependency-candidates-${{ matrix.shard }}
+          path: .private/discovery.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+  review:
+    needs: discover
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - name: Download all bounded catalog observations
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --pattern 'dependency-candidates-*' --dir .private/reviews
+      - run: node scripts/prepare-review-queue.mjs --input-dir .private/reviews --out .private/review-queue.json
+      - run: node scripts/refresh-networks.mjs --input-dir .private/reviews
+      - run: npm run build
+      - run: npm run verify
+      - name: Open or update candidate review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: node scripts/publish-review.mjs

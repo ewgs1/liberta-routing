@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "services": [
+    {
+      "id": "kontur-ru",
+      "holderIncludes": "kontur",
+      "source": "https://kontur.ru/bugbounty",
+      "prefixes": ["46.17.200.0/21", "185.161.180.0/22", "91.221.248.0/23", "89.169.16.0/22"]
+    }
+  ]
+}

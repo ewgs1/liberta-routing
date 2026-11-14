@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "1c-bitrix.ru",
+        "1c.ru",
+        "ascon.ru",
+        "bitrix24.ru",
+        "drweb.ru",
+        "kaspersky.ru",
+        "kompas.ru",
+        "kontur.ru",
+        "nanocad.ru",
+        "r7-office.ru",
+        "redos.red-soft.ru",
+        "rosa.ru",
+        "skbkontur.ru",
+        "trueconf.ru"
+      ]
+    }
+  ]
+}

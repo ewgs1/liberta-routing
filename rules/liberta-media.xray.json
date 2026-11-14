@@ -1,6 +1,8 @@
 {
   "type": "field",
   "domain": [
+    "domain:band.link",
+    "domain:bookmate.ru",
     "domain:ivi.ru",
     "domain:kinopoisk.ru",
     "domain:more.tv",

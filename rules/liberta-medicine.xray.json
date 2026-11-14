@@ -1,8 +1,15 @@
 {
   "type": "field",
   "domain": [
+    "domain:apteka.ru",
+    "domain:apteki.ru",
     "domain:emias.info",
-    "domain:medsi.ru"
+    "domain:helix.ru",
+    "domain:invitro.ru",
+    "domain:medsi.ru",
+    "domain:megapteka.ru",
+    "domain:rigla.ru",
+    "domain:uteka.ru"
   ],
   "outboundTag": "direct"
 }

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "policy": "Only reviewed service-owned public networks with a fresh BGP snapshot. Shared hosting, DNS answers and country allocation do not establish service ownership. Empty until reviewed; no country-wide fallback.",
+  "entries": [
+    {
+      "service": "wildberries",
+      "prefix": "85.198.76.0/22",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "185.138.252.0/22",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "213.184.156.0/22",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "185.62.200.0/23",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "90.156.247.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "91.230.107.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.88.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.89.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.90.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.91.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.92.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.93.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.94.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "176.101.95.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "185.62.202.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "194.1.214.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "213.184.154.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201513,
+      "holder": "AS_WILDBERRIES_KZ LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "213.184.155.0/24",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "2a03:720::/32",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    },
+    {
+      "service": "wildberries",
+      "prefix": "2a00:5da0:8010::/48",
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "checkedAt": "2026-11-14",
+      "validUntil": "2026-11-21",
+      "asn": 201513,
+      "holder": "AS_WILDBERRIES_KZ LLC Wildberries",
+      "snapshotSha256": "13e797faf5ee0cea21c03eb7f21c3189b92d3dc62f59b0affc102db627071835",
+      "status": "reviewed-service-network"
+    }
+  ]
+}

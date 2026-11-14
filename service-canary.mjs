@@ -35,6 +35,11 @@ export async function dnsAddresses(host, { timeoutMs = 4000 } = {}) {
     return addresses;
   } finally { clearTimeout(timer); }
 }
+export function pinnedLookup(address) {
+  ensure(isPublicAddress(address), 'unsafe pinned address');
+  const family = isIP(address);
+  return (_host, options, callback) => options?.all ? callback(null, [{address,family}]) : callback(null, address, family);
+}
 export function probeHttps(host, address, { timeoutMs = 6000 } = {}) {
   return new Promise(resolveResult => {
     let settled = false;
@@ -42,7 +47,7 @@ export function probeHttps(host, address, { timeoutMs = 6000 } = {}) {
     const req = request({
       hostname: host, servername: host, port: 443, path: '/', method: 'HEAD',
       rejectUnauthorized: true, agent: false,
-      lookup: (_host, _options, callback) => callback(null, address, isIP(address)),
+      lookup: pinnedLookup(address),
       headers: { 'User-Agent': 'LibertaRouting-Canary/0.1', 'Accept': '*/*' }
     }, response => {
       const status = response.statusCode;

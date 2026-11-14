@@ -8,7 +8,7 @@ permissions:
 jobs:
   observe:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
@@ -16,5 +16,11 @@ jobs:
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 24
-      - run: npm run canary -- --strict
-      # No report upload, no commits, no automatic PRs, no route publication.
+      - run: npm run canary
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: public-availability-observation
+          path: .private/canary.json
+          include-hidden-files: true
+          retention-days: 14
+      # DNS and HTTPS observations from this runner are not device acceptance or a route-publication gate.

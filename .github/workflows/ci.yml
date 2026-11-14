@@ -10,6 +10,108 @@ concurrency:
   group: routing-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  catalog:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - run: node scripts/discover-catalog.mjs --shard ${{ matrix.shard }} --shards 10 --out .private/catalog.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: catalog-${{ matrix.shard }}
+          path: .private/catalog.json
+          include-hidden-files: true
+          retention-days: 14
+  apk:
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        service: [2gis, tbank, ozon, vk]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s test -p '*_test.py'
+      - run: sudo apt-get update -qq && sudo apt-get install -y apksigner
+      - name: Download a company-published APK without executing it
+        id: download
+        continue-on-error: true
+        run: node scripts/observe-apk.mjs --service ${{ matrix.service }} --out .private/apk-source.json --download .private/official.apk
+      - if: steps.download.outcome == 'success'
+        run: |
+          python3 scripts/inspect-apk.py --apk .private/official.apk --out .private/apk-candidates.json
+          python3 -m unittest discover -s test -p '*_test.py'
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: apk-domain-observations-${{ matrix.service }}
+          path: |
+            .private/apk-source.json
+            .private/apk-candidates.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+  networks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - run: node scripts/audit-networks.mjs --out .private/network-review.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: network-ownership-observations
+          path: .private/network-review.json
+          include-hidden-files: true
+          retention-days: 14
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        service: [tbank, vk, ozon, wildberries, yandex, gosuslugi, 2gis]
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - if: matrix.service == 'wildberries'
+        run: node scripts/observe-sources.mjs
+      - name: Discover service dependencies
+        env:
+          SERVICE: ${{ matrix.service }}
+          CERTIFICATES: ${{ matrix.service == 'tbank' && 'true' || 'false' }}
+          NETWORKS: ${{ matrix.service == 'wildberries' && 'true' || 'false' }}
+        run: node scripts/discover-services.mjs --service "$SERVICE" --ct "$CERTIFICATES" --networks "$NETWORKS" --out .private/discovery.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: discovery-candidates-${{ matrix.service }}
+          path: .private/discovery.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
   validate:
     strategy:
       fail-fast: false
@@ -45,3 +147,5 @@ jobs:
       - run: |
           export PATH="$GITHUB_WORKSPACE/.local/bin:$PATH"
           npm run verify:cores
+          npm run verify:routing
+          node scripts/verify-dns.mjs

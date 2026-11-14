@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "note": "First-party download pages only. Signer integrity is checked separately; publisher identity requires an independently pinned certificate. No APK or application code is redistributed.",
+  "services": [
+    {"id":"2gis","pages":["https://apk.2gis.ru/"],"downloadDomains":["2gis.ru","2gis.com"]},
+    {"id":"tbank","pages":["https://www.tbank.ru/apps/android-bank/","https://status.tbank-online.com/android-bank/"],"downloadDomains":["tbank.ru","t-bank-app.ru","tbank-online.com","cdn-tinkoff.ru"]},
+    {"id":"ozon","pages":["https://www.ozon.ru/app/"],"downloadDomains":["ozon.ru","ozone.ru","ozonusercontent.com"]},
+    {"id":"vk","pages":["https://vk.com/android_app"],"downloadDomains":["vk.com","vk.ru","userapi.com","vkuser.net"]}
+  ]
+}

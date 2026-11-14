@@ -1,0 +1,8 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:cdek.ru",
+    "domain:dostavista.ru"
+  ],
+  "outboundTag": "direct"
+}

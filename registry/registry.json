@@ -1,208 +1,391 @@
 {
   "version": 3,
-  "updated": "2026-11-12",
-  "note": "Собственный реестр Liberta. Все классы policy:direct входят в независимые списки. Флаг explicit используется только прежним совместимым профилем и не исключает домены из собственных наборов.",
+  "updated": "2026-11-14",
+  "note": "Собственный текущий реестр выбранных сервисов. Все policy: direct включаются в независимые наборы. Старые explicit-флаги сохранены для истории; совместимый профиль v1 собирается из отдельного неизменяемого снимка compatibility-v1.json.",
   "classes": {
     "banks": {
       "policy": "direct",
       "explicit": true,
-      "why": "отказ по иностранному адресу необратим и стоит денег",
+      "why": "Выбранные сервисы категории banks направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "tbank.ru",
-        "tinkoff.ru",
-        "tinkoff.com",
-        "tcsbank.ru",
-        "tbank.com",
-        "sberbank.ru",
-        "sber.ru",
-        "online.sberbank.ru",
-        "sberbank.com",
-        "vtb.ru",
-        "alfabank.ru",
         "alfabank.com",
+        "alfabank.gcdn.co",
+        "alfabank.ru",
+        "cdn-tinkoff.ru",
+        "data-tscbank.ru",
+        "domrfbank.ru",
         "gazprombank.ru",
-        "psbank.ru",
-        "rshb.ru",
-        "sovcombank.ru",
-        "otpbank.ru",
-        "raiffeisen.ru",
         "mkb.ru",
         "open.ru",
-        "domrfbank.ru",
+        "otpbank.ru",
+        "psb.ru",
+        "psbank.ru",
+        "raiffeisen.ru",
         "rsb.ru",
-        "alfabank.gcdn.co"
+        "rshb.ru",
+        "sber.ru",
+        "sberbank.com",
+        "sberbank.ru",
+        "sovcombank.ru",
+        "t-bank-app.ru",
+        "t-calls.ru",
+        "t-static.ru",
+        "t-tolk.ru",
+        "tbank-online.com",
+        "tbank.ru",
+        "tcsbank.ru",
+        "tinkoff.com",
+        "tinkoff.ru",
+        "tinkoffinsurance.ru",
+        "vtb.ru",
+        "wb-bank.ru",
+        "yandex-bank.net"
       ]
     },
     "payments": {
       "policy": "direct",
       "explicit": true,
-      "why": "платёжный шлюз блокирует транзакцию, а не страницу",
+      "why": "Выбранные сервисы категории payments направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "nspk.ru",
-        "nspk.com",
         "cbr.ru",
+        "cloudpayments.ru",
+        "inplat.ru",
+        "nspk.com",
+        "nspk.ru",
+        "payanyway.ru",
+        "paymaster.ru",
+        "paywb.com",
+        "paywb.ru",
+        "platron.ru",
+        "yoobusiness.ru",
+        "yookassa.ru",
         "yoomoney.ru"
       ]
     },
     "gov": {
       "policy": "direct",
       "explicit": true,
-      "why": "вход по иностранному адресу закрыт, восстановление через поддержку",
+      "why": "Выбранные сервисы категории gov направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "gosuslugi.ru",
         "esia.gosuslugi.ru",
-        "nalog.ru",
-        "nalog.gov.ru",
-        "sfr.gov.ru",
         "fssp.gov.ru",
+        "gosuslugi.ru",
+        "government.ru",
+        "kremlin.ru",
         "mos.ru",
         "mosreg.ru",
+        "nalog.gov.ru",
+        "nalog.ru",
+        "pochta.ru",
         "pravo.gov.ru",
         "regulation.gov.ru",
         "rosreestr.gov.ru",
+        "sfr.gov.ru",
         "sudrf.ru",
-        "government.ru",
-        "kremlin.ru",
-        "trudvsem.ru",
-        "pochta.ru"
+        "trudvsem.ru"
       ]
     },
     "telecom": {
       "policy": "direct",
       "explicit": false,
-      "why": "приложение оператора привязано к домашней сети, иностранный адрес даёт отказ",
+      "why": "Выбранные сервисы категории telecom направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "mts.ru",
+        "akado.ru",
         "beeline.ru",
+        "dom.ru",
         "megafon.ru",
-        "t2.ru",
-        "tele2.ru",
-        "yota.ru",
+        "mgts.ru",
+        "mts.ru",
         "rostelecom.ru",
         "rt.ru",
-        "dom.ru",
-        "mgts.ru",
-        "akado.ru"
+        "t2.ru",
+        "tele2.ru",
+        "tinkoffmobile.ru",
+        "yota.ru"
       ]
     },
     "marketplaces": {
       "policy": "direct",
       "explicit": false,
-      "why": "с апреля 2026 сами ограничивают вход с VPN",
+      "why": "Выбранные сервисы категории marketplaces направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "ozon.ru",
-        "wildberries.ru",
-        "wb.ru",
-        "wbstatic.net",
         "avito.ru",
         "megamarket.ru",
-        "sbermegamarket.ru"
+        "o3.ru",
+        "o3t.ru",
+        "o3team.ru",
+        "ozon-dostavka.ru",
+        "ozon.ru",
+        "ozone.ru",
+        "ozonpartners.ru",
+        "ozonusercontent.com",
+        "rwb.ru",
+        "sbermegamarket.ru",
+        "wb-basket.ru",
+        "wb.ru",
+        "wbbasket.ru",
+        "wbcontent.net",
+        "wbheld.ru",
+        "wbstatic.net",
+        "wbwh.ru",
+        "wbwh.tech",
+        "wibes.ru",
+        "wildberries.ru"
       ]
     },
     "retail": {
       "policy": "direct",
       "explicit": false,
-      "why": "магазины и аптеки режут вход по адресу, чаще всего молча",
+      "why": "Выбранные сервисы категории retail направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "dns-shop.ru",
-        "mvideo.ru",
-        "eldorado.ru",
+        "auchan.ru",
         "citilink.ru",
         "detmir.ru",
+        "dns-shop.ru",
+        "edadeal.ru",
+        "eldorado.ru",
         "goldapple.ru",
-        "letu.ru",
         "lamoda.ru",
+        "lenta.com",
+        "letu.ru",
+        "magnit.ru",
+        "metro-cc.ru",
+        "mvideo.ru",
+        "onlinetrade.ru",
         "perekrestok.ru",
         "pyaterochka.ru",
-        "magnit.ru",
-        "vkusvill.ru",
-        "auchan.ru",
-        "lenta.com"
+        "vkusvill.ru"
       ]
     },
     "delivery": {
       "policy": "direct",
       "explicit": false,
-      "why": "заказ привязан к адресу и оплате, отказ по гео выглядит как сбой",
+      "why": "Выбранные сервисы категории delivery направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
+        "delivery-club.ru",
         "eda.yandex.ru",
-        "lavka.yandex.ru",
-        "samokat.ru",
         "kuper.ru",
-        "delivery-club.ru"
+        "lavka.yandex.ru",
+        "samokat.ru"
       ]
     },
     "taxi": {
       "policy": "direct",
       "explicit": false,
-      "why": "поездка и оплата ломаются в середине сценария",
+      "why": "Выбранные сервисы категории taxi направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "taxi.yandex.ru",
-        "go.yandex"
+        "go.yandex",
+        "taxi.yandex.ru"
       ]
     },
     "transport": {
       "policy": "direct",
       "explicit": false,
-      "why": "билеты и посадочные не отдаются на зарубежный адрес",
+      "why": "Выбранные сервисы категории transport направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "rzd.ru",
+        "2gis.com",
+        "2gis.ru",
         "aeroflot.ru",
-        "s7.ru",
-        "pobeda.aero",
-        "utair.ru",
         "aviasales.ru",
+        "flysmartavia.com",
+        "onetwotrip.com",
+        "ostrovok.ru",
+        "pobeda.aero",
+        "rzd.ru",
+        "s7.ru",
+        "sutochno.ru",
         "tutu.ru",
-        "onetwotrip.com"
+        "uralairlines.ru",
+        "utair.ru"
       ]
     },
     "medicine": {
       "policy": "direct",
       "explicit": false,
-      "why": "запись к врачу привязана к полису и региону",
+      "why": "Выбранные сервисы категории medicine направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
+        "apteka.ru",
+        "apteki.ru",
         "emias.info",
-        "medsi.ru"
+        "helix.ru",
+        "invitro.ru",
+        "medsi.ru",
+        "megapteka.ru",
+        "rigla.ru",
+        "uteka.ru"
       ]
     },
     "media": {
       "policy": "direct",
       "explicit": false,
-      "why": "ограничивают показ с зарубежного адреса, часть просто зависает",
+      "why": "Выбранные сервисы категории media направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "kinopoisk.ru",
+        "band.link",
+        "bookmate.ru",
         "ivi.ru",
-        "okko.tv",
-        "wink.ru",
+        "kinopoisk.ru",
         "more.tv",
-        "start.ru",
+        "okko.tv",
         "premier.one",
         "rutube.ru",
+        "smotrim.ru",
+        "start.ru",
         "vkvideo.ru",
-        "smotrim.ru"
+        "wink.ru"
       ]
     },
     "social": {
       "policy": "direct",
       "explicit": false,
-      "why": "вход и платежи внутри сервиса, иностранный адрес даёт проверку",
+      "why": "Выбранные сервисы категории social направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "vk.com",
-        "vk.ru",
-        "ok.ru",
+        "api-hprof.odkl.ru",
+        "apiok.ru",
+        "dzen.ru",
+        "dzeninfra.ru",
         "mail.ru",
-        "max.ru"
+        "max.ru",
+        "mycdn.me",
+        "ok.me",
+        "ok.ru",
+        "okcdn.ru",
+        "tamtam.chat",
+        "userapi.com",
+        "vk-cdn.net",
+        "vk.cc",
+        "vk.com",
+        "vk.link",
+        "vk.ru",
+        "vkontakte.com",
+        "vkontakte.ru",
+        "vkuser.net",
+        "vkuseraudio.com",
+        "vkuseraudio.net",
+        "vkuserlive.com",
+        "vkuserlive.net",
+        "vkuservideo.com",
+        "vkuservideo.net",
+        "ya.cc",
+        "ya.ru",
+        "yandex.by",
+        "yandex.com",
+        "yandex.com.tr",
+        "yandex.kz",
+        "yandex.net",
+        "yandex.ru",
+        "yandex.st",
+        "yastatic.net"
       ]
     },
     "jobs_realty": {
       "policy": "direct",
       "explicit": false,
-      "why": "отклики и сделки с проверкой личности",
+      "why": "Выбранные сервисы категории jobs_realty направляются напрямую; доступность и зависимости проверяются отдельно.",
       "domains": [
-        "hh.ru",
-        "superjob.ru",
         "cian.ru",
-        "domclick.ru"
+        "domclick.ru",
+        "hh.ru",
+        "superjob.ru"
+      ]
+    },
+    "software": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "1c-bitrix.ru",
+        "1c.ru",
+        "ascon.ru",
+        "bitrix24.ru",
+        "drweb.ru",
+        "kaspersky.ru",
+        "kompas.ru",
+        "kontur.ru",
+        "nanocad.ru",
+        "r7-office.ru",
+        "redos.red-soft.ru",
+        "rosa.ru",
+        "skbkontur.ru",
+        "trueconf.ru"
+      ]
+    },
+    "education": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "dnevnik.ru",
+        "htmlacademy.ru",
+        "netology.ru",
+        "otus.ru",
+        "skillbox.ru",
+        "skillfactory.ru",
+        "skyeng.ru",
+        "skysmart.ru",
+        "stepik.org",
+        "uchi.ru"
+      ]
+    },
+    "services": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "afisha.ru",
+        "sberauto.com",
+        "sberhealth.ru"
+      ]
+    },
+    "logistics": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "cdek.ru",
+        "dostavista.ru"
+      ]
+    },
+    "news": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "championat.com",
+        "fontanka.ru",
+        "kommersant.ru",
+        "kp.ru",
+        "lenta.ru",
+        "rg.ru",
+        "ria.ru",
+        "sports.ru",
+        "tass.ru",
+        "vedomosti.ru"
+      ]
+    },
+    "auto": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "citydrive.ru",
+        "delimobil.ru",
+        "drom.ru"
+      ]
+    },
+    "insurance": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Выбранные сервисы: первичные страницы и отдельная проверка зависимостей.",
+      "domains": [
+        "rgs.ru"
+      ]
+    },
+    "food": {
+      "policy": "direct",
+      "explicit": true,
+      "why": "Первичные страницы российских сервисов; зависимости проверяются отдельно.",
+      "domains": [
+        "vkusnoitochka.ru"
       ]
     }
   },

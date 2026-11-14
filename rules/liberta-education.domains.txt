@@ -1,0 +1,10 @@
+domain:dnevnik.ru
+domain:htmlacademy.ru
+domain:netology.ru
+domain:otus.ru
+domain:skillbox.ru
+domain:skillfactory.ru
+domain:skyeng.ru
+domain:skysmart.ru
+domain:stepik.org
+domain:uchi.ru

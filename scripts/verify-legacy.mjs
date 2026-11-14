@@ -8,7 +8,7 @@ const root = resolve('.private/legacy');
 const expected = '399e02f737cc97bab29cdbbe54a145269c091048dd6cbd099435f44dd16e219d';
 let directory;
 try {
-  const saved = await readFile(join(root, 'releases/smart-v5.generated.json'));
+  const saved = await readFile(resolve('.private/compatibility-baseline.json'));
   ensure(sha256(saved) === expected, 'legacy baseline differs from the supplied snapshot');
   await mkdir('.private', { recursive: true, mode: 0o700 });
   directory = await mkdtemp(resolve('.private/legacy-check-'));
@@ -21,6 +21,6 @@ try {
   ensure(sha256(JSON.stringify(rebuilt,null,2)+'\n') === expected, 'Regression: routing, DNS or other configuration changed');
   console.log(`Rename-only regression passed: all fields except remarks match supplied baseline (${expected}). No live configuration changed.`);
 } catch (error) {
-  console.error(error.code === 'ENOENT' ? 'Private supplied Smart v5 baseline is unavailable; legacy verification was not performed.' : error.message);
+  console.error(error.code === 'ENOENT' ? 'Private compatibility baseline is unavailable; verification was not performed.' : error.message);
   process.exitCode = 1;
 } finally { if (directory) await rm(directory, { recursive: true, force: true }); }

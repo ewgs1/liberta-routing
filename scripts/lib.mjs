@@ -4,7 +4,7 @@ import { isIP } from 'node:net';
 import { readFile, lstat, mkdtemp, mkdir, writeFile, rename, rm } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 
-export const ARTIFACTS = ['smart.domains.txt', 'smart.singbox.json', 'smart.xray.json'];
+export const ARTIFACTS = ['liberta-v1.domains.txt', 'liberta-v1.singbox.json', 'liberta-v1.xray.json'];
 export const json = value => JSON.stringify(value, null, 2) + '\n';
 export const sha256 = value => createHash('sha256').update(value).digest('hex');
 export const releaseTag = registry => registry.releaseTag ?? `v${registry.version}`;
@@ -66,6 +66,46 @@ export function validateRegistry(registry) {
 export function allEntries(registry) {
   return Object.entries(registry.classes).flatMap(([name, cls]) => cls.domains.map(domain => ({id:domain,class:name,domain,match:'suffix',route:'direct',explicit:cls.explicit}))).sort((a,b)=>a.domain < b.domain ? -1 : a.domain > b.domain ? 1 : 0);
 }
+export function validateProvenance(registry, provenance, now = new Date()) {
+  validateRegistry(registry);
+  ensure(provenance.schemaVersion === 1 && Array.isArray(provenance.entries), 'invalid provenance registry');
+  const expected = new Map(allEntries(registry).map(entry => [entry.domain, entry.class]));
+  const seen = new Set();
+  for (const entry of provenance.entries) {
+    exactKeys(entry, ['domain', 'class', 'origin', 'addedAt', 'source'], 'provenance entry');
+    ensure(expected.get(entry.domain) === entry.class && !seen.has(entry.domain), 'provenance domain/class missing, duplicate or mismatched');
+    seen.add(entry.domain);
+    ensure(Array.isArray(entry.source) && entry.source.length > 0, 'provenance source required');
+    if (entry.origin === 'existing-liberta-registry') ensure(entry.addedAt === null, 'do not invent original addition dates');
+    else {
+      ensure(['first-party-document-review', 'operator-service-report'].includes(entry.origin), 'unknown provenance origin');
+      date(entry.addedAt, now, 'addedAt');
+    }
+    for (const source of entry.source) {
+      if (source.result === 'operator-reported-bundle') {
+        exactKeys(source, ['record', 'checkedAt', 'result', 'note'], 'operator source');
+        ensure(entry.origin === 'operator-service-report' && source.record === 'registry/evidence/tbank-user-report.json', 'invalid operator evidence');
+        date(source.checkedAt, now, 'checkedAt');
+        ensure(typeof source.note === 'string' && source.note.length > 0, 'operator evidence note required');
+        continue;
+      }
+      publicHttps(source.url);
+      if (source.result === 'pending-review') {
+        exactKeys(source, ['url', 'checkedAt', 'result'], 'pending source');
+        ensure(entry.origin === 'existing-liberta-registry' && source.checkedAt === null, 'new domains require a checked first-party reference');
+      } else {
+        exactKeys(source, ['url', 'checkedAt', 'result', 'reference', 'note'], 'reviewed source');
+        ensure(source.result === 'first-party-reference', 'unknown source result');
+        date(source.checkedAt, now, 'checkedAt');
+        const host = publicHttps(source.reference).hostname;
+        ensure(host === entry.domain || host.endsWith(`.${entry.domain}`), 'source reference does not identify this domain');
+        ensure(typeof source.note === 'string' && source.note.length > 0, 'source review note required');
+      }
+    }
+  }
+  ensure(seen.size === expected.size, 'provenance must cover every selected domain exactly once');
+  return provenance;
+}
 export function activeEntries(registry) {
   const measured = new Set(registry.measured_exceptions.map(entry => entry.domain));
   return allEntries(registry).filter(entry => entry.explicit || measured.has(entry.domain));
@@ -75,8 +115,8 @@ export function render(registry) {
   const domains=activeEntries(registry).map(entry=>entry.domain);
   ensure(domains.length > 0, 'empty explicit list');
   return {
-    'smart.domains.txt': domains.map(domain=>'domain:'+domain).join('\n')+'\n',
-    'smart.singbox.json':json({version:1,rules:[{domain_suffix:domains}]})
+    'liberta-v1.domains.txt': domains.map(domain=>'domain:'+domain).join('\n')+'\n',
+    'liberta-v1.singbox.json':json({version:1,rules:[{domain_suffix:domains}]})
   };
 }
 export async function atomicDirectory(target, files) {
