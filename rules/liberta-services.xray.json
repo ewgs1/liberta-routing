@@ -1,0 +1,9 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:afisha.ru",
+    "domain:sberauto.com",
+    "domain:sberhealth.ru"
+  ],
+  "outboundTag": "direct"
+}

@@ -40,6 +40,41 @@ jobs:
         with:
           persist-credentials: false
       - run: python3 -m unittest discover -s test -p '*_test.py'
+      - run: sudo apt-get update -qq && sudo apt-get install -y apksigner
+      - name: Download a company-published APK without executing it
+        id: download
+        continue-on-error: true
+        run: node scripts/observe-apk.mjs --out .private/apk-source.json --download .private/official.apk
+      - if: steps.download.outcome == 'success'
+        run: |
+          python3 scripts/inspect-apk.py --apk .private/official.apk --out .private/apk-candidates.json
+          python3 -m unittest discover -s test -p '*_test.py'
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: apk-domain-observations
+          path: |
+            .private/apk-source.json
+            .private/apk-candidates.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+  networks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: 24
+      - run: node scripts/audit-networks.mjs --out .private/network-review.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: network-ownership-observations
+          path: .private/network-review.json
+          include-hidden-files: true
+          retention-days: 14
   sources:
     runs-on: ubuntu-latest
     timeout-minutes: 10

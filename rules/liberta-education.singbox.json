@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "dnevnik.ru",
+        "htmlacademy.ru",
+        "netology.ru",
+        "otus.ru",
+        "skillbox.ru",
+        "skillfactory.ru",
+        "skyeng.ru",
+        "skysmart.ru",
+        "stepik.org",
+        "uchi.ru"
+      ]
+    }
+  ]
+}

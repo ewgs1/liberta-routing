@@ -1,6 +1,7 @@
 import { readFile, readdir, mkdir, mkdtemp, lstat, rename, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateNetworks } from './network-data.mjs';
 import { ensure, json } from './lib.mjs';
 import { independentFiles, selectiveTemplate, happProfile } from './rule-sets.mjs';
 
@@ -9,11 +10,12 @@ export async function generatedRules() {
   const registryBytes = await readFile(join(ROOT, 'registry/registry.json'), 'utf8');
   const provenanceBytes = await readFile(join(ROOT, 'registry/provenance.json'), 'utf8');
   const registry = JSON.parse(registryBytes), provenance = JSON.parse(provenanceBytes);
+  const networks=validateNetworks(JSON.parse(await readFile(join(ROOT,'registry/networks.json'),'utf8')));
   return {
-    rules: independentFiles(registry, provenance, registryBytes, provenanceBytes),
-    template: json(selectiveTemplate(registry, JSON.parse(await readFile(join(ROOT, 'dist/liberta-v1.xray.json'), 'utf8')))),
+    rules: independentFiles(registry, provenance, registryBytes, provenanceBytes, networks),
+    template: json(selectiveTemplate(registry, JSON.parse(await readFile(join(ROOT, 'dist/liberta-v1.xray.json'), 'utf8')), {networks:networks.entries})),
     happ: Object.fromEntries([false, true].flatMap(fakeDNS => {
-      const profile = happProfile(registry, { fakeDNS });
+      const profile = happProfile(registry, { fakeDNS, networks:networks.entries });
       const name = fakeDNS ? 'liberta-selective-fakedns' : 'liberta-selective';
       return [[name + '.json', json(profile)], [name + '.txt', 'happ://routing/add/' + Buffer.from(JSON.stringify(profile)).toString('base64') + '\n']];
     }))

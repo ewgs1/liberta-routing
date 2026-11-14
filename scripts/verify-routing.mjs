@@ -122,6 +122,11 @@ try {
     ensure(await probe(inboundPort,host)==='proxy', `unexpected direct route: ${host}`);
     checked++;
   }
+  const networks=await readJson('registry/networks.json');
+  for(const entry of networks.entries) {
+    ensure(await probe(inboundPort,entry.prefix.split('/')[0],null)==='direct','reviewed raw service IP must use direct');checked++;
+  }
+  if(networks.entries.length){ensure(await probe(inboundPort,networks.entries[0].prefix.split('/')[0],'tenant.cloud.vk.com')==='proxy','cloud override must precede service IP fallback');checked++;}
   ensure(await probe(inboundPort,'1.1.1.1',null)==='proxy','unclassified IPv4 must use proxy'); checked++;
   ensure(await probe(inboundPort,'2001:4860:4860::8888',null)==='proxy','unclassified IPv6 must use proxy'); checked++;
   ensure(await probe(inboundPort,'1.1.1.1','api.t-bank-app.ru')==='direct','HTTP sniffed service name must select direct'); checked++;

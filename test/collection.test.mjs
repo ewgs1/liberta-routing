@@ -30,3 +30,14 @@ test('Remnawave deployment preserves connections, rejects drift and supports a v
   await applyPlan(plan,api,{rollback:true});assert.deepEqual(current,template);
   const tampered=structuredClone(plan);tampered.after.remarks='modified';await assert.rejects(()=>applyPlan(tampered,api),/modified deployment/);
 });
+
+import { reviewQueue } from '../scripts/prepare-review-queue.mjs';
+import { apkLinks } from '../scripts/observe-apk.mjs';
+test('incomplete daily observations cannot replace the complete review queue',()=>{
+ assert.throws(()=>reviewQueue([],catalog),/incomplete/);
+ const reports=[{checkedAt:'2026-11-14T00:00:00Z',services:catalog.services.map(s=>({candidates:[{service:s.id,domain:s.domains[0],route:'already-covered',evidence:[]}]}))}];
+ assert.equal(reviewQueue(reports,catalog).services.length,catalog.services.length);
+});
+test('official APK discovery refuses third-party mirrors, credentials and query parameters',()=>{
+ assert.deepEqual(apkLinks('<a href="https://download.2gis.ru/app.apk">ok</a><a href="https://unrelated.net/app.apk">mirror</a><a href="https://user:pass@apk.2gis.ru/app.apk">bad</a>','https://apk.2gis.ru/'),['https://download.2gis.ru/app.apk']);
+});

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { args, ensure, readJson, render, json } from './lib.mjs';
 import { selectiveTemplate } from './rule-sets.mjs';
 
-export function integrate(base, registry, format, { mode = 'rename', template } = {}) {
+export function integrate(base, registry, format, { mode = 'rename', template, networks = [] } = {}) {
   ensure(format === 'xray', 'Automatic replacement of the full sing-box routing is disabled; its source export covers explicit domain rules only');
   ensure(base && typeof base === 'object' && !Array.isArray(base), 'configuration object required');
   const result=structuredClone(base);
@@ -15,7 +15,7 @@ export function integrate(base, registry, format, { mode = 'rename', template } 
     ensure(byTag.size === base.outbounds.length && byTag.has('proxy') && byTag.get('direct')?.protocol === 'freedom' && byTag.get('block')?.protocol === 'blackhole', 'expected unique proxy/direct/block outbounds; no connection settings will be invented');
     ensure(!base.fakedns && !base.routing?.balancers && !base.routing?.rules?.some(rule => rule.balancerTag), 'existing FakeDNS or balancers require a separate integration review');
     ensure(base.inbounds.every(inbound => ['socks', 'http'].includes(inbound.protocol) && inbound.listen === '127.0.0.1'), 'only local client SOCKS/HTTP inbounds are supported');
-    const generated = selectiveTemplate(registry, template);
+    const generated = selectiveTemplate(registry, template, {networks});
     result.remarks = 'Liberta Routing v1 — Selective test';
     result.dns = generated.dns;
     result.routing = generated.routing;
@@ -40,7 +40,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   try {
     const options = args(process.argv.slice(2), ['--base', '--registry', '--format', '--out', '--mode']);
     ensure(options['--base'] && options['--out'] && options['--format'], 'required: --base --format --out');
-    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry/registry.json'), options['--format'], { mode: options['--mode'] ?? 'rename', template: options['--mode'] === 'selective' ? await readJson('dist/liberta-v1.xray.json') : undefined });
+    const result = integrate(await readJson(options['--base']), await readJson(options['--registry'] ?? 'registry/registry.json'), options['--format'], { mode: options['--mode'] ?? 'rename', networks:(await readJson('registry/networks.json')).entries, template: options['--mode'] === 'selective' ? await readJson('dist/liberta-v1.xray.json') : undefined });
     await mkdir('.private', { recursive: true, mode: 0o700 });
     await writeFile(await privateOutput(options['--out'], options['--base']), json(result), { mode: 0o600, flag: 'wx' });
     console.log('Created separate private test configuration. Original profile unchanged. No profile was activated.');

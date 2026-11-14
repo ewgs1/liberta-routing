@@ -3,8 +3,15 @@
   "rules": [
     {
       "domain_suffix": [
+        "apteka.ru",
+        "apteki.ru",
         "emias.info",
-        "medsi.ru"
+        "helix.ru",
+        "invitro.ru",
+        "medsi.ru",
+        "megapteka.ru",
+        "rigla.ru",
+        "uteka.ru"
       ]
     }
   ]

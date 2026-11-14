@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { ensure } from './lib.mjs';
 try{
- const base=process.env.BASE_SHA;
+ const base=process.env.BASE_SHA||execFileSync('git',['merge-base','HEAD','origin/main'],{encoding:'utf8'}).trim();
  if(base&&!/^0+$/.test(base)){
   ensure(/^[a-f0-9]{40}$/.test(base),'invalid base SHA');
   let hasOriginalRegistry=false;
@@ -33,6 +33,11 @@ try{
    const domains=r=>new Set(Object.values(r.classes).flatMap(group=>group.domains));
    const before=domains(previous),after=domains(current);
    console.log(JSON.stringify({independentRouteChanges:{added:[...after].filter(domain=>!before.has(domain)).sort(),removed:[...before].filter(domain=>!after.has(domain)).sort()}}));
+   try {
+    const beforeIp=JSON.parse(execFileSync('git',['show',`${base}:registry/networks.json`],{encoding:'utf8'})).entries.map(e=>e.prefix);
+    const afterIp=JSON.parse(readFileSync('registry/networks.json','utf8')).entries.map(e=>e.prefix);
+    console.log(JSON.stringify({serviceIpChanges:{added:afterIp.filter(p=>!beforeIp.includes(p)),removed:beforeIp.filter(p=>!afterIp.includes(p))}}));
+   }catch(error){if(!String(error.message).includes('does not exist'))console.log('Previous source has no service-IP registry; new routes require review.');}
    let hadSnapshot=false;
    try{execFileSync('git',['cat-file','-e',`${base}:registry/compatibility-v1.json`],{stdio:'ignore'});hadSnapshot=true;}catch{}
    if(hadSnapshot) ensure(execFileSync('git',['diff',base,'HEAD','--','registry/compatibility-v1.json'],{encoding:'utf8'}).length===0,'frozen compatible registry changed');

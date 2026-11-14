@@ -1,3 +1,4 @@
+import { validateNetworks } from './network-data.mjs';
 import { allEntries, ensure, json, sha256, validateRegistry, validateProvenance } from './lib.mjs';
 
 export const DIRECT_TAG = 'direct';
@@ -29,7 +30,7 @@ export function renderSet(domains, route = DIRECT_TAG) {
   };
 }
 
-export function independentFiles(registry, provenance, registryBytes, provenanceBytes) {
+export function independentFiles(registry, provenance, registryBytes, provenanceBytes, networks = {schemaVersion:1,policy:"none",entries:[]}) {
   const domains = selectedDomains(registry);
   validateProvenance(registry, provenance);
   const sourceDomains = provenance.entries.map(entry => entry.domain).sort(lexical);
@@ -53,6 +54,13 @@ export function independentFiles(registry, provenance, registryBytes, provenance
       sets[tag].files[format] = { name, sha256: sha256(content), bytes: Buffer.byteLength(content) };
     }
   }
+  validateNetworks(networks);
+  const prefixes=networks.entries.map(entry=>entry.prefix).sort();
+  if(prefixes.length) {
+    files['liberta-direct-ip.cidrs.txt']=prefixes.join('\n')+'\n';
+    files['liberta-direct-ip.singbox.json']=json({version:1,rules:[{ip_cidr:prefixes}]});
+    files['liberta-direct-ip.xray.json']=json({type:'field',ip:prefixes,outboundTag:DIRECT_TAG});
+  }
   files['manifest.json'] = json({
     schemaVersion: 1,
     project: 'liberta-routing',
@@ -60,6 +68,7 @@ export function independentFiles(registry, provenance, registryBytes, provenance
     matching: 'domain-and-subdomains',
     precedence: ['liberta-proxy', 'liberta-direct', 'default-proxy'],
     domains: domains.length,
+    serviceNetworks: {prefixes:prefixes.length,registrySha256:sha256(json(networks)),validUntil:networks.entries.length?networks.entries.map(e=>e.validUntil).sort()[0]:null,files:Object.fromEntries(Object.entries(files).filter(([name])=>name.startsWith('liberta-direct-ip.')).map(([name,body])=>[name,{sha256:sha256(body),bytes:Buffer.byteLength(body)}]))},
     categories: Object.keys(registry.classes).length,
     registrySha256: sha256(registryBytes),
     provenanceSha256: sha256(provenanceBytes),
@@ -77,7 +86,7 @@ export function independentFiles(registry, provenance, registryBytes, provenance
   return files;
 }
 
-export function selectiveTemplate(registry, compatibleTemplate) {
+export function selectiveTemplate(registry, compatibleTemplate, {networks = []} = {}) {
   const domains = selectedDomains(registry);
   const result = structuredClone(compatibleTemplate);
   ensure(result.dns?.servers && result.inbounds && result.outbounds, 'complete base template required');
@@ -93,6 +102,7 @@ export function selectiveTemplate(registry, compatibleTemplate) {
       { ...domainRule(PROXY_DOMAINS), outboundTag: PROXY_TAG },
       { type: 'field', domain: ['regexp:.*\\.local$', 'regexp:.*\\.lan$', 'domain:localhost'], outboundTag: DIRECT_TAG },
       domainRule(domains),
+      ...(networks.length?[{type:'field',ip:networks.map(e=>e.prefix),outboundTag:DIRECT_TAG}]:[]),
       { type: 'field', ip: ['77.88.8.8/32', '77.88.8.1/32'], port: '53', network: 'tcp,udp', outboundTag: DIRECT_TAG },
       { type: 'field', ip: LOCAL_NETWORKS, outboundTag: DIRECT_TAG },
       { type: 'field', network: 'tcp,udp', outboundTag: PROXY_TAG }
@@ -108,7 +118,7 @@ export function selectiveTemplate(registry, compatibleTemplate) {
   return result;
 }
 
-export function happProfile(registry, { fakeDNS = false } = {}) {
+export function happProfile(registry, { fakeDNS = false, networks = [] } = {}) {
   return {
     Name: fakeDNS ? 'Liberta v1 — Selective FakeDNS test' : 'Liberta v1 — Selective test',
     GlobalProxy: true, RouteOrder: 'block-proxy-direct',
@@ -116,7 +126,7 @@ export function happProfile(registry, { fakeDNS = false } = {}) {
     DomesticDNSType: 'DoU', DomesticDNSDomain: '', DomesticDNSIP: '77.88.8.8',
     Geoipurl: '', Geositeurl: '', LastUpdated: String(Date.parse(registry.updated + 'T00:00:00Z') / 1000),
     DnsHosts: { 'cloudflare-dns.com': '1.1.1.1' },
-    DirectSites: selectedDomains(registry).map(domain => `domain:${domain}`), DirectIp: [...LOCAL_NETWORKS],
+    DirectSites: selectedDomains(registry).map(domain => `domain:${domain}`), DirectIp: [...LOCAL_NETWORKS,...networks.map(e=>e.prefix)],
     ProxySites: PROXY_DOMAINS.map(domain => `domain:${domain}`), ProxyIp: [], BlockSites: [], BlockIp: [],
     DomainStrategy: 'AsIs', FakeDNS: fakeDNS, UseChunkFiles: false
   };

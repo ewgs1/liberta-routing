@@ -11,7 +11,8 @@ const registryBytes = await readFile('registry/registry.json', 'utf8');
 const provenanceBytes = await readFile('registry/provenance.json', 'utf8');
 const registry = JSON.parse(registryBytes), provenance = JSON.parse(provenanceBytes);
 const compatible = await readJson('dist/liberta-v1.xray.json');
-const files = independentFiles(registry, provenance, registryBytes, provenanceBytes);
+const networks=await readJson('registry/networks.json');
+const files = independentFiles(registry, provenance, registryBytes, provenanceBytes, networks);
 const selected = selectedDomains(registry);
 const original = await readJson('registry/compatibility-v1.json');
 const route = (template, domain) => {
@@ -22,7 +23,8 @@ const route = (template, domain) => {
 };
 
 test('independent list preserves service coverage except documented exclusions', () => {
-  assert.equal(selected.length, 173);
+  assert.ok(selected.length>=173);
+  for(const domain of ['1c.ru','netology.ru','invitro.ru','cdek.ru','rgs.ru','kompas.ru','vkusnoitochka.ru'])assert.ok(selected.includes(domain),domain);
   assert.deepEqual(selected, allEntries(registry).map(entry => entry.domain));
   for (const [name, group] of Object.entries(original.classes)) {
     for (const domain of group.domains) {
@@ -40,7 +42,7 @@ test('all three independent formats describe the same domain-and-subdomain set',
   assert.deepEqual(files['liberta-direct.domains.txt'].trim().split('\n'), xray.domain);
   assert.equal(xray.outboundTag, 'direct');
 });
-test('13 categories cover the whole registry and contain no added domains', () => {
+test('service categories cover the whole registry and contain no added domains', () => {
   const union = new Set();
   for (const [name, group] of Object.entries(registry.classes)) {
     const rule = JSON.parse(files[`liberta-${name.replaceAll('_', '-')}.singbox.json`]);
@@ -52,11 +54,13 @@ test('13 categories cover the whole registry and contain no added domains', () =
 test('manifest verifies every generated file and the input evidence registry', () => {
   const manifest = JSON.parse(files['manifest.json']);
   assert.equal(manifest.domains, selected.length);
-  assert.equal(manifest.categories, 13);
+  assert.equal(manifest.categories,Object.keys(registry.classes).length);
   assert.equal(manifest.registrySha256, sha256(registryBytes));
   assert.equal(manifest.provenanceSha256, sha256(provenanceBytes));
   assert.deepEqual(manifest.externalRoutingDatabases, []);
-  assert.deepEqual(manifest.sourceReview, {pending:98,firstPartyReference:72,operatorReportedBundle:3,applicationTests:'not-performed-for-this-rule-set'});
+  assert.equal(manifest.sourceReview.pending,98);assert.ok(manifest.sourceReview.firstPartyReference>=72);assert.equal(manifest.sourceReview.operatorReportedBundle,3);assert.equal(manifest.sourceReview.applicationTests,'not-performed-for-this-rule-set');
+  assert.equal(manifest.serviceNetworks.prefixes,networks.entries.length);
+  for(const [name,info] of Object.entries(manifest.serviceNetworks.files))assert.equal(sha256(files[name]),info.sha256);
   for (const set of Object.values(manifest.sets)) for (const file of Object.values(set.files)) {
     assert.equal(sha256(files[file.name]), file.sha256);
     assert.equal(Buffer.byteLength(files[file.name]), file.bytes);
@@ -69,7 +73,7 @@ test('missing provenance stops generation without silently dropping services', (
 test('generation order is stable and requires no network source', () => {
   const reverse = structuredClone(registry);
   for (const value of Object.values(reverse.classes)) value.domains.reverse();
-  const first = independentFiles(reverse, provenance, registryBytes, provenanceBytes);
+  const first = independentFiles(reverse, provenance, registryBytes, provenanceBytes, networks);
   for (const name of Object.keys(files)) assert.equal(first[name], files[name]);
   for (const [name, body] of Object.entries(files)) {
     assert.ok(!/(?:geosite:|geoip:|include:|ext:)/.test(body), name);
@@ -162,3 +166,11 @@ test('Happ native routing and optional FakeDNS profile share the own registry', 
   assert.deepEqual(experimental.DirectSites,standard.DirectSites);
   assert.equal(standard.Geoipurl,''); assert.equal(standard.Geositeurl,'');
 });
+
+ test('service IP exports agree across formats and reach the full profile without external geoip',()=>{
+  const prefixes=networks.entries.map(e=>e.prefix).sort();
+  const xray=JSON.parse(files['liberta-direct-ip.xray.json']),singbox=JSON.parse(files['liberta-direct-ip.singbox.json']);
+  assert.deepEqual(xray.ip,prefixes);assert.deepEqual(singbox.rules[0].ip_cidr,prefixes);assert.deepEqual(files['liberta-direct-ip.cidrs.txt'].trim().split('\n'),prefixes);
+  const full=selectiveTemplate(registry,compatible,{networks:networks.entries});assert.ok(full.routing.rules.some(r=>r.ip?.length===prefixes.length&&r.outboundTag==='direct'));
+  assert.ok(full.routing.rules.findIndex(r=>r.domain?.includes('domain:cloud.vk.com'))<full.routing.rules.findIndex(r=>r.ip?.length===prefixes.length));
+ });

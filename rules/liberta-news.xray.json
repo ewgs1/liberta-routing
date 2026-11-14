@@ -1,0 +1,16 @@
+{
+  "type": "field",
+  "domain": [
+    "domain:championat.com",
+    "domain:fontanka.ru",
+    "domain:kommersant.ru",
+    "domain:kp.ru",
+    "domain:lenta.ru",
+    "domain:rg.ru",
+    "domain:ria.ru",
+    "domain:sports.ru",
+    "domain:tass.ru",
+    "domain:vedomosti.ru"
+  ],
+  "outboundTag": "direct"
+}

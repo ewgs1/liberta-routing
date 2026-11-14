@@ -51,10 +51,10 @@
       "domains": [
         "citydrive.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "citydrive.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://citydrive.ru/"
       ],
@@ -71,10 +71,10 @@
       "domains": [
         "delimobil.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "delimobil.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://delimobil.ru/"
       ],
@@ -91,10 +91,10 @@
       "domains": [
         "drom.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "drom.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://drom.ru/"
       ],
@@ -140,6 +140,26 @@
       ],
       "ctRoots": [
         "whoosh-bike.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "absolutbank-ru",
+      "name": "Абсолют Банк",
+      "category": "banks",
+      "domains": [
+        "absolutbank.ru"
+      ],
+      "activeDomains": [],
+      "candidateDomains": [
+        "absolutbank.ru"
+      ],
+      "pages": [
+        "https://absolutbank.ru/"
+      ],
+      "ctRoots": [
+        "absolutbank.ru"
       ],
       "asns": [],
       "products": []
@@ -411,10 +431,10 @@
       "domains": [
         "psb.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "psb.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://psb.ru/"
       ],
@@ -600,7 +620,6 @@
       "name": "Т-Банк",
       "category": "banks",
       "domains": [
-        "absolutbank.ru",
         "cdn-tinkoff.ru",
         "data-tscbank.ru",
         "t-bank-app.ru",
@@ -635,7 +654,6 @@
         "tinkoffmobile.ru"
       ],
       "candidateDomains": [
-        "absolutbank.ru",
         "tinkoff-edu.ru",
         "tinkoff-group.com",
         "tinkoffcapital.ru",
@@ -785,10 +803,10 @@
       "domains": [
         "dnevnik.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "dnevnik.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://dnevnik.ru/"
       ],
@@ -825,10 +843,10 @@
       "domains": [
         "htmlacademy.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "htmlacademy.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://htmlacademy.ru/"
       ],
@@ -845,10 +863,10 @@
       "domains": [
         "netology.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "netology.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://netology.ru/"
       ],
@@ -865,10 +883,10 @@
       "domains": [
         "otus.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "otus.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://otus.ru/"
       ],
@@ -905,10 +923,10 @@
       "domains": [
         "skillbox.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "skillbox.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://skillbox.ru/"
       ],
@@ -925,10 +943,10 @@
       "domains": [
         "skillfactory.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "skillfactory.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://skillfactory.ru/"
       ],
@@ -945,15 +963,35 @@
       "domains": [
         "skyeng.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "skyeng.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://skyeng.ru/"
       ],
       "ctRoots": [
         "skyeng.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skysmart-ru",
+      "name": "skysmart.ru",
+      "category": "education",
+      "domains": [
+        "skysmart.ru"
+      ],
+      "activeDomains": [
+        "skysmart.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skysmart.ru/"
+      ],
+      "ctRoots": [
+        "skysmart.ru"
       ],
       "asns": [],
       "products": []
@@ -965,10 +1003,10 @@
       "domains": [
         "stepik.org"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "stepik.org"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://stepik.org/"
       ],
@@ -985,10 +1023,10 @@
       "domains": [
         "uchi.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "uchi.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://uchi.ru/"
       ],
@@ -1105,10 +1143,10 @@
       "domains": [
         "vkusnoitochka.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "vkusnoitochka.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://vkusnoitochka.ru/"
       ],
@@ -1627,10 +1665,10 @@
       "domains": [
         "rgs.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "rgs.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://rgs.ru/"
       ],
@@ -1927,10 +1965,10 @@
       "domains": [
         "cdek.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "cdek.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://cdek.ru/"
       ],
@@ -1947,10 +1985,10 @@
       "domains": [
         "dostavista.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "dostavista.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://dostavista.ru/"
       ],
@@ -2446,10 +2484,10 @@
       "domains": [
         "apteka.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "apteka.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://apteka.ru/"
       ],
@@ -2466,10 +2504,10 @@
       "domains": [
         "apteki.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "apteki.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://apteki.ru/"
       ],
@@ -2566,10 +2604,10 @@
       "domains": [
         "helix.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "helix.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://helix.ru/"
       ],
@@ -2586,10 +2624,10 @@
       "domains": [
         "invitro.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "invitro.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://invitro.ru/"
       ],
@@ -2626,10 +2664,10 @@
       "domains": [
         "megapteka.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "megapteka.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://megapteka.ru/"
       ],
@@ -2666,10 +2704,10 @@
       "domains": [
         "rigla.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "rigla.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://rigla.ru/"
       ],
@@ -2686,10 +2724,10 @@
       "domains": [
         "uteka.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "uteka.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://uteka.ru/"
       ],
@@ -2726,10 +2764,10 @@
       "domains": [
         "championat.com"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "championat.com"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://championat.com/"
       ],
@@ -2746,10 +2784,10 @@
       "domains": [
         "fontanka.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "fontanka.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://fontanka.ru/"
       ],
@@ -2806,10 +2844,10 @@
       "domains": [
         "kommersant.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "kommersant.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://kommersant.ru/"
       ],
@@ -2826,10 +2864,10 @@
       "domains": [
         "kp.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "kp.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://kp.ru/"
       ],
@@ -2846,10 +2884,10 @@
       "domains": [
         "lenta.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "lenta.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://lenta.ru/"
       ],
@@ -2886,10 +2924,10 @@
       "domains": [
         "rg.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "rg.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://rg.ru/"
       ],
@@ -2906,10 +2944,10 @@
       "domains": [
         "ria.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "ria.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://ria.ru/"
       ],
@@ -2926,10 +2964,10 @@
       "domains": [
         "sports.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "sports.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://sports.ru/"
       ],
@@ -2946,10 +2984,10 @@
       "domains": [
         "tass.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "tass.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://tass.ru/"
       ],
@@ -2966,10 +3004,10 @@
       "domains": [
         "vedomosti.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "vedomosti.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://vedomosti.ru/"
       ],
@@ -3006,10 +3044,10 @@
       "domains": [
         "cloudpayments.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "cloudpayments.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://cloudpayments.ru/"
       ],
@@ -3026,10 +3064,10 @@
       "domains": [
         "inplat.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "inplat.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://inplat.ru/"
       ],
@@ -3086,10 +3124,10 @@
       "domains": [
         "payanyway.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "payanyway.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://payanyway.ru/"
       ],
@@ -3106,10 +3144,10 @@
       "domains": [
         "paymaster.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "paymaster.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://paymaster.ru/"
       ],
@@ -3126,10 +3164,10 @@
       "domains": [
         "platron.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "platron.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://platron.ru/"
       ],
@@ -3166,10 +3204,10 @@
       "domains": [
         "yoobusiness.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "yoobusiness.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://yoobusiness.ru/"
       ],
@@ -3186,10 +3224,10 @@
       "domains": [
         "yookassa.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "yookassa.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://yookassa.ru/"
       ],
@@ -3526,10 +3564,10 @@
       "domains": [
         "metro-cc.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "metro-cc.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://metro-cc.ru/"
       ],
@@ -3586,10 +3624,10 @@
       "domains": [
         "onlinetrade.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "onlinetrade.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://onlinetrade.ru/"
       ],
@@ -3746,10 +3784,10 @@
       "domains": [
         "afisha.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "afisha.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://afisha.ru/"
       ],
@@ -3886,10 +3924,10 @@
       "domains": [
         "sberauto.com"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "sberauto.com"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://sberauto.com/"
       ],
@@ -3926,10 +3964,10 @@
       "domains": [
         "sberhealth.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "sberhealth.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://sberhealth.ru/"
       ],
@@ -4370,10 +4408,10 @@
       "domains": [
         "1c-bitrix.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "1c-bitrix.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://1c-bitrix.ru/"
       ],
@@ -4390,10 +4428,10 @@
       "domains": [
         "1c.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "1c.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://1c.ru/"
       ],
@@ -4430,10 +4468,10 @@
       "domains": [
         "ascon.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "ascon.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://ascon.ru/"
       ],
@@ -4470,10 +4508,10 @@
       "domains": [
         "bitrix24.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "bitrix24.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://bitrix24.ru/"
       ],
@@ -4490,10 +4528,10 @@
       "domains": [
         "drweb.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "drweb.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://drweb.ru/"
       ],
@@ -4510,10 +4548,10 @@
       "domains": [
         "kaspersky.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "kaspersky.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://kaspersky.ru/"
       ],
@@ -4530,10 +4568,10 @@
       "domains": [
         "kompas.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "kompas.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://kompas.ru/"
       ],
@@ -4550,10 +4588,10 @@
       "domains": [
         "kontur.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "kontur.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://kontur.ru/"
       ],
@@ -4590,10 +4628,10 @@
       "domains": [
         "nanocad.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "nanocad.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://nanocad.ru/"
       ],
@@ -4630,10 +4668,10 @@
       "domains": [
         "r7-office.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "r7-office.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://r7-office.ru/"
       ],
@@ -4650,10 +4688,10 @@
       "domains": [
         "redos.red-soft.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "redos.red-soft.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://redos.red-soft.ru/"
       ],
@@ -4670,15 +4708,35 @@
       "domains": [
         "rosa.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "rosa.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://rosa.ru/"
       ],
       "ctRoots": [
         "rosa.ru"
+      ],
+      "asns": [],
+      "products": []
+    },
+    {
+      "id": "skbkontur-ru",
+      "name": "skbkontur.ru",
+      "category": "software",
+      "domains": [
+        "skbkontur.ru"
+      ],
+      "activeDomains": [
+        "skbkontur.ru"
+      ],
+      "candidateDomains": [],
+      "pages": [
+        "https://skbkontur.ru/"
+      ],
+      "ctRoots": [
+        "skbkontur.ru"
       ],
       "asns": [],
       "products": []
@@ -4690,10 +4748,10 @@
       "domains": [
         "trueconf.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "trueconf.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://trueconf.ru/"
       ],
@@ -5017,10 +5075,10 @@
       "domains": [
         "flysmartavia.com"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "flysmartavia.com"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://flysmartavia.com/"
       ],
@@ -5097,10 +5155,10 @@
       "domains": [
         "ostrovok.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "ostrovok.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://ostrovok.ru/"
       ],
@@ -5197,10 +5255,10 @@
       "domains": [
         "sutochno.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "sutochno.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://sutochno.ru/"
       ],
@@ -5257,10 +5315,10 @@
       "domains": [
         "uralairlines.ru"
       ],
-      "activeDomains": [],
-      "candidateDomains": [
+      "activeDomains": [
         "uralairlines.ru"
       ],
+      "candidateDomains": [],
       "pages": [
         "https://uralairlines.ru/"
       ],

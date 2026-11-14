@@ -9,6 +9,7 @@ export function cidr(value) {
   if(family===4)parts=address.split('.').map(Number).map(x=>[x,8]);
   else {
     ensure(!address.includes('.'),'mapped IPv6 is not accepted');
+    ensure(new URL('https://['+address+']/').hostname==='['+address+']','noncanonical IPv6 prefix');
     const [left,right]=address.split('::'),a=left?left.split(':'):[],b=right?right.split(':'):[];
     const groups=address.includes('::')?[...a,...Array(8-a.length-b.length).fill('0'),...b]:a;
     ensure(groups.length===8,'invalid IPv6');parts=groups.map(x=>[parseInt(x,16),16]);
@@ -21,7 +22,7 @@ export function cidr(value) {
 const timestamp=value=>Date.parse(/[zZ]|[+-]\d\d:\d\d$/.test(value)?value:value+'Z');
 export function currentAnnouncements(data, now=new Date()) {
   const end=timestamp(data.query_endtime??'');
-  ensure(Number.isFinite(end)&&Math.abs(now.getTime()-end)<=36*3600000,'BGP snapshot is stale or in the future');
+  ensure(Number.isFinite(end)&&now.getTime()-end<=36*3600000&&end-now.getTime()<=300000,'BGP snapshot is stale or in the future');
   return (data.prefixes??[]).filter(p=>{
     try{cidr(p.prefix);return p.timelines?.some(t=>timestamp(t.starttime)<=end&&timestamp(t.endtime)>=end);}catch{return false;}
   }).map(p=>p.prefix).sort();
@@ -35,7 +36,7 @@ export function validateNetworks(registry, now=new Date()) {
     ensure(/^[a-z0-9][a-z0-9-]*$/.test(entry.service) && entry.status==='reviewed-service-network','network requires ownership review');
     publicHttps(entry.source);date(entry.checkedAt,now,'network checkedAt');
     const expires=Date.parse(entry.validUntil+'T00:00:00Z');
-    ensure(Number.isFinite(expires)&&expires>now.getTime()&&expires-Date.parse(entry.checkedAt+'T00:00:00Z')<=8*86400000,'network review expired or validity too long');
+    ensure(/^\d{4}-\d{2}-\d{2}$/.test(entry.validUntil)&&Number.isFinite(expires)&&new Date(expires).toISOString().slice(0,10)===entry.validUntil&&expires>now.getTime()&&expires-Date.parse(entry.checkedAt+'T00:00:00Z')<=8*86400000,'network review expired or validity too long');
     ensure(Number.isInteger(entry.asn)&&entry.asn>0&&typeof entry.holder==='string'&&entry.holder.length>3&&/^[a-f0-9]{64}$/.test(entry.snapshotSha256),'network snapshot provenance required');
   }
   return registry;

@@ -20,7 +20,9 @@ node scripts/integrate.mjs --mode selective --format xray --base .private/base.j
 
 ## sing-box и TXT
 
-Источник правил: `rules/liberta-direct.singbox.json`. Подключите его как source rule-set к вашему direct. Набор `liberta-proxy` применяется раньше direct; итоговый маршрут — proxy. Для remote rule-set используйте опубликованный URL и параметры загрузки, соответствующие версии sing-box. Сам rule-set не задаёт подключение, TUN и DNS.
+Источник доменных правил: `rules/liberta-direct.singbox.json`. Сервисные IP находятся отдельно в `liberta-direct-ip.singbox.json`; подключайте оба набора к direct после `liberta-proxy`. Подключите его как source rule-set к вашему direct. Набор `liberta-proxy` применяется раньше direct; итоговый маршрут — proxy. Для remote rule-set используйте опубликованный URL и параметры загрузки, соответствующие версии sing-box. Сам rule-set не задаёт подключение, TUN и DNS.
+
+Доменные правила не перехватывают неизвестные IP вне рассмотренных сервисных CIDR. Это остаётся ограничением выборочного профиля.
 
 `rules/liberta-direct.xray.json` — один объект для routing.rules. Xray не скачивает такой JSON как remote rule-set: его нужно включить в шаблон сборщиком или средствами клиента. TXT содержит `domain:`-суффиксы, а не универсальный файл для всех программ.
 
@@ -33,3 +35,13 @@ node scripts/integrate.mjs --mode selective --format xray --base .private/base.j
 Прежний совместимый набор `liberta-v1.*` сохраняет поведение исходного профиля. Он использует геобазы клиента и не является независимой базой выбранных сервисов.
 
 Спецификации: https://docs.rw/learn-en/templates/ ; https://docs.rw/learn/xray-json-advanced/ ; https://www.happ.su/main/ru/dev-docs/routing ; https://www.happ.su/main/ru/dev-docs/examples-of-links-and-parameters ; https://sing-box.sagernet.org/configuration/rule-set/
+
+Обновление одного существующего XRAY_JSON-шаблона панели:
+
+```sh
+node scripts/remnawave-sync.mjs --mode plan --uuid TEMPLATE_UUID --plan .private/deploy.json
+node scripts/remnawave-sync.mjs --mode apply --plan .private/deploy.json
+node scripts/remnawave-sync.mjs --mode rollback --plan .private/deploy.json
+```
+
+Адрес панели и токен задаются локально через `REMNAWAVE_API_URL` (без завершающего `/api`) и `REMNAWAVE_API_TOKEN`. План содержит резервную копию и требует приватного хранения. Apply откажется писать, если шаблон изменился после plan. Скрипт обновляет указанный шаблон и проверяет ответ; он не выбирает шаблон за оператора и не заставляет телефон обновить подписку. Неизвестные схемы шаблонов требуют отдельного разбора.

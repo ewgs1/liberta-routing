@@ -3,6 +3,36 @@
   "note": "Состав и флаги сохранены из собственного рабочего реестра пользователя. Отсутствие нового обзора не меняет рабочую маршрутизацию. Неизвестные даты добавления не выдумываются.",
   "entries": [
     {
+      "domain": "1c-bitrix.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.1c-bitrix.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://1c-bitrix.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "1c.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://1c.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://1c.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "2gis.com",
       "class": "transport",
       "origin": "first-party-document-review",
@@ -42,6 +72,21 @@
           "url": "https://aeroflot.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "afisha.ru",
+      "class": "services",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.afisha.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://afisha.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -128,6 +173,51 @@
       ]
     },
     {
+      "domain": "apteka.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://apteka.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://apteka.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "apteki.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://apteki.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://apteki.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "ascon.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://ascon.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://ascon.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "auchan.ru",
       "class": "retail",
       "origin": "existing-liberta-registry",
@@ -195,6 +285,21 @@
       ]
     },
     {
+      "domain": "bitrix24.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.bitrix24.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://bitrix24.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "bookmate.ru",
       "class": "media",
       "origin": "first-party-document-review",
@@ -223,6 +328,21 @@
       ]
     },
     {
+      "domain": "cdek.ru",
+      "class": "logistics",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://cdek.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://cdek.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "cdn-tinkoff.ru",
       "class": "banks",
       "origin": "first-party-document-review",
@@ -234,6 +354,21 @@
           "result": "first-party-reference",
           "reference": "https://fallback.cdn-tinkoff.ru/",
           "note": "Observed asset URL in the public application page HTML. Evidence and response hashes: registry/evidence/public-source-observation-20261113.json. Host association does not prove all subdomains are required."
+        }
+      ]
+    },
+    {
+      "domain": "championat.com",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.championat.com/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://championat.com/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -264,6 +399,36 @@
       ]
     },
     {
+      "domain": "citydrive.ru",
+      "class": "auto",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://citydrive.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://citydrive.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "cloudpayments.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://cloudpayments.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://cloudpayments.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "data-tscbank.ru",
       "class": "banks",
       "origin": "operator-service-report",
@@ -274,6 +439,21 @@
           "checkedAt": "2026-11-13",
           "result": "operator-reported-bundle",
           "note": "Operator reported successful login after adding the whole group to direct routing and domestic DNS. Individual dependency and ownership not independently established."
+        }
+      ]
+    },
+    {
+      "domain": "delimobil.ru",
+      "class": "auto",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://delimobil.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://delimobil.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -300,6 +480,21 @@
           "url": "https://detmir.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "dnevnik.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://dnevnik.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://dnevnik.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -352,6 +547,51 @@
           "url": "https://domrfbank.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "dostavista.ru",
+      "class": "logistics",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://dostavista.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://dostavista.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "drom.ru",
+      "class": "auto",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.drom.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://drom.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "drweb.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.drweb.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://drweb.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -453,6 +693,36 @@
       ]
     },
     {
+      "domain": "flysmartavia.com",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://flysmartavia.com/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://flysmartavia.com/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "fontanka.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.fontanka.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://fontanka.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "fssp.gov.ru",
       "class": "gov",
       "origin": "existing-liberta-registry",
@@ -533,6 +803,21 @@
       ]
     },
     {
+      "domain": "helix.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://helix.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://helix.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "hh.ru",
       "class": "jobs_realty",
       "origin": "existing-liberta-registry",
@@ -542,6 +827,51 @@
           "url": "https://hh.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "htmlacademy.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://htmlacademy.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://htmlacademy.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "inplat.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://inplat.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://inplat.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "invitro.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.invitro.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://invitro.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -559,6 +889,21 @@
       ]
     },
     {
+      "domain": "kaspersky.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.kaspersky.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://kaspersky.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "kinopoisk.ru",
       "class": "media",
       "origin": "existing-liberta-registry",
@@ -570,6 +915,66 @@
           "result": "first-party-reference",
           "reference": "https://kinopoisk.ru/",
           "note": "Company-declared service namespace; domain association only."
+        }
+      ]
+    },
+    {
+      "domain": "kommersant.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.kommersant.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://kommersant.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "kompas.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://kompas.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://kompas.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "kontur.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://kontur.ru/bugbounty",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://kontur.ru/",
+          "note": "Первичный документ сервиса с указанием доменного пространства; проверено 14.11.2026. Доступность приложения этим не подтверждена."
+        }
+      ]
+    },
+    {
+      "domain": "kp.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.kp.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://kp.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -635,6 +1040,21 @@
           "url": "https://lenta.com/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "lenta.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://lenta.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://lenta.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -726,6 +1146,36 @@
           "url": "https://megamarket.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "megapteka.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://megapteka.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://megapteka.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "metro-cc.ru",
+      "class": "retail",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://metro-cc.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://metro-cc.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -858,6 +1308,36 @@
           "url": "https://nalog.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "nanocad.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://nanocad.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://nanocad.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "netology.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://netology.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://netology.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1004,6 +1484,21 @@
       ]
     },
     {
+      "domain": "onlinetrade.ru",
+      "class": "retail",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.onlinetrade.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://onlinetrade.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "open.ru",
       "class": "banks",
       "origin": "existing-liberta-registry",
@@ -1017,6 +1512,21 @@
       ]
     },
     {
+      "domain": "ostrovok.ru",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://ostrovok.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://ostrovok.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "otpbank.ru",
       "class": "banks",
       "origin": "existing-liberta-registry",
@@ -1026,6 +1536,21 @@
           "url": "https://otpbank.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "otus.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://otus.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://otus.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1105,6 +1630,36 @@
       ]
     },
     {
+      "domain": "payanyway.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://payanyway.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://payanyway.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "paymaster.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://info.paymaster.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://paymaster.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "paywb.com",
       "class": "payments",
       "origin": "first-party-document-review",
@@ -1144,6 +1699,21 @@
           "url": "https://perekrestok.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "platron.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://pay.platron.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://platron.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1200,6 +1770,21 @@
       ]
     },
     {
+      "domain": "psb.ru",
+      "class": "banks",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://psb.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://psb.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "psbank.ru",
       "class": "banks",
       "origin": "existing-liberta-registry",
@@ -1226,6 +1811,21 @@
       ]
     },
     {
+      "domain": "r7-office.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://r7-office.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://r7-office.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "raiffeisen.ru",
       "class": "banks",
       "origin": "existing-liberta-registry",
@@ -1239,6 +1839,21 @@
       ]
     },
     {
+      "domain": "redos.red-soft.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://redos.red-soft.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://redos.red-soft.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "regulation.gov.ru",
       "class": "gov",
       "origin": "existing-liberta-registry",
@@ -1248,6 +1863,81 @@
           "url": "https://regulation.gov.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "rg.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://rg.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://rg.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "rgs.ru",
+      "class": "insurance",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.rgs.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://rgs.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "ria.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://ria.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://ria.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "rigla.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.rigla.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://rigla.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "rosa.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://rosa.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://rosa.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1397,6 +2087,21 @@
       ]
     },
     {
+      "domain": "sberauto.com",
+      "class": "services",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://sberauto.com/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://sberauto.com/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "sberbank.com",
       "class": "banks",
       "origin": "existing-liberta-registry",
@@ -1419,6 +2124,21 @@
           "url": "https://sberbank.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sberhealth.ru",
+      "class": "services",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://sberhealth.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://sberhealth.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1449,6 +2169,81 @@
       ]
     },
     {
+      "domain": "skbkontur.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://kontur.ru/bugbounty",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://skbkontur.ru/",
+          "note": "Первичный документ сервиса с указанием доменного пространства; проверено 14.11.2026. Доступность приложения этим не подтверждена."
+        }
+      ]
+    },
+    {
+      "domain": "skillbox.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://skillbox.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://skillbox.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "skillfactory.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://skillfactory.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://skillfactory.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "skyeng.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://skyeng.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://skyeng.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "skysmart.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://skyeng.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://skysmart.ru/",
+          "note": "Первичный документ сервиса с указанием доменного пространства; проверено 14.11.2026. Доступность приложения этим не подтверждена."
+        }
+      ]
+    },
+    {
       "domain": "smotrim.ru",
       "class": "media",
       "origin": "existing-liberta-registry",
@@ -1475,6 +2270,21 @@
       ]
     },
     {
+      "domain": "sports.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.sports.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://sports.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "start.ru",
       "class": "media",
       "origin": "existing-liberta-registry",
@@ -1484,6 +2294,21 @@
           "url": "https://start.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "stepik.org",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://stepik.org/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://stepik.org/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1510,6 +2335,21 @@
           "url": "https://superjob.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "sutochno.ru",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://sutochno.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://sutochno.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1597,6 +2437,21 @@
           "result": "first-party-reference",
           "reference": "https://tamtam.chat/",
           "note": "OK declares these service and content domain families in its own public program."
+        }
+      ]
+    },
+    {
+      "domain": "tass.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://tass.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://tass.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1742,6 +2597,21 @@
       ]
     },
     {
+      "domain": "trueconf.ru",
+      "class": "software",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://trueconf.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://trueconf.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
       "domain": "tutu.ru",
       "class": "transport",
       "origin": "existing-liberta-registry",
@@ -1751,6 +2621,36 @@
           "url": "https://tutu.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "uchi.ru",
+      "class": "education",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://uchi.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://uchi.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "uralairlines.ru",
+      "class": "transport",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.uralairlines.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://uralairlines.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1779,6 +2679,36 @@
           "url": "https://utair.ru/",
           "checkedAt": null,
           "result": "pending-review"
+        }
+      ]
+    },
+    {
+      "domain": "uteka.ru",
+      "class": "medicine",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://uteka.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://uteka.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "vedomosti.ru",
+      "class": "news",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://www.vedomosti.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://vedomosti.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },
@@ -1989,6 +2919,21 @@
           "result": "first-party-reference",
           "reference": "https://vkuservideo.net/",
           "note": "VK declares these account, API and content domain families in its own public program. Parent suffix covers the listed subdomains."
+        }
+      ]
+    },
+    {
+      "domain": "vkusnoitochka.ru",
+      "class": "food",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://vkusnoitochka.ru/app",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://vkusnoitochka.ru/",
+          "note": "Первичный документ сервиса с указанием доменного пространства; проверено 14.11.2026. Доступность приложения этим не подтверждена."
         }
       ]
     },
@@ -2369,6 +3314,36 @@
           "result": "first-party-reference",
           "reference": "https://yastatic.net/",
           "note": "Документация указывает хранилище статики интерфейса."
+        }
+      ]
+    },
+    {
+      "domain": "yoobusiness.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://yoobusiness.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://yoobusiness.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
+        }
+      ]
+    },
+    {
+      "domain": "yookassa.ru",
+      "class": "payments",
+      "origin": "first-party-document-review",
+      "addedAt": "2026-11-14",
+      "source": [
+        {
+          "url": "https://yookassa.ru/",
+          "checkedAt": "2026-11-14",
+          "result": "first-party-reference",
+          "reference": "https://yookassa.ru/",
+          "note": "Идентичность сервиса рассмотрена по первичной странице; HTTP 200 и хеш ответа зафиксированы в registry/evidence/catalog-review-20261114.json. Это проверка доменного пространства, не испытание приложения."
         }
       ]
     },

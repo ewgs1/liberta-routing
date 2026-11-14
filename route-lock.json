@@ -1,11 +1,12 @@
 {
   "schemaVersion": 2,
-  "routeSha256": "78c914a3226b9a2d21a076abd916aa771030036b43c0a23d2de71f2ca00ceff8",
+  "routeSha256": "7cbfa966c6b361cacefba524e6d608282bc35928c7f63d4b65cfc12db89be60c",
   "compatibilityRouteSha256": "34ea2353985ffb6fd6095f1c0ebea356477697bb8404ea2a6cd3000bcd891719",
-  "reviewedAt": "2026-11-13",
-  "reason": "Nine first-party domain references added to independent test lists; preserved v1 compatibility profile remains frozen. Device/application acceptance remains open.",
+  "reviewedAt": "2026-11-14",
+  "reason": "First-party review adds 65 service roots across education, software, medicine, logistics, food, insurance, media and other categories. Twenty current Wildberries service networks cover IP-only traffic; withdrawn announcements and shared clouds are not promoted. Device acceptance remains open; compatible v1 behavior is frozen.",
   "proxySuffixes": [
     "cloud.vk.com",
     "mcs.mail.ru"
-  ]
+  ],
+  "networkRouteSha256": "60853068851fffd7cccbde5c32b88bfe8c96f69878d9b6f14613b771d2d32f2c"
 }

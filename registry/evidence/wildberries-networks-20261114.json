@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-14T06:42:07.069Z",
+  "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+  "sourceRun": "https://github.com/ewgs1/liberta-routing/actions/runs/43567559980",
+  "announcements": [
+    {
+      "asn": 49053,
+      "holder": "AS_WB-TECH LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [],
+      "historicalOnlyPrefixes": [
+        "185.62.203.0/24"
+      ]
+    },
+    {
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "176.101.88.0/24",
+        "176.101.90.0/24",
+        "185.138.252.0/22",
+        "185.138.253.0/24",
+        "185.138.255.0/24",
+        "185.62.200.0/23",
+        "185.62.202.0/24",
+        "194.1.214.0/24",
+        "213.184.155.0/24",
+        "213.184.156.0/22",
+        "213.184.156.0/24",
+        "2a03:720:14::/48",
+        "2a03:720:4::/48",
+        "2a03:720:8::/48",
+        "2a03:720:9::/48",
+        "2a03:720::/32",
+        "85.198.76.0/22",
+        "85.198.76.0/24",
+        "85.198.77.0/24",
+        "85.198.78.0/24",
+        "85.198.79.0/24",
+        "90.156.247.0/24",
+        "91.230.107.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "asn": 201513,
+      "holder": "AS_WILDBERRIES_KZ LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "213.184.154.0/24",
+        "2a00:5da0:8010::/48",
+        "2a03:720:5::/48"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "176.101.89.0/24",
+        "176.101.90.0/24",
+        "176.101.91.0/24",
+        "176.101.92.0/24",
+        "176.101.93.0/24",
+        "176.101.94.0/24",
+        "176.101.95.0/24",
+        "2a03:720:40::/48"
+      ],
+      "historicalOnlyPrefixes": []
+    }
+  ]
+}

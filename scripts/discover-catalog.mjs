@@ -12,7 +12,7 @@ try {
   const results=[];
   // A separate bounded request budget for every service prevents early services starving the rest.
   for (const service of services) {
-    const report=await discover({...catalog,services:[service]},registry,{maxRequests:4,maxDns:8,networks:service.asns.length>0});
+    const report=await discover({...catalog,services:[service]},registry,{maxRequests:service.asns.length?32:4,maxDns:8,networks:service.asns.length>0});
     results.push(report);
     console.log(JSON.stringify({service:service.id,candidates:report.candidates.length,responses:report.observations.filter(o=>o.result==='observed').length,routesModified:false}));
   }

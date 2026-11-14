@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-14",
+  "sourceRun": "https://github.com/ewgs1/liberta-routing/actions/runs/43567559980",
+  "policy": "Individual first-party service-root review. No shared cloud/CDN wildcard promotion and no application acceptance claim.",
+  "entries": [
+    {
+      "domain": "1c.ru",
+      "service": "1c-ru",
+      "source": "https://1c.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "1a43fe2c3e51efba5e63895b67935f7a85b1f1d3a3ce004f95aea085186f25c1",
+      "applicationTest": false
+    },
+    {
+      "domain": "1c-bitrix.ru",
+      "service": "1c-bitrix-ru",
+      "source": "https://www.1c-bitrix.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "54b6ef5def0634f9d8c64dd173cd655fbe6c91ebf8cff95bbfd833ebc4932989",
+      "applicationTest": false
+    },
+    {
+      "domain": "bitrix24.ru",
+      "service": "bitrix24-ru",
+      "source": "https://www.bitrix24.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "add25c8949abcfe524c06a2320bd508b74973be5894d690c46c67bfb3dab4ec8",
+      "applicationTest": false
+    },
+    {
+      "domain": "kompas.ru",
+      "service": "kompas-ru",
+      "source": "https://kompas.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "36ba065e72ff4745cc2d2160d406c40549a1afdfb88ca4f99db09de5ccf6fd53",
+      "applicationTest": false
+    },
+    {
+      "domain": "nanocad.ru",
+      "service": "nanocad-ru",
+      "source": "https://nanocad.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "fdf35334d07de1442f87c3ecc1b01443fe7e2ca7009a1dd6accebea905230a6e",
+      "applicationTest": false
+    },
+    {
+      "domain": "r7-office.ru",
+      "service": "r7-office-ru",
+      "source": "https://r7-office.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "289c59a74e8ccbe694d82a4642adb822a40fe5a7042d0175395460461b7d9fdd",
+      "applicationTest": false
+    },
+    {
+      "domain": "rosa.ru",
+      "service": "rosa-ru",
+      "source": "https://rosa.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "0c3fd6581190bcecbe5fd7893a5f00b7fdd802b08374641b306f12fa92ecd4eb",
+      "applicationTest": false
+    },
+    {
+      "domain": "redos.red-soft.ru",
+      "service": "redos-red-soft-ru",
+      "source": "https://redos.red-soft.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "dbd9b42e6a666ebfa35f5c4d228fcbe59ce95d26b822372ab9fb302a8fe93ecd",
+      "applicationTest": false
+    },
+    {
+      "domain": "ascon.ru",
+      "service": "ascon-ru",
+      "source": "https://ascon.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "084eb595f1cfef103ff4a43a53b6228391e8a0bb955cffed39515656ed888e35",
+      "applicationTest": false
+    },
+    {
+      "domain": "drweb.ru",
+      "service": "drweb-ru",
+      "source": "https://www.drweb.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "1ac4f90d2bc2db7511c81885a9a52162c3de9b3e179f124ce38f48c19cb1d72f",
+      "applicationTest": false
+    },
+    {
+      "domain": "kaspersky.ru",
+      "service": "kaspersky-ru",
+      "source": "https://www.kaspersky.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "b3d1ed57f28bc6bdf169ede1321f6135b2dc63816e470fbf9b69c01517554612",
+      "applicationTest": false
+    },
+    {
+      "domain": "trueconf.ru",
+      "service": "trueconf-ru",
+      "source": "https://trueconf.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d0db68a344d1ad23628a7baec8bdbdf58a763073717bd3cf01ebba3d3478e8ef",
+      "applicationTest": false
+    },
+    {
+      "domain": "uchi.ru",
+      "service": "uchi-ru",
+      "source": "https://uchi.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "2e6df1823af8f97afb66e7da091b24c24b6efa6bae97004856409755cc7175a4",
+      "applicationTest": false
+    },
+    {
+      "domain": "netology.ru",
+      "service": "netology-ru",
+      "source": "https://netology.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "fec9d27dd2b13c947a7d8b4a1af657f8e119316febcc522c950f886ca812597d",
+      "applicationTest": false
+    },
+    {
+      "domain": "skillbox.ru",
+      "service": "skillbox-ru",
+      "source": "https://skillbox.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "9dd4e1cfbb66212d02221565bc68396580d1a234833ab2069ab38ec9b6f4c571",
+      "applicationTest": false
+    },
+    {
+      "domain": "htmlacademy.ru",
+      "service": "htmlacademy-ru",
+      "source": "https://htmlacademy.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "427be157e2e1d21711baba2823ea7d9bf12d9d32fa1217f6a3125816d8227495",
+      "applicationTest": false
+    },
+    {
+      "domain": "otus.ru",
+      "service": "otus-ru",
+      "source": "https://otus.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "24312b4588de684296481bebc85bfce2e2526cd083c81e034afbcd67fd916712",
+      "applicationTest": false
+    },
+    {
+      "domain": "stepik.org",
+      "service": "stepik-org",
+      "source": "https://stepik.org/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "c426826f67d30d95a4cf9daa8fb6ca19418f3100b858dd5c2eda652654169b18",
+      "applicationTest": false
+    },
+    {
+      "domain": "skillfactory.ru",
+      "service": "skillfactory-ru",
+      "source": "https://skillfactory.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "edfe719fed1020bf2174edaeb51ed22c06ae0c474afb4c07a38c93ebb6972fe5",
+      "applicationTest": false
+    },
+    {
+      "domain": "dnevnik.ru",
+      "service": "dnevnik-ru",
+      "source": "https://dnevnik.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "56184baccd235e66c96534a067ea8b3ee491de2ee8e796319dc503b8fa98a216",
+      "applicationTest": false
+    },
+    {
+      "domain": "skyeng.ru",
+      "service": "skyeng-ru",
+      "source": "https://skyeng.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "eec899d1c45cdb6e49950734567ab4f7ddc28c25901de77fdb14b2314465848c",
+      "applicationTest": false
+    },
+    {
+      "domain": "apteka.ru",
+      "service": "apteka-ru",
+      "source": "https://apteka.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "822f26ce3fbb6ac768009e2ea4afdbeda021bb1d6a90746706318fe1318fcea1",
+      "applicationTest": false
+    },
+    {
+      "domain": "apteki.ru",
+      "service": "apteki-ru",
+      "source": "https://apteki.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "9eb4a8c18148ee806a75672e47eeb24e38e8dec3b934e77c30a47a792f01afc0",
+      "applicationTest": false
+    },
+    {
+      "domain": "helix.ru",
+      "service": "helix-ru",
+      "source": "https://helix.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "46758a50f57c4932496ddc38c378a410f2e0d436cc4052fb191ecc1eaeced3d8",
+      "applicationTest": false
+    },
+    {
+      "domain": "invitro.ru",
+      "service": "invitro-ru",
+      "source": "https://www.invitro.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "23254c5c1956084bf74bd8b36d6487a0f5b7b2a9540a1693b9c9150bca26289b",
+      "applicationTest": false
+    },
+    {
+      "domain": "megapteka.ru",
+      "service": "megapteka-ru",
+      "source": "https://megapteka.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d3c185e43f41bc6f5e20aa386888b5ffb718bc1ccf452539f08a894353425cff",
+      "applicationTest": false
+    },
+    {
+      "domain": "rigla.ru",
+      "service": "rigla-ru",
+      "source": "https://www.rigla.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "86630418ca3baf5a10700e33d89a4846fef6a7271a8537a31cc7544d9f5032dd",
+      "applicationTest": false
+    },
+    {
+      "domain": "uteka.ru",
+      "service": "uteka-ru",
+      "source": "https://uteka.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "74a98352afd70e277377a1575b80b9aea070abe063e8c14e7b4a1b799f6852cb",
+      "applicationTest": false
+    },
+    {
+      "domain": "sberhealth.ru",
+      "service": "sberhealth-ru",
+      "source": "https://sberhealth.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "84fe4f5659395c308be86071e17ec72508c6d4fe2b34a7b156aed2f255da774f",
+      "applicationTest": false
+    },
+    {
+      "domain": "cdek.ru",
+      "service": "cdek-ru",
+      "source": "https://cdek.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "1570585e94be3311f91339249f76ec95f980b3b2b3edeef68b26c80e34c15f16",
+      "applicationTest": false
+    },
+    {
+      "domain": "dostavista.ru",
+      "service": "dostavista-ru",
+      "source": "https://dostavista.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "f5fb46028769d90a4a26d178c18a5985d161bfe99ae3f72681a2dc5abb0c92f6",
+      "applicationTest": false
+    },
+    {
+      "domain": "cloudpayments.ru",
+      "service": "cloudpayments-ru",
+      "source": "https://cloudpayments.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "eff58d5f521f4b8208118149fcd50f159c1e9cd30b135965d81c3647d53618da",
+      "applicationTest": false
+    },
+    {
+      "domain": "inplat.ru",
+      "service": "inplat-ru",
+      "source": "https://inplat.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "3568934b3ed19e7bfccc8e3e86c1d08f73c160428e76d06b1eff3f93f653424f",
+      "applicationTest": false
+    },
+    {
+      "domain": "payanyway.ru",
+      "service": "payanyway-ru",
+      "source": "https://payanyway.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "26c2ff6ec455804e99831c3e6d19e06abee7420cfa3a58fe23a15946421435b9",
+      "applicationTest": false
+    },
+    {
+      "domain": "paymaster.ru",
+      "service": "paymaster-ru",
+      "source": "https://info.paymaster.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "52a145535500a3cd2e0269a46eeb993a75a0bb52b261379fed7ea582a61b48e3",
+      "applicationTest": false
+    },
+    {
+      "domain": "platron.ru",
+      "service": "platron-ru",
+      "source": "https://pay.platron.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d00f2a0c66480b1da59f128644f7144abf8f13fc9e3beb8628e3d70c14b70299",
+      "applicationTest": false
+    },
+    {
+      "domain": "yookassa.ru",
+      "service": "yookassa-ru",
+      "source": "https://yookassa.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "10254786ea69faef0d71cb832e74a3940392bbfabb7faf1baca2afb9b6030099",
+      "applicationTest": false
+    },
+    {
+      "domain": "yoobusiness.ru",
+      "service": "yoobusiness-ru",
+      "source": "https://yoobusiness.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "3aca9f1cfa01c5848eb89d6544f3e4ef39b934ad6d9b217a7d6e0c24d121fc8f",
+      "applicationTest": false
+    },
+    {
+      "domain": "afisha.ru",
+      "service": "afisha-ru",
+      "source": "https://www.afisha.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d3a4d651822b9b3f028ccc7e203568839e55b48bbeebf5e649452f9a204342a1",
+      "applicationTest": false
+    },
+    {
+      "domain": "championat.com",
+      "service": "championat-com",
+      "source": "https://www.championat.com/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "c2d640184112d352a1cd7b885e0b67dd9d5b064d8df62e62e9e966dd86ca3b4c",
+      "applicationTest": false
+    },
+    {
+      "domain": "fontanka.ru",
+      "service": "fontanka-ru",
+      "source": "https://www.fontanka.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "41e8a91a81a984416e95f2ebd0cbb57b2d9238b6d0e16bca6f62840ebdeb373d",
+      "applicationTest": false
+    },
+    {
+      "domain": "kommersant.ru",
+      "service": "kommersant-ru",
+      "source": "https://www.kommersant.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "7fa2019cc842d71198370890356de7fe0486d3dfa08aff96d05b11e151f3a274",
+      "applicationTest": false
+    },
+    {
+      "domain": "kp.ru",
+      "service": "kp-ru",
+      "source": "https://www.kp.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "51bea33c217a8cbafad952aaa89817ca447ba9e1cf15d52a3cf50ab071940e9f",
+      "applicationTest": false
+    },
+    {
+      "domain": "lenta.ru",
+      "service": "lenta-ru",
+      "source": "https://lenta.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "ac13585958ee240b8f8ae5341696fdd510c0e94c65567a3a91324c401398f5dc",
+      "applicationTest": false
+    },
+    {
+      "domain": "rg.ru",
+      "service": "rg-ru",
+      "source": "https://rg.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "c2f6583ee82a106f15cb8df09892577d42df4681ea59b04706a6b6c94b8516b0",
+      "applicationTest": false
+    },
+    {
+      "domain": "ria.ru",
+      "service": "ria-ru",
+      "source": "https://ria.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "2c6f019cbbbbee23a3eb33c19f4929cb8ed53d844a7c61afb57a2f13acc4adeb",
+      "applicationTest": false
+    },
+    {
+      "domain": "sports.ru",
+      "service": "sports-ru",
+      "source": "https://www.sports.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "86c57e665c45c314a05dbfcb9ea5f4c698dcb213099a19f1ae1de56a946d509e",
+      "applicationTest": false
+    },
+    {
+      "domain": "tass.ru",
+      "service": "tass-ru",
+      "source": "https://tass.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "c0e5d9663ad1bbedc1a25b219f0c21d6a20039d36d3c955084d5a7bb013793dd",
+      "applicationTest": false
+    },
+    {
+      "domain": "vedomosti.ru",
+      "service": "vedomosti-ru",
+      "source": "https://www.vedomosti.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "e1bd422421535023789de84504e501fa194f74a70ff7005bf58d559ccb3f7c91",
+      "applicationTest": false
+    },
+    {
+      "domain": "delimobil.ru",
+      "service": "delimobil-ru",
+      "source": "https://delimobil.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "0131873701c939b9fd7733eb13b42b4682e138a97b80a218a6cf23df87740780",
+      "applicationTest": false
+    },
+    {
+      "domain": "citydrive.ru",
+      "service": "citydrive-ru",
+      "source": "https://citydrive.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d6e3907e29ec38aae5d165c7f54f59918413d4ad533e94eac3971315cacfd76f",
+      "applicationTest": false
+    },
+    {
+      "domain": "drom.ru",
+      "service": "drom-ru",
+      "source": "https://www.drom.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "89e35d0ad932fa5d5eb22929d87e0896aa8220dd5795a0ec5740c9668c101194",
+      "applicationTest": false
+    },
+    {
+      "domain": "sberauto.com",
+      "service": "sberauto-com",
+      "source": "https://sberauto.com/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "d8412139d23f291bebfcf09f85d7b8f1206f81e8867a2bab7f0462be0af41dca",
+      "applicationTest": false
+    },
+    {
+      "domain": "metro-cc.ru",
+      "service": "metro-cc-ru",
+      "source": "https://metro-cc.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "6207d5c21a4061e90bced1d4679f8635bfdfe371a2020933257f1a4978f01e2b",
+      "applicationTest": false
+    },
+    {
+      "domain": "onlinetrade.ru",
+      "service": "onlinetrade-ru",
+      "source": "https://www.onlinetrade.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "74bdb0d0f4f90135334d4d4d9df8c97267560587107c11c2008daabd2d5d73b6",
+      "applicationTest": false
+    },
+    {
+      "domain": "rgs.ru",
+      "service": "rgs-ru",
+      "source": "https://www.rgs.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "114bec885442a6f5ad0f4e72c9800915acc7bd0ce091fa6ee73bc55db3e7237d",
+      "applicationTest": false
+    },
+    {
+      "domain": "uralairlines.ru",
+      "service": "uralairlines-ru",
+      "source": "https://www.uralairlines.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "2923b4a9f0e6949b0e84237edaa705d8db94f40802c719750eb89cb47bb404cc",
+      "applicationTest": false
+    },
+    {
+      "domain": "flysmartavia.com",
+      "service": "flysmartavia-com",
+      "source": "https://flysmartavia.com/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "453899d59639bb3e18ecc49fcac152249dce7ac2c08133c4f37d0a04ff0fcf34",
+      "applicationTest": false
+    },
+    {
+      "domain": "ostrovok.ru",
+      "service": "ostrovok-ru",
+      "source": "https://ostrovok.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "af74faaab1547a32869edf307677f77602f30f5b3acdeeaca8322e54cfd15176",
+      "applicationTest": false
+    },
+    {
+      "domain": "sutochno.ru",
+      "service": "sutochno-ru",
+      "source": "https://sutochno.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "970bfd19b0126f43159e3252be5c92dd6849fabde19b7be356f62be6987bb540",
+      "applicationTest": false
+    },
+    {
+      "domain": "psb.ru",
+      "service": "psb-ru",
+      "source": "https://psb.ru/",
+      "checkedAt": "2026-11-14",
+      "httpStatus": 200,
+      "bodySha256": "04e7516b85fe79832b0c88f88544cbdd5b4e896158c56e964b4fc16e0bbf4e1b",
+      "applicationTest": false
+    }
+  ]
+}

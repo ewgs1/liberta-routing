@@ -1,9 +1,12 @@
-import { readJson, validateRegistry, validateProvenance, allEntries, ensure } from './lib.mjs';
+import { readFile, readdir } from 'node:fs/promises';
+import { sha256, readJson, validateRegistry, validateProvenance, allEntries, ensure } from './lib.mjs';
 import { validateNetworks } from './network-data.mjs';
 import { validateCatalog } from './catalog.mjs';
 try{
  const registry=validateRegistry(await readJson('registry/registry.json'));
- validateNetworks(await readJson('registry/networks.json'));
+ const networks=validateNetworks(await readJson('registry/networks.json'));
+ const snapshots=await Promise.all((await readdir('registry/evidence')).filter(p=>p.includes('-networks-')&&p.endsWith('.json')).map(async p=>{const bytes=await readFile('registry/evidence/'+p);return {sha256:sha256(bytes),data:JSON.parse(bytes)};}));
+ for(const entry of networks.entries)ensure(snapshots.some(s=>s.sha256===entry.snapshotSha256&&s.data.announcements.some(a=>(a.source??s.data.source)===entry.source&&a.asn===entry.asn&&a.holder===entry.holder&&a.currentPrefixes.includes(entry.prefix))),'network snapshot does not cover approved prefix');
  validateCatalog(await readJson('registry/service-catalog.json'),registry);
  const provenance=await readJson('registry/provenance.json');
  validateProvenance(registry,provenance);

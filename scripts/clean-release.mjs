@@ -11,7 +11,7 @@ try {
  const api=async(method,path,body)=>{
   const argv=['api','--method',method,`repos/${process.env.GH_REPO}/${path}`];
   if(body){const file=join(temporary,`${sequence++}.json`);await writeFile(file,json(body));argv.push('--input',file);}
-  const result=spawnSync('gh',argv,{encoding:'utf8',timeout:30000});ensure(result.status===0,'release housekeeping API failed');return JSON.parse(result.stdout);
+  const result=spawnSync('gh',argv,{encoding:'utf8',timeout:30000});ensure(result.status===0,'release housekeeping API failed');return result.stdout.trim()?JSON.parse(result.stdout):null;
  };
  const release=await api('GET','releases/tags/v1.0.0');
  const manifest=JSON.parse(await readFile('releases/v1.0.0/release.json','utf8'));

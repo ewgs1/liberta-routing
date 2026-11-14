@@ -2,9 +2,13 @@ domain:2gis.com
 domain:2gis.ru
 domain:aeroflot.ru
 domain:aviasales.ru
+domain:flysmartavia.com
 domain:onetwotrip.com
+domain:ostrovok.ru
 domain:pobeda.aero
 domain:rzd.ru
 domain:s7.ru
+domain:sutochno.ru
 domain:tutu.ru
+domain:uralairlines.ru
 domain:utair.ru

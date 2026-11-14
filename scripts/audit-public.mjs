@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { readFile, readdir, lstat } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cidr, validateNetworks } from './network-data.mjs';
 import { ensure } from './lib.mjs';
 
 export function scanContent(content) {
@@ -33,6 +34,7 @@ export async function auditPublic(root = '.') {
   try { files = execFileSync('git', ['ls-files', '-z'], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).split('\0').filter(Boolean); }
   catch { files = await filesUnder(root); }
   ensure(files.length > 0, 'public audit: empty file set');
+  const approvedNetworks=validateNetworks(JSON.parse(await readFile(join(root,'registry/networks.json'),'utf8'))).entries.map(e=>e.prefix);
   const findings = [];
   for (const path of files) {
     const generatedTemplate = (path.endsWith('/liberta-v1.xray.json') || path === 'dist/liberta.xray.json') || path === 'examples/remnawave/liberta-selective.xray.json';
@@ -45,8 +47,20 @@ export async function auditPublic(root = '.') {
     const kinds = scanContent(content).filter(kind => {
       if ((path.startsWith('test/') || path === 'service-canary.mjs' || path === 'scripts/audit-public.mjs') && ['ipv4-literal', 'credential-assignment', 'connection-uri'].includes(kind)) return false;
       if ((path === 'scripts/build.mjs' || path === 'scripts/rule-sets.mjs' || path === 'scripts/integrate.mjs' || path === 'scripts/remnawave-sync.mjs' || path === 'scripts/verify-routing.mjs' || path === 'scripts/verify-dns.mjs' || path.startsWith('examples/happ/') || generatedTemplate) && kind === 'ipv4-literal') {
-        const allowed = new Set(['8.8.4.4', '1.1.1.1', '77.88.8.8', '77.88.8.1', '127.0.0.1', '10.0.0.0', '127.0.0.0', '169.254.0.0', '172.16.0.0', '192.168.0.0']);
+        const allowed = new Set([...approvedNetworks.map(p=>p.split('/')[0]),'8.8.4.4', '1.1.1.1', '77.88.8.8', '77.88.8.1', '127.0.0.1', '10.0.0.0', '127.0.0.0', '169.254.0.0', '172.16.0.0', '192.168.0.0']);
         return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(match => !allowed.has(match[0]));
+      }
+      if(kind==='ipv4-literal'&&/^registry\/evidence\/[a-z0-9-]+-networks-(?:\d{8}|latest)\.json$/.test(path)) {
+        const data=JSON.parse(content);const prefixes=data.announcements.flatMap(a=>[...a.currentPrefixes,...a.historicalOnlyPrefixes]);for(const prefix of prefixes)cidr(prefix);
+        return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(m=>!prefixes.some(p=>p.split('/')[0]===m[0]));
+      }
+      if(kind==='ipv4-literal' && (path==='registry/network-sources.json'||path==='registry/networks.json'||path.startsWith('rules/liberta-direct-ip.'))) {
+        if(path==='registry/network-sources.json') {
+          const data=JSON.parse(content);for(const service of data.services)for(const prefix of service.prefixes)cidr(prefix);
+          const prefixes=data.services.flatMap(s=>s.prefixes);
+          return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(m=>!prefixes.some(p=>p.split('/')[0]===m[0]));
+        }
+        return [...content.matchAll(/\b(?:\d{1,3}\.){3}\d{1,3}\b/g)].some(m=>!approvedNetworks.some(p=>p.split('/')[0]===m[0]));
       }
       return true;
     });
