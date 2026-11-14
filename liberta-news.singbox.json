@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "championat.com",
+        "fontanka.ru",
+        "kommersant.ru",
+        "kp.ru",
+        "lenta.ru",
+        "rg.ru",
+        "ria.ru",
+        "sports.ru",
+        "tass.ru",
+        "vedomosti.ru"
+      ]
+    }
+  ]
+}

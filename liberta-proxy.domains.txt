@@ -1,0 +1,2 @@
+domain:cloud.vk.com
+domain:mcs.mail.ru

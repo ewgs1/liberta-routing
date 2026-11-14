@@ -2,8 +2,17 @@
   "type": "field",
   "domain": [
     "domain:cbr.ru",
+    "domain:cloudpayments.ru",
+    "domain:inplat.ru",
     "domain:nspk.com",
     "domain:nspk.ru",
+    "domain:payanyway.ru",
+    "domain:paymaster.ru",
+    "domain:paywb.com",
+    "domain:paywb.ru",
+    "domain:platron.ru",
+    "domain:yoobusiness.ru",
+    "domain:yookassa.ru",
     "domain:yoomoney.ru"
   ],
   "outboundTag": "direct"
