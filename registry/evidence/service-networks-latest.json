@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-14T11:11:20.715Z",
+  "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+  "announcements": [
+    {
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "asn": 57073,
+      "holder": "Wildberries-AS LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "85.198.76.0/22",
+        "185.138.252.0/22",
+        "213.184.156.0/22",
+        "185.62.200.0/23",
+        "90.156.247.0/24",
+        "91.230.107.0/24",
+        "176.101.88.0/24",
+        "176.101.90.0/24",
+        "185.62.202.0/24",
+        "194.1.214.0/24",
+        "213.184.155.0/24",
+        "2a03:720::/32"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "asn": 201512,
+      "holder": "AS_WILDBERRIES_CDN LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "176.101.89.0/24",
+        "176.101.91.0/24",
+        "176.101.92.0/24",
+        "176.101.93.0/24",
+        "176.101.94.0/24",
+        "176.101.95.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "source": "https://bugbounty.standoff365.com/en-US/programs/wildberries/",
+      "asn": 201513,
+      "holder": "AS_WILDBERRIES_KZ LLC Wildberries",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "213.184.154.0/24",
+        "2a00:5da0:8010::/48"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "source": "https://rdap.db.ripe.net/autnum/43399",
+      "asn": 43399,
+      "holder": "TCS-AS \"TBANK\" JSC",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "91.218.132.0/22",
+        "212.233.80.0/22",
+        "91.194.226.0/23",
+        "178.130.128.0/23",
+        "217.14.19.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    },
+    {
+      "source": "https://rdap.db.ripe.net/autnum/44386",
+      "asn": 44386,
+      "holder": "OZON-AS LLC Internet Solutions",
+      "window": {
+        "start": "2026-10-31T00:00:00",
+        "end": "2026-11-14T00:00:00"
+      },
+      "currentPrefixes": [
+        "185.73.192.0/22",
+        "195.34.20.0/23",
+        "46.226.122.0/24",
+        "91.212.64.0/24",
+        "91.223.93.0/24"
+      ],
+      "historicalOnlyPrefixes": []
+    }
+  ]
+}

@@ -11,7 +11,7 @@
   "domains": 238,
   "serviceNetworks": {
     "prefixes": 30,
-    "registrySha256": "c87035b4b296e61452f7b04ab640b63cba1aa0c96f7fa63b6caa4710ff22097a",
+    "registrySha256": "59d96d8f8b5d20a52fd760b326d75d9a3695765282c7023b3c318ec14a7e2b79",
     "validUntil": "2026-11-21",
     "files": {
       "liberta-direct-ip.cidrs.txt": {
