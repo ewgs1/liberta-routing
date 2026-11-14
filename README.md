@@ -2,8 +2,8 @@
 
 238 выбранных доменов и 21 категорий из собственного реестра Liberta.
 
-Источник: https://github.com/ewgs1/liberta-routing/tree/5c12e8b7daa24376adea7230af0666f40f5cc5b2
+Источник: https://github.com/ewgs1/liberta-routing/tree/d153be9d54d72d9ac4626a614a06178d2203fe9e
 
-Подключение: https://github.com/ewgs1/liberta-routing/blob/5c12e8b7daa24376adea7230af0666f40f5cc5b2/docs/USAGE.md
+Подключение: https://github.com/ewgs1/liberta-routing/blob/d153be9d54d72d9ac4626a614a06178d2203fe9e/docs/USAGE.md
 
 Лицензия MIT. Данные не включают country-wide списки, геобазы или подключения VPN-узлов.

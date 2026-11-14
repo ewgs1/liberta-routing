@@ -1,7 +1,7 @@
 {
-  "sourceCommit": "5c12e8b7daa24376adea7230af0666f40f5cc5b2",
+  "sourceCommit": "d153be9d54d72d9ac4626a614a06178d2203fe9e",
   "file": "liberta.xray.json",
-  "sha256": "fcbb831649a86088c3151934f431d8f859ddda64b910fdc1082f74bd96a31779",
-  "bytes": 26951,
+  "sha256": "87f269e77ef08ddcdda57ea7b665cc8a98132f88fa7d6b6b7aacbbae7b4b728a",
+  "bytes": 27238,
   "applicationAcceptance": false
 }
