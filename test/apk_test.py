@@ -5,7 +5,7 @@ class ApkTests(unittest.TestCase):
  def test_dex_and_resources(self):
   text=b'https://api.tbank.ru/v1\0';data=bytearray(117)+bytes([len(text)-1])+text
   data[:8]=b'dex\n035\0';struct.pack_into('<II',data,56,1,112);struct.pack_into('<I',data,112,117)
-  self.assertEqual(apk.dex_strings(data),['https://api.tbank.ru/v1'])
+  self.assertEqual(list(apk.dex_strings(data)),['https://api.tbank.ru/v1'])
   with tempfile.TemporaryDirectory() as folder:
    path=Path(folder)/'fixture.apk'
    with zipfile.ZipFile(path,'w') as out:out.writestr('classes.dex',data);out.writestr('assets/config.json','{"endpoint":"https://api.2gis.ru/path?hidden=data"}')
@@ -22,5 +22,5 @@ class ApkTests(unittest.TestCase):
    with self.assertRaises(ValueError):apk.verify(target)
  def test_malformed_dex(self):
   data=bytearray(112);data[:8]=b'dex\n035\0';struct.pack_into('<II',data,56,100,100)
-  with self.assertRaises(ValueError):apk.dex_strings(data)
+  with self.assertRaises(ValueError):list(apk.dex_strings(data))
 if __name__=='__main__':unittest.main()

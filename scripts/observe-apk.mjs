@@ -22,9 +22,9 @@ async function download(url,roots,redirects=0) {
  return new Promise((resolve,reject)=>{
   let size=0;const chunks=[];const req=request(target,{agent:false,lookup:pinnedLookup(address),headers:{'User-Agent':'LibertaRouting-APK/1.0'}},res=>{
    if([301,302,303,307,308].includes(res.statusCode)){res.resume();clearTimeout(timer);download(new URL(res.headers.location,target).href,roots,redirects+1).then(resolve,reject);return;}
-   if(res.statusCode!==200){res.resume();reject(Error('APK not available'));return;}
+   if(res.statusCode!==200){res.resume();clearTimeout(timer);reject(Error('APK not available'));return;}
    res.on('data',chunk=>{size+=chunk.length;if(size>350_000_000)req.destroy(Error('APK too large'));else chunks.push(chunk);});
-   res.on('error',reject);res.on('end',()=>{clearTimeout(timer);resolve(Buffer.concat(chunks));});
+   res.on('error',error=>{clearTimeout(timer);reject(error);});res.on('end',()=>{clearTimeout(timer);resolve(Buffer.concat(chunks));});
   });const timer=setTimeout(()=>req.destroy(Error('APK download timed out')),60000);
   req.on('error',error=>{clearTimeout(timer);reject(error);});req.end();
  });
